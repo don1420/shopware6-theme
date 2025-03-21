@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Όχι",
+                    "true": "Ναί"
+                },
+                "select": {
+                    "defaultPlaceholder": "Επιλέξτε την επιλογή..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Εμφάνιση περισσότερων λεπτομερειών",
+            "liveRegionSlideAnnouncement": "Τώρα βλέπω διαφάνεια για το προϊόν %productName%"
+        }
+    }
+}

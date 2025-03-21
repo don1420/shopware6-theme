@@ -1,0 +1,774 @@
+{
+    "sw-order-detail": {
+        "payPalCarrierDescription": "Dacă doriți să schimbați operatorul de transport pentru această comandă PayPal, <a target=\"_blank\" href=\"{orderLink}\">click aici</a>",
+        "payPalCarrierHelpText": "Puteți seta și modifica transportatorul implicit de transport maritim pentru PayPal în <a class=\"sw-internal-link sw-internal-link--inline\" href=\"#/sw/settings/shipping/index\">metode de expediere<sw-icon name=\"regular-long-arrow-right\" small /></a>. Cu toate acestea, acest lucru nu va avea niciun efect asupra comenzilor care au fost deja plasate.",
+        "payPalCarrierLabel": "Transportator implicit",
+        "payPalCarrierPlaceholder": "nu este setat"
+    },
+    "swag-paypal": {
+        "errors": {
+            "SWAG_PAYPAL_POS__EXISTING_POS_ACCOUNT": "Acest cont Zettle a fost deja configurat într-un alt canal de vânzări",
+            "SWAG_PAYPAL__API_INVALID_CREDENTIALS": "Acreditările API nu sunt valide",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "Serviciile PayPal sunt momentan indisponibile. Vă rugăm să încercați din nou mai târziu.",
+            "SWAG_PAYPAL__INVALID_API_CREDENTIALS": "Acreditările API nu sunt valide",
+            "UNKNOWN": "A apărut o eroare necunoscută"
+        },
+        "notifications": {
+            "credentials": {
+                "errorMessage": "Preluarea eșuată:<br>{message}",
+                "title": "Acreditări PayPal"
+            },
+            "merchantInformation": {
+                "errorMessage": "Preluarea eșuată:<br>{message}",
+                "title": "Cont PayPal"
+            },
+            "posError": {
+                "title": "Zettle POS"
+            },
+            "save": {
+                "errorMessage": "Salvarea nu a reușit:<br>{message}",
+                "title": "Setări PayPal",
+                "webhookMessage": "Webhook-ul nu a putut fi salvat:<br>{message}"
+            },
+            "test": {
+                "errorMessage": "Validarea a eșuat:<br>{message}",
+                "successMessage": "Acreditările sunt valabile.",
+                "title": "Acreditări API PayPal"
+            },
+            "webhook": {
+                "errorMessage": "Nu s-a reușit reîmprospătarea webhook-ului:<br>{message}",
+                "successMessage": "Webhook-ul a fost reîmprospătat.",
+                "title": "Webhook PayPal"
+            }
+        }
+    },
+    "swag-paypal-disputes": {
+        "common": {
+            "dispute_amount": "Suma",
+            "dispute_id": "ID",
+            "dispute_life_cycle_stage": "Etapa",
+            "response_due_date": {
+                "buyer": "Cumpărător",
+                "label": "Data scadenței răspunsului",
+                "seller": "Vânzător"
+            },
+            "status": "Stare",
+            "update_time": "Timp de actualizare"
+        },
+        "detail": {
+            "copyButtonLabel": "Copierea datelor brute",
+            "externalLinkText": "Litigiu deschis în centrul de rezolvare Pay",
+            "mainFieldsCardTitle": "Detalii",
+            "orderModuleLinkText": "Comanda deschisa",
+            "rawDataCardTitle": "Date brute",
+            "title": "Disputa PayPal:",
+            "titleAddition": "(Detalii tehnice)"
+        },
+        "general": {
+            "descriptionTextModule": "Gestionați litigiile PayPal aici",
+            "mainMenuItemGeneral": "Dispute PayPal"
+        },
+        "list": {
+            "emptyState": {
+                "subline": "Modificați filtrul pentru a afișa toate disputele.",
+                "title": "Nu a fost găsită nicio dispută"
+            },
+            "emptyStateNotAuthorized": {
+                "link": "Metode de plată",
+                "subline": "Accesați {link} pentru configurarea PayPal.",
+                "title": "Fără configurare cont PayPal"
+            },
+            "errorTitle": "Eroare la preluarea litigiilor de la PayPal",
+            "title": "Litigiile",
+            "titleSidebarItemFilter": "Filtru",
+            "titleSidebarItemRefresh": "Actualizare"
+        }
+    },
+    "swag-paypal-frw-credentials": {
+        "buttonGetCredentials": "Obțineți acreditări API",
+        "buttonGetSandboxCredentials": "Obțineți acreditări API pentru sandbox",
+        "labelClientId": "ID client",
+        "labelClientIdSandbox": "ID client Sandbox",
+        "labelClientSecret": "Secretul clientului",
+        "labelClientSecretSandbox": "Sandbox client secret",
+        "labelMerchantPayerId": "ID-ul comerciantului PayPal",
+        "labelMerchantPayerIdSandbox": "ID comerciant PayPal Sandbox",
+        "labelSandbox": "Utilizați cutia de nisip",
+        "labelSetDefault": "Setați ca metodă de plată implicită",
+        "messageFetchedError": "Încercați din nou sau utilizați setările complexe pentru a vă furniza acreditările.",
+        "messageInvalidCredentials": "Acreditările nu sunt valide.",
+        "messageNoCredentials": "Nu sunt furnizate acreditări.",
+        "messageTestSuccess": "Acreditările sunt valabile.",
+        "textFetchedSuccessful": "Acreditările au fost preluate.",
+        "textIntroPayPal": "Pentru a pune PayPal în funcțiune, trebuie doar să furnizați acreditările API PayPal.",
+        "tooltipSandbox": "În funcție de activarea sandboxului, sunt salvate acreditări separate.",
+        "tooltipSetDefault": "PayPal va fi setat ca metodă de plată implicită pentru toate canalele de vânzări. Puteți seta metode de plată implicite individuale pentru fiecare canal de vânzări în modulul de setări."
+    },
+    "swag-paypal-method": {
+        "appImageAlt": "PayPal",
+        "availabilityToolTip": {
+            "bancontactapmhandler": "Bancontact este disponibil pentru următoarele țări: Belgia",
+            "blikapmhandler": "BLIK este disponibil pentru următoarele țări: Polonia",
+            "boletobancarioapmhandler": "Boleto Bancário este disponibil pentru următoarele țări: Brazilia",
+            "epsapmhandler": "eps este disponibil pentru urmatoarele tari: Austria",
+            "idealapmhandler": "iDeal este disponibil pentru următoarele țări: Olanda",
+            "multibancoapmhandler": "Multibanco este disponibil pentru următoarele țări: Portugalia",
+            "mybankapmhandler": "MyBank este disponibil pentru următoarele țări: Italia",
+            "oxxoapmhandler": "OXXO este disponibil pentru următoarele țări: Mexic",
+            "p24apmhandler": "Przelewy24 este disponibil pentru următoarele țări: Polonia",
+            "paylaterhandler": "Pay Later este disponibil pentru următoarele țări: Australia, Franța, Germania, Italia, Spania, Marea Britanie, Statele Unite",
+            "puihandler": "Plata pe factură este disponibilă pentru următoarele țări: Germania",
+            "sepahandler": "SEPA Lastschrift este disponibil pentru următoarele țări: Germania",
+            "trustlyapmhandler": "Trustly este disponibil pentru următoarele țări: Estonia, Finlanda, Olanda, Suedia",
+            "venmohandler": "Venmo este disponibil pentru următoarele țări: Statele Unite"
+        },
+        "banner": "Cu PayPal Checkout, puteți oferi clienților dvs. plata prin factură, card de credit și alte metode de plată locale. PayPal Checkout vă sprijină cu cea mai recentă tehnologie și vă oferă cea mai mare flexibilitate. Păstrați metodele de plată existente, iar taxele rămân aceleași! Activați PayPal Checkout și dezactivați PayPal PLUS pentru a evita metodele de plată duplicate în magazinul dvs.",
+        "bannerLink": "Mai multe informații",
+        "cardTitle": "Plata PayPal",
+        "description": "PayPal Checkout este noua soluție all-in-one care vă permite să oferiți funcții puternice de procesare a plăților flexibile pe piețe și alte platforme comerciale.",
+        "domainAssociation": {
+            "link": "Deschideți setările domeniilor",
+            "title": "Asigurați-vă că domeniul dvs. este setat corect pentru ca Apple Pay să funcționeze corect. Fișierul de asociere a domeniului este deja prezent."
+        },
+        "editDetail": "Editați detaliile",
+        "header": "Mai multe metode de plată cu o soluție de la PayPal",
+        "merchantStatusText": {
+            "connected": "Conectaţi",
+            "emailUnconfirmed": "E-mail neconfirmat",
+            "notConnected": "Nu este conectat",
+            "onboardingNeeded": "Este nevoie de re-onboarding",
+            "paymentsUnreceivable": "Plăți de nerambursat"
+        },
+        "onboardingStatusText": {
+            "active": "Autorizat",
+            "inactive": "Este nevoie de onboarding",
+            "ineligible": "Neeligibil",
+            "limited": "Limitat",
+            "mybank": "Limitat",
+            "pending": "Autorizație în așteptare",
+            "test": "Mod de testare"
+        },
+        "onboardingStatusTooltip": {
+            "ineligible": "PayPal ne-a informat, că această metodă de plată este în prezent neeligibilă pentru contul dvs.",
+            "limited": "PayPal ne-a informat, că această metodă de plată are unele limitări pentru contul dvs.",
+            "mybank": "Comercianții care activează MyBank după februarie 2023 vor avea nevoie de aprobarea manuală de către PayPal. Contactați asistența PayPal pentru informații suplimentare despre acest lucru."
+        },
+        "paymentMethodText": "Metode de plată",
+        "ratePayLabel": "de Ratepay",
+        "sandbox": {
+            "helpText": "Activați, dacă doriți să testați integrarea PayPal.",
+            "label": "Cutie de nisip",
+            "onlyLiveTooltip": "Sunteți conectat doar un cont PayPal live până acum.",
+            "onlySandboxTooltip": "Sunteți conectat doar un cont PayPal sandbox până acum."
+        },
+        "settingsLink": "Setări",
+        "switch": {
+            "active": "Metoda de plată „{name}” este acum activă.",
+            "inactive": "Metoda de plată „{name}” este acum inactivă.",
+            "label": "Activ"
+        }
+    },
+    "swag-paypal-onboarding-button": {
+        "live": {
+            "changeTitle": "Conectați un cont diferit",
+            "onboardingTitle": "Începeți integrarea PayPal",
+            "restartOnboardingTitle": "Reporniți integrarea PayPal",
+            "title": "Conectați contul PayPal"
+        },
+        "sandbox": {
+            "changeTitle": "Conectați diferite conturi sandbox",
+            "onboardingTitle": "Începeți integrarea în sandbox PayPal",
+            "title": "Conectați contul sandbox"
+        }
+    },
+    "swag-paypal-payment": {
+        "buttons": {
+            "label": {
+                "capture": "Captură",
+                "refund": "Creează o nouă rambursare",
+                "void": "Anulare autorizaţie"
+            }
+        },
+        "captureAction": {
+            "button": {
+                "text": "Capturare plată"
+            },
+            "captureInvoiceNumber": {
+                "label": "Numărul facturii",
+                "placeholder": "Introduceți un număr de factură"
+            },
+            "captureNoteToPayer": {
+                "label": "Notă către plătitor",
+                "placeholder": "Introduceți o notă către plătitor"
+            },
+            "currentAmount": "Suma",
+            "isFinal": "Aceasta este captura finală",
+            "isFinalHint": "Sugestie: Marcat ca captură finală, deși nu va fi capturată întreaga sumă.",
+            "maxAmount": "Suma maximă",
+            "successMessage": "Capturarea ta a avut succes."
+        },
+        "errorPage": {
+            "canceledPaymentContent": "A apărut o eroare la preluarea detaliilor de plată de la PayPal. Dacă vedeți acest mesaj, a fost probabil o plată care a fost anulată de client. Plățile anulate vor fi șterse de PayPal după un timp și apoi nu mai sunt disponibile.",
+            "other": "A apărut o eroare la preluarea detaliilor de plată de la PayPal.",
+            "title": "Detalii de plată nu sunt disponibile"
+        },
+        "general": {
+            "title": "Ordine"
+        },
+        "modal": {
+            "title": {
+                "capture": "Captură",
+                "refund": "Restituire nouă",
+                "void": "Anulare autorizaţie"
+            }
+        },
+        "paymentDetails": {
+            "cardTitle": "Plata",
+            "customer": {
+                "heading": "Client",
+                "payerId": "ID-ul plătitorului:"
+            },
+            "error": {
+                "title": "Eroare la preluarea detaliilor de plată de la Pay"
+            },
+            "invoice": {
+                "discount": "Reducere:",
+                "handling": "Taxa de manipulare:",
+                "heading": "Suma facturii",
+                "insurance": "Asigurare:",
+                "shipping": "Expediere:",
+                "shipping_discount": "Reducere de transport:",
+                "subTotal": "Subtotal:",
+                "totalAmount": "Suma totală:"
+            },
+            "payment": {
+                "cartId": "ID coş:",
+                "createTime": "Creează timp:",
+                "heading": "Detalii de plată",
+                "intent": "Intenție:",
+                "paymentId": "ID de plată:",
+                "state": "Statul:",
+                "updateTime": "Ora actualizării:"
+            }
+        },
+        "puiDetails": {
+            "accountHolder": "Titularul contului:",
+            "amount": "Suma:",
+            "bank": "Banca:",
+            "bic": "BIC:",
+            "buttonCopy": "Copiere",
+            "cardTitle": "Date de plată a facturii",
+            "iban": "IBAN:",
+            "reference": "Referință:"
+        },
+        "refundAction": {
+            "confirmButton": {
+                "text": "executa"
+            },
+            "invoiceSelect": {
+                "label": "Selectează captura"
+            },
+            "refundAmount": {
+                "helpText": "O sumă de „0” va determina rambursarea plății complete",
+                "label": "Suma"
+            },
+            "refundDescription": {
+                "label": "Descriere",
+                "placeholder": "Introduceți o descriere"
+            },
+            "refundInvoiceNumber": {
+                "label": "Numărul facturii",
+                "placeholder": "Introduceți un număr de factură"
+            },
+            "refundNoteToPayer": {
+                "label": "Notă către plătitor",
+                "placeholder": "Introduceți o notă către plătitor"
+            },
+            "refundReason": {
+                "label": "Motivul",
+                "placeholder": "Introduceți un motiv"
+            },
+            "successMessage": "Rambursarea ta a avut succes."
+        },
+        "tabs": {
+            "order": "PayPal",
+            "overview": "Prezentare generală"
+        },
+        "transactionHistory": {
+            "cardTitle": "Istoric plăţi",
+            "states": {
+                "authorization": "autorizație",
+                "capture": "Captură",
+                "order": "Comanda",
+                "refund": "rambursarea",
+                "sale": "Vânzare"
+            },
+            "types": {
+                "amount": "Suma",
+                "createTime": "Creat",
+                "paymentMode": "Modul de plată",
+                "state": "Stat",
+                "trackingId": "ID urmărire",
+                "transactionFee": "Taxa de tranzacție",
+                "type": "Tip",
+                "updateTime": "Actualizat"
+            }
+        },
+        "voidAction": {
+            "confirm": {
+                "button": {
+                    "confirm": "Anulare autorizaţie"
+                },
+                "message": "Chiar vrei să anulezi această plată?"
+            },
+            "successMessage": "Plata a fost anulată cu succes."
+        }
+    },
+    "swag-paypal-pos": {
+        "account": {
+            "connectedStatus": "Conectaţi",
+            "editConnection": "Editare conexiune",
+            "errorEmail": "Cheia API nu a putut fi verificată",
+            "errorName": "Eroare în timpul autentificării",
+            "lastUpdated": "Ultima actualizare",
+            "loadingEmail": "pos@example.com",
+            "loadingName": "În prezent încarcă...",
+            "manageAccount": "Gestionează contul",
+            "noConnectionStatus": "Nici o conexiune"
+        },
+        "authentication": {
+            "apiKeyDescription": "Tastele API funcționează ca parole. Shopware va utiliza cheia API Zettle pentru a stabili o conexiune securizată la contul Zettle.",
+            "buttonGenerateKey": "Generare cheie API",
+            "labelApiKey": "Cheie API",
+            "messageDuplicateError": "Acest cont Zettle a fost deja configurat într-un alt canal de vânzări",
+            "messageTestError": "Acreditările nu au putut fi validate",
+            "placeholderApiKey": "Introduceți tasta API..."
+        },
+        "detail": {
+            "cleanLog": "Curățare jurnal",
+            "disclaimer": {
+                "headline": "Zettle este un serviciu PayPal",
+                "linkTarget": "https://www.paypal.com/en/webapps/mpp/merchant",
+                "linkText": "Obțineți PayPal pentru magazinul dvs.",
+                "subheadline": "Ajutați la creșterea vânzărilor prin puterea PayPal. Începeți gratuit."
+            },
+            "logs": {
+                "columnLastSync": "Detalii",
+                "noEntry": "Nu este sincronizat încă",
+                "states": {
+                    "aborted": "Abandonat",
+                    "failed": "Nu a",
+                    "success": "Actualizat"
+                }
+            },
+            "overview": {
+                "buttonSync": "Sincronizează acum",
+                "buttonSyncAbort": "Abandonează sincronizarea",
+                "buttonSyncImages": "Încărcați imagini",
+                "buttonSyncInventory": "Sincronizarea inventarului",
+                "buttonSyncProducts": "Sincronizarea detaliilor produsului",
+                "continueSetup": {
+                    "cardTitle": "Configurare",
+                    "content": {
+                        "firstLine": "Conturile Zettle și Shopware sunt acum conectate! Acum puteţi configura sincronizarea produsului.",
+                        "headline": "Configurarea sincronizării produsului",
+                        "secondLine": "Odată activat, Zettle va fi sincronizat automat cu produsele Shopware. Vânzările realizate prin Zettle sunt, de asemenea, sincronizate cu Shopware și puteți utiliza Administrația pentru a vă menține la curent cu vânzările Zettle și Shopware, de asemenea."
+                    }
+                },
+                "status": {
+                    "disabled": "Sincronizarea nu este activată, deoarece canalul de vânzări este dezactivat.",
+                    "lastSynced": "Ultima sincronizare",
+                    "lastSyncedComplete": "Ultima sincronizare completă",
+                    "message": {
+                        "aborted": "Ultima sincronizare a fost anulată de către utilizator",
+                        "error": "Ultima sincronizare terminată cu erori",
+                        "noRunYet": "Nu a fost găsită nicio versiune recentă",
+                        "success": "Sincronizat cu succes",
+                        "syncing": "Sincronizarea în curs",
+                        "warning": "Ultima sincronizare terminată cu avertismente"
+                    },
+                    "syncingDetail": "Acest lucru ar putea dura câteva minute. Acest proces se desfășoară în fundal, între timp puteți utiliza magazinul dvs. ca de obicei.",
+                    "task": {
+                        "complete": "complet",
+                        "image": "imagini",
+                        "inventory": "inventar",
+                        "product": "produse"
+                    }
+                },
+                "syncErrorTitle": "Eroare de sincronizare",
+                "titleSync": "Sincronizare"
+            },
+            "runs": {
+                "actions": {
+                    "showDetails": "Arată detalii"
+                },
+                "cloneVisibilityTask": "Vizibilitatea produsului",
+                "columns": {
+                    "date": "Data",
+                    "state": "Stat",
+                    "task": "Tip"
+                },
+                "completeTask": "Complet",
+                "emptyState": {
+                    "message": "Sincronizaţi acum pentru a genera jurnale.",
+                    "title": "Fără sincronizări finalizate"
+                },
+                "imageTask": "Imagine",
+                "inventoryTask": "inventar",
+                "productTask": "Produs",
+                "states": {
+                    "aborted": "Abandonat de către utilizator",
+                    "failed": "Nu a",
+                    "successful": "Finalizat",
+                    "withWarnings": "Completată cu avertismente"
+                },
+                "title": "Istoricul sincronizării",
+                "toolbarText": "„Curățați jurnalele” va șterge toate jurnalele. Jurnalele mai vechi de 30 de zile vor fi eliminate automat."
+            },
+            "settings": {
+                "activeHelpText": "Dacă este activă, sincronizarea Zettle va avea loc automat în fundal.",
+                "domain": "Domeniul dvs. de magazin",
+                "domainHelpText": "Zettle va utiliza acest domeniu pentru a descărca media asociată cu produsele sincronizate. Zettle va accepta numai URL-uri securizate (https).",
+                "optionsTitle": "Opțiuni",
+                "productStream": "Grup dinamic de produse",
+                "replace": "Înlocuiți produsele existente în Zettle",
+                "reset": {
+                    "buttonTitle": "Resetați sincronizarea",
+                    "descriptionText": "Dacă întâmpinați probleme, puteți reîncărca toate produsele și imaginile.",
+                    "modalButtonConfirm": "Resetați sincronizarea",
+                    "modalConfirmText": "Acest lucru va reseta istoricul de sincronizare pentru canalul de vânzări",
+                    "modalTextInfo": "Toate elementele vor fi reîncărcate la următoarea sincronizare. Acest lucru poate dura un timp. Nu veți pierde date în Shopware, unele date pot fi suprascrise la Zettle.",
+                    "modalTitle": "Resetarea istoricului de sincronizare"
+                },
+                "saveAlert": "Modificările salvate sunt disponibile după terminarea sincronizării curente între Shopware și Zettle.",
+                "syncPrices": "Sincronizarea prețurilor",
+                "titleCredentials": "Acreditări",
+                "titleGeneralSettings": "Setări generale",
+                "titlePrices": "Preturi",
+                "titleSync": "Sincronizare"
+            },
+            "syncedProducts": {
+                "actions": {
+                    "productDetails": "Detalii produs"
+                },
+                "columns": {
+                    "date": "Data",
+                    "name": "Nume",
+                    "state": "Stare"
+                },
+                "emptyState": {
+                    "message": "Nu există produse în canalul dvs. de vânzări sau în grupul de produse dinamic.",
+                    "title": "Niciun produs selectat"
+                },
+                "notSyncedYet": "Nu este sincronizat încă",
+                "title": "Produse sincronizate"
+            }
+        },
+        "general": {
+            "moduleTitle": "Zettle by PayPal",
+            "salesChannelDetailDescription": {
+                "manufacturer": "Zettle by PayPal",
+                "title": "Dezvoltați-vă afacerea cu Shopware și Zettle de la PayPal"
+            }
+        },
+        "gettingStarted": {
+            "appHeadline": "Descărcați aplicația Zettle Go",
+            "appImageAlt": "Aplicația Zettle",
+            "appText": "Disponibil pentru tablete și telefoane iOS și Android.<br>Conectați contul Zettle și cititorul de carduri pentru a începe să faceți vânzări.",
+            "cardTitle": "Începeți cu Zettle by PayPal",
+            "readerHeadline": "Conectați-vă la Zettle pentru a comanda cititorul de carduri Zettle",
+            "readerImageAlt": "Cititor de carduri Zettle",
+            "readerLinkTarget": "https://shop.zettle.com",
+            "readerLinkText": "shop.zettle.com",
+            "readerText": "Aflați mai multe despre cititorul de carduri și comandați unul chiar aici:"
+        },
+        "header": "Canalul de vânzări Zettle",
+        "messageCloneError": "Nu s-a putut transfera vizibilitatea produsului de pe un alt canal de vânzări.",
+        "messageWebhookRegisterError": "Webhook nu a putut fi înregistrat la Zettle",
+        "tabTitle": {
+            "help": "Ajutor",
+            "overview": "Prezentare generală",
+            "runs": "Jurnale",
+            "settings": "Setări",
+            "syncedProducts": "Produse sincronizate"
+        },
+        "wizard": {
+            "connection": {
+                "buttonCreateAccount": "Creează un cont Zettle",
+                "buttonCreateAccountLink": "https://www.zettle.com/gb/integrations/e-commerce/shopware?utm_source=local_partnership&utm_medium=ecommerce&utm_campaign=shopware",
+                "headerConnect": "Conectează-ți contul Zettle",
+                "headerNewCustomer": "Nou la Zettle?",
+                "modalTitle": "Configurarea contului"
+            },
+            "connectionDisconnect": {
+                "disconnectButton": "Deconectează contul",
+                "disconnectErrorMessage": "A apărut o eroare în timpul deconectării.",
+                "headline": "Eşti pe cale să-l deconectezi pe Zettle.",
+                "info": "Produsele nu vor mai fi actualizate și sincronizate cu contul Zettle afișat atunci când vă deconectați contul.",
+                "modalTitle": "Deconectează contul Zettle"
+            },
+            "connectionSuccess": {
+                "disclaimer": "Orice modificări aduse produselor Shopware vor fi actualizate automat în contul dvs. Zettle conectat.",
+                "disconnectButton": "Deconectați",
+                "fakeFirstName": "În prezent",
+                "fakeLastName": "încărcare...",
+                "fakeMail": "pos@example.com",
+                "headline": "Conturile Zettle și Shopware sunt acum conectate!",
+                "info": "Urmați pașii următori pentru a termina configurarea sincronizării produsului.",
+                "modalTitle": "Conexiune stabilită"
+            },
+            "customization": {
+                "labelDomain": "Domeniul dvs. de magazin",
+                "modalTitle": "Detalii despre canalul de vânzări",
+                "placeholderDomain": "www.my-store.shopware.com",
+                "salesChannelLabel": "Numele Canalului de Vânzări",
+                "subtitle": "Zettle va utiliza acest domeniu pentru a descărca media asociată cu produsele sincronizate."
+            },
+            "finish": {
+                "firstParagraph": "Contul dvs. Zettle este acum conectat la canalul dvs. de vânzări, iar produsele dvs. vor fi transferate către Zettle. În viitor, când faceți o vânzare, vă vom actualiza stocul în Zettle și Shopware.",
+                "header": "Configurarea sincronizării produsului a fost finalizată!",
+                "modalTitle": "Finish",
+                "secondParagraph": "Dacă aveți nevoie să vă actualizați produsele, vă recomandăm să faceți acest lucru în Shopware, iar acestea se vor sincroniza automat cu aplicația Zettle."
+            },
+            "productSelection": {
+                "info": "Pentru a începe mai repede, aveți acum opțiunea de a atribui produse dintr-un canal de vânzări existent celui nou creat. Toate produsele atribuite vor fi apoi disponibile pentru sincronizare în Zettle POS. Nu este nevoie de muncă manuală.",
+                "labelSelect": "Canal de vânzări",
+                "labelToggle": "Transfer selecţie produs",
+                "modalTitle": "Transferați produse de pe canalul de vânzări existent"
+            },
+            "salesChannelPrototypeName": "Zettle POS",
+            "stepItemTitle": {
+                "connection": "Configurarea contului",
+                "connectionSuccess": "Conectare",
+                "customization": "Personalizare",
+                "finish": "Finish",
+                "productSelection": "Selecția produsului",
+                "syncLibrary": "Sincronizarea produsului",
+                "syncPrices": "Sincronizarea prețurilor"
+            },
+            "syncLibrary": {
+                "description": "Toate produsele sunt sincronizate din canalul de vânzări nou creat în Shopware. Ţi-ar plăcea să-ţi instalezi biblioteca Zettle?",
+                "disclaimer": "Puteți modifica aceste setări mai târziu în orice moment.",
+                "header": "Am găsit {shopwareProducts} și {posProducts}",
+                "modalTitle": "Configurarea sincronizării produsului",
+                "optionReplaceNotDescription": "Produsele Shopware și cantitățile de stoc vor fi adăugate la biblioteca Zettle existentă.",
+                "optionReplaceNotLabel": "Adaugă produse Shopware",
+                "optionReplaceOneTimeDescription": "Înlocuiți biblioteca Zettle existentă cu produse și cantități de stoc din Shopware o dată.",
+                "optionReplaceOneTimeLabel": "Înlocuiți biblioteca Zettle",
+                "optionReplacePermanentlyDescription": "Numai produsele Shopware și cantitățile de stoc vor exista în biblioteca dvs. Zettle.",
+                "optionReplacePermanentlyLabel": "Utilizează numai produsele Shopware",
+                "posProducts": "Nu există produse Zettle | un produs Zettle | {n} Produse Zettle",
+                "shopwareProducts": "fără produse Shopware | un produs Shopware | {n} Produse de magazin"
+            },
+            "syncPrices": {
+                "description": "Prețurile produselor dvs. vor include TVA atunci când sunt sincronizate cu Zettle.",
+                "disclaimer": "Puteți edita manual TVA-ul în biblioteca de produse Zettle.",
+                "header": "Cum ați dori să sincronizați prețurile produselor cu Zettle?",
+                "modalTitle": "Configurarea sincronizării produsului",
+                "optionFalseDescription": "Prețurile produselor nu vor fi transferate la sincronizare. Le puteți seta în biblioteca de produse Zettle.",
+                "optionFalseLabel": "Nu sincronizați prețurile",
+                "optionTrueDescription": "Prețurile sincronizate cu Zettle vor include TVA.",
+                "optionTrueLabel": "Sincronizarea prețurilor cu TVA"
+            }
+        }
+    },
+    "swag-paypal-setting": {
+        "helpText": {
+            "acdcForce3DS": "Tranzacția nu va fi acceptată, dacă 3D Secure nu este disponibil.",
+            "brandName": "Acest text va fi afișat ca nume de marcă pe pagina de plată PayPal.",
+            "clientId": "ID-ul clientului REST API este utilizat pentru a autentifica acest plugin cu API-ul PayPal.",
+            "clientIdSandbox": "ID-ul clientului REST API este utilizat în timpul testării pentru a autentifica acest plugin cu API-ul PayPal.",
+            "clientSecret": "Secretul clientului REST API este folosit pentru a autentifica acest plugin cu API-ul PayPal.",
+            "clientSecretSandbox": "Secretul clientului REST API este folosit în timpul testării pentru a autentifica acest plugin cu API-ul PayPal.",
+            "ecsButtonLanguageIso": "Dacă nu este setat, limba canalului de vânzări va fi utilizată.",
+            "ecsCartEnabled": "Dacă această opțiune este activă, butonul Express Checkout va fi afișat în coș.",
+            "ecsDetailEnabled": "Dacă această opțiune este activă, butonul Express Checkout va fi afișat pe fiecare pagină cu detaliile produsului.",
+            "ecsListingEnabled": "Dacă această opțiune este activă, butonul Express Checkout va fi afișat pe paginile listării.",
+            "ecsLoginEnabled": "Dacă această opțiune este activă, butonul Express Checkout va fi afișat pe pagina de conectare și înregistrare.",
+            "ecsOffCanvasEnabled": "Dacă această opțiune este activă, butonul Express Checkout va fi afișat pe coșul off-canvas.",
+            "ecsShowPayLater": "Butonul „Plătiți mai târziu” va fi afișat pe aceleași pagini și în același design ca butonul „PayPal Checkout”.",
+            "ecsSubmitCart": "Dacă această opțiune este activă, coșul va fi trimis la PayPal pentru comenzi Express.",
+            "excludedProductIds": "Produsele selectate aici nu pot fi achiziționate cu PayPal.",
+            "excludedProductStreamIds": "Produsele incluse în grupurile dinamice de produse selectate aici nu pot fi achiziționate cu PayPal.",
+            "installmentBannerCartEnabled": "Dacă această opțiune este activă, bannerul „Plătește mai târziu” va fi afișat în coș.",
+            "installmentBannerDetailPageEnabled": "Dacă această opțiune este activă, bannerul „Plătiți mai târziu” va fi afișat pe fiecare pagină cu detalii despre produs.",
+            "installmentBannerFooterEnabled": "Dacă această opțiune este activă, bannerul „Plătiți mai târziu” va fi afișat în subsol.",
+            "installmentBannerLoginPageEnabled": "Dacă această opțiune este activă, bannerul „Plătiți mai târziu” va fi afișat pe pagina de conectare și înregistrare.",
+            "installmentBannerOffCanvasCartEnabled": "Dacă această opțiune este activă, bannerul „Plătește mai târziu” va fi afișat pe coșul off-canvas.",
+            "merchantPayerId": "ID-ul comerciantului PayPal atribuit contului dvs. PayPal (consultați Informații despre afaceri în setările contului PayPal).",
+            "merchantPayerIdSandbox": "ID-ul comerciant PayPal atribuit contului dvs. PayPal sandbox (consultați Informații despre afaceri în setările contului PayPal).",
+            "orderNumberPrefix": "Acest text este plasat înaintea numărului de comandă original (de exemplu, MyShop_SW20001). Acest lucru ajută la identificarea magazinului în care a fost efectuată plata. Îl puteți găsi ca ID de factură în tabloul de bord PayPal.",
+            "orderNumberSuffix": "Acest text este plasat după numărul de comandă original (de exemplu SW20001_MyShop). Acest lucru ajută la identificarea magazinului în care a fost efectuată plata. Îl puteți găsi ca ID de factură în tabloul de bord PayPal.",
+            "puiCustomerServiceInstructions": "Aceste instrucțiuni vor fi trimise la PayPal & RatePay și afișate în e-mailuri pentru client.",
+            "sandbox": "Activați, dacă doriți să testați integrarea PayPal.",
+            "sendOrderNumber": "Dacă această opțiune este activă, numărul comenzii va fi trimis la PayPal ca ID de factură la finalizare.",
+            "spbAlternativePaymentMethodsEnabled": "Metodele alternative de plată sunt de credit- și carduri de debit și mai mult.",
+            "spbButtonLanguageIso": "Dacă nu este setat, limba canalului de vânzări va fi utilizată.",
+            "submitCart": "Dacă această opțiune este activă, datele coșului vor fi trimise către PayPal la finalizarea comenzii."
+        },
+        "hintText": {
+            "landingPage": {
+                "GUEST_CHECKOUT": "Client Checkout: Site-ul PayPal afișează un formular pentru informații de plată, clientul nu trebuie să se conecteze.",
+                "LOGIN": "Autentificare: Site-ul PayPal afișează un ecran de conectare ca pagină de destinație.",
+                "NO_PREFERENCE": "Nici o preferință: PayPal decide ce pagină este afișată, în funcție de interacțiunea anterioară a clientului cu PayPal."
+            }
+        },
+        "label": {
+            "acdcForce3DS": "Executați tranzacții numai cu 3D Secure",
+            "brandName": "Numele dvs. propriu de marcă pe pagina PayPal",
+            "clientId": "ID client",
+            "clientIdSandbox": "ID client Sandbox",
+            "clientSecret": "Secretul clientului",
+            "clientSecretSandbox": "Sandbox client secret",
+            "crossBorderBuyerCountry": "Localizare",
+            "crossBorderMessagingEnabled": "Activați localizarea transfrontalieră a mesajului Pay Later",
+            "ecsButtonColor": "Culoare buton",
+            "ecsButtonLanguageIso": "Localizare buton",
+            "ecsButtonShape": "Forma butonului",
+            "ecsCartEnabled": "'PayPal Checkout' în coș",
+            "ecsDetailEnabled": "„PayPal Checkout” pe pagina de detalii",
+            "ecsListingEnabled": "„PayPal Checkout” pe paginile de listare",
+            "ecsLoginEnabled": "„PayPal Checkout” pe pagina de conectare",
+            "ecsOffCanvasEnabled": "„PayPal Checkout” pe coșul off-canvas",
+            "ecsShowPayLater": "Afișează butonul „Plătește mai târziu” lângă butonul „PayPal Checkout”",
+            "ecsSubmitCart": "Trimite cosul",
+            "excludedProductIds": "Produse excluse",
+            "excludedProductStreamIds": "Grupuri de produse dinamice excluse",
+            "installmentBannerCartEnabled": "Bannerul „Plătește mai târziu” pe coș",
+            "installmentBannerDetailPageEnabled": "Bannerul „Plătiți mai târziu” pe pagina de detalii",
+            "installmentBannerFooterEnabled": "Banner „Plătiți mai târziu” în subsol",
+            "installmentBannerLoginPageEnabled": "Bannerul „Plătiți mai târziu” pe pagina de conectare",
+            "installmentBannerOffCanvasCartEnabled": "Bannerul „Plătește mai târziu” pe coșul off-canvas",
+            "intent": "Achizitie plata",
+            "landingPage": "Pagina de destinație PayPal",
+            "merchantPayerId": "ID-ul comerciantului PayPal",
+            "merchantPayerIdSandbox": "ID comerciant PayPal Sandbox",
+            "orderNumberPrefix": "Prefixul numărului comenzii",
+            "orderNumberSuffix": "Sufixul numărului de ordine",
+            "puiCustomerServiceInstructions": "Instrucțiuni de asistență pentru clienți pentru Plătiți la factură",
+            "sandbox": "Activează cutia cu nisip",
+            "sendOrderNumber": "Trimite numărul comenzii",
+            "spbAlternativePaymentMethodsEnabled": "Activați metodele alternative de plată pentru butoanele de plată inteligente.",
+            "spbButtonColor": "Culoare buton",
+            "spbButtonLanguageIso": "Localizare buton",
+            "spbButtonShape": "Forma butonului",
+            "spbCheckoutEnabled": "Activare butoane de plată inteligente",
+            "spbShowPayLater": "Afișează butonul „Plătește mai târziu” lângă butonul PayPal",
+            "submitCart": "Trimite cosul",
+            "vaultingEnabledACDC": "Eanable Vaulting pentru carduri de credit și debit",
+            "vaultingEnabledVenmo": "Activați Vaulting pentru plățile Venmo",
+            "vaultingEnabledWallet": "Activați Vaulting pentru plățile PayPal"
+        }
+    },
+    "swag-paypal-settings": {
+        "acdc": {
+            "title": "Credit- sau card de debit"
+        },
+        "behavior": {
+            "title": "comportament"
+        },
+        "credentialsLive": {
+            "test": "Test",
+            "title": "Acreditări API live"
+        },
+        "credentialsSandbox": {
+            "test": "Test",
+            "title": "Acreditări API Sandbox"
+        },
+        "crossBorder": {
+            "buyerCountryAuto": "Determinare automată",
+            "buyerCountryOverride": "Localizare",
+            "info": "Mesageria Pay Later este o caracteristică care vă permite să afișați un mesaj Pay Later în limba clientului. Această caracteristică este disponibilă numai pentru anumite țări. {0}",
+            "title": "Mesagerie transfrontalieră Pay Later",
+            "warning": "Vă rugăm să contactați reprezentantul PayPal pentru a activa această caracteristică pentru contul dvs."
+        },
+        "express": {
+            "alertMessage": "Înscrierea dublă pentru oaspeți este activată într-unul dintre canalele dvs. de vânzări. Această caracteristică nu este compatibilă cu butoanele de comandă rapidă PayPal Express. Clienții care se înscriu prin butoanele de comandă rapidă pentru plată rapidă nu vor primi e-mailuri de verificare dublă de înscriere.",
+            "subtitle": "Cumpărăturile expres cresc rata de conversie în magazinul dvs. și nu prezintă niciun risc financiar pentru dvs. ca comerciant. Este recomandat să le mențineți activate. ",
+            "title": "Comandă rapidă pentru checkout expres"
+        },
+        "header": "PayPal",
+        "installment": {
+            "subtitle": "Bannerele cresc rata de conversie în magazinul dvs. și nu prezintă niciun risc financiar pentru dvs. ca comerciant. Este recomandat să le mențineți activate.",
+            "title": "Banner „Plătiți mai târziu”"
+        },
+        "module": {
+            "description": "Setări PayPal",
+            "title": "PayPal"
+        },
+        "options": {
+            "buttonColor": {
+                "black": "neagră",
+                "blue": "Albastru",
+                "gold": "Aur (recomandat)",
+                "silver": "Argintiu",
+                "white": "alb"
+            },
+            "buttonShape": {
+                "pill": "Runda",
+                "rect": "Rect",
+                "sharp": "Dreptunghiular cu colțuri ascuțite"
+            },
+            "intent": {
+                "AUTHORIZE": "Colectarea manuală a plăților (intenție AUTORIZARE)",
+                "CAPTURE": "Colectarea automată a plăților (intenție CAPTURE"
+            },
+            "landingPage": {
+                "GUEST_CHECKOUT": "Checkout pentru oaspeți",
+                "LOGIN": "Login",
+                "NO_PREFERENCE": "Nici o preferinţă"
+            }
+        },
+        "pui": {
+            "title": "Plătiți la factură"
+        },
+        "spb": {
+            "title": "Butoane inteligente de plată"
+        },
+        "tabs": {
+            "advanced": "Advanced",
+            "general": "General",
+            "storefront": "Prezentarea magazinului"
+        },
+        "vaulting": {
+            "activeButtonLabel": "Activați boltul",
+            "descriptionText": "Depozitarea unui cont PayPal vă va permite să debitați contul în viitor fără a solicita clientului dvs. să fie prezent în timpul tranzacției sau să se autentifice din nou cu PayPal atunci când este prezent în timpul tranzacției.",
+            "descriptionTitle": "Plată de plată unică prin Paypal",
+            "title": "Sculptură"
+        },
+        "webhook": {
+            "buttonRefresh": "Reîmprospătați webhook",
+            "fetchFailed": "Nu s-a reușit preluarea stării webhook",
+            "info": "Webhook-ul este utilizat pentru actualizarea stării unei tranzacții asincron. Webhook-urile înregistrate incorect, de exemplu pe un alt server sau care nu este disponibil public, pot duce la tranzacții neconfirmate, indiferent dacă tranzacția a fost procesată de PayPal.",
+            "refreshFailed": "Reîmprospătarea nu a reușit",
+            "status": {
+                "invalid": "Înregistrată, dar posibilă nepotrivire a domeniului",
+                "missing": "Nu este înregistrat",
+                "unknown": "Se încarcă...",
+                "valid": "Înregistrat"
+            },
+            "title": "Webhook"
+        }
+    },
+    "swag-paypal-settings-locale-select": {
+        "automatic": "Automat (recomandat)",
+        "invalid": "Localizarea furnizată nu este validă. Vă rugăm să alegeți unul din listă."
+    },
+    "swag-paypal-settings-sales-channel-switch": {
+        "description": "Faceți clic pe acest buton pentru a activa PayPal și selectați-l ca implicit în canalul de vânzări selectat",
+        "label": "Setați PayPal ca implicit"
+    },
+    "swag-paypal-settings-shipping-carrier": {
+        "cardHelpText": "Informațiile de urmărire vor fi trimise către PayPal",
+        "cardTitle": "Transportator implicit",
+        "commonCarrierBadge": "Folosit în mod obișnuit",
+        "description": "PayPal oferă urmărire pentru comenzile procesate prin PayPal. Pentru a utiliza acest lucru, specificați un transportator implicit de transport maritim, care poate fi suprascrisă în comenzi. Găsiți o listă a tuturor furnizorilor de transport <a target=\"_blank\" href=\"https://developer.paypal.com/docs/tracking/reference/carriers/\">aici</a>",
+        "inputHelpText": "Selectați „Altele” pentru a introduce un nume personalizat de operator.",
+        "inputHelpTextOther": "Dacă operatorul dvs. nu este inclus în listă, introduceți numele aici. Lăsați gol pentru a utiliza numele metodei de expediere.",
+        "inputLabel": "Codul transportatorului",
+        "inputLabelOther": "Numele transportatorului",
+        "inputPlaceholder": "Introduceți un cod de operator PayPal (de exemplu, DHL_GLOBAL_ECOMMERCE)...",
+        "inputPlaceholderOther": "Introduceți numele unui transportator...",
+        "invalid": "Codul transportatorului furnizat este nevalid. Vă rugăm să alegeți unul din listă sau selectați „Altele”."
+    }
+}

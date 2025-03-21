@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "नहीं",
+                    "true": "हाँ"
+                },
+                "select": {
+                    "defaultPlaceholder": "विकल्प चुनें..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "अधिक विवरण दिखाएँ",
+            "liveRegionSlideAnnouncement": "अब उत्पाद %productName%के लिए स्लाइड देख रहे हैं"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nie",
+                    "true": "Áno"
+                },
+                "select": {
+                    "defaultPlaceholder": "Vyberte možnosť..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Zobraziť ďalšie podrobnosti",
+            "liveRegionSlideAnnouncement": "Teraz sa zobrazuje snímka produktu %productName%"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Non",
+                    "true": "Oui"
+                },
+                "select": {
+                    "defaultPlaceholder": "Sélectionner l'option..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Afficher plus de détails",
+            "liveRegionSlideAnnouncement": "Je regarde maintenant la diapositive du produit %productName%"
+        }
+    }
+}

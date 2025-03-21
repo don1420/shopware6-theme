@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nem",
+                    "true": "Igen"
+                },
+                "select": {
+                    "defaultPlaceholder": "Válassza ki a lehetőséget..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "További részletek",
+            "liveRegionSlideAnnouncement": "A %productName%termék diájának megtekintése"
+        }
+    }
+}

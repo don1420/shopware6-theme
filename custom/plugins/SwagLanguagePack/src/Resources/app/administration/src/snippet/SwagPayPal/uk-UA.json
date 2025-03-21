@@ -1,0 +1,774 @@
+{
+    "sw-order-detail": {
+        "payPalCarrierDescription": "Якщо ви хочете змінити перевізника для цього замовлення PayPal, <a target=\"_blank\" href=\"{orderLink}\">натисніть тут</a>",
+        "payPalCarrierHelpText": "Ви можете встановити і змінити перевізника за замовчуванням для PayPal в <a class=\"sw-internal-link sw-internal-link--inline\" href=\"#/sw/settings/shipping/index\">способи доставки<sw-icon name=\"regular-long-arrow-right\" small /></a>. Однак це не вплине на замовлення, які вже були розміщені.",
+        "payPalCarrierLabel": "Транспортний перевізник за замовчуванням",
+        "payPalCarrierPlaceholder": "не встановлено"
+    },
+    "swag-paypal": {
+        "errors": {
+            "SWAG_PAYPAL_POS__EXISTING_POS_ACCOUNT": "Цей обліковий запис Zettle вже налаштовано в іншому каналі продажів",
+            "SWAG_PAYPAL__API_INVALID_CREDENTIALS": "Облікові дані API недійсні",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "Послуги PayPal наразі недоступні. Будь ласка, спробуйте ще раз пізніше.",
+            "SWAG_PAYPAL__INVALID_API_CREDENTIALS": "Облікові дані API недійсні",
+            "UNKNOWN": "Сталася невідома помилка"
+        },
+        "notifications": {
+            "credentials": {
+                "errorMessage": "Отримання не вдалося:<br>{message}",
+                "title": "Облікові дані PayPal"
+            },
+            "merchantInformation": {
+                "errorMessage": "Отримання не вдалося:<br>{message}",
+                "title": "Обліковий запис PayPal"
+            },
+            "posError": {
+                "title": "Zettle POS"
+            },
+            "save": {
+                "errorMessage": "Збереження не вдалося:<br>{message}",
+                "title": "Параметри PayPal",
+                "webhookMessage": "Вебхук не вдалося зберегти:<br>{message}"
+            },
+            "test": {
+                "errorMessage": "Перевірка не вдалася:<br>{message}",
+                "successMessage": "Облікові дані дійсні.",
+                "title": "Облікові дані API PayPal"
+            },
+            "webhook": {
+                "errorMessage": "Не вдалося оновити веб-хук:<br>{message}",
+                "successMessage": "Вебхук оновлено.",
+                "title": "Вебхук PayPal"
+            }
+        }
+    },
+    "swag-paypal-disputes": {
+        "common": {
+            "dispute_amount": "Сума",
+            "dispute_id": "ID",
+            "dispute_life_cycle_stage": "Стадія",
+            "response_due_date": {
+                "buyer": "Покупець",
+                "label": "Дата завершення відповіді",
+                "seller": "Продавець"
+            },
+            "status": "Статус",
+            "update_time": "Час оновлення"
+        },
+        "detail": {
+            "copyButtonLabel": "Копіювання вихідних даних",
+            "externalLinkText": "Відкритий спір у центрі вирішення PayPal",
+            "mainFieldsCardTitle": "Деталі",
+            "orderModuleLinkText": "Відкрити замовлення",
+            "rawDataCardTitle": "Необроблені дані",
+            "title": "Спір PayPal:",
+            "titleAddition": "(Технічні подробиці)"
+        },
+        "general": {
+            "descriptionTextModule": "Керування суперечками PayPal тут",
+            "mainMenuItemGeneral": "Спори з Pay"
+        },
+        "list": {
+            "emptyState": {
+                "subline": "Змініть фільтр, щоб показати всі суперечки.",
+                "title": "Спори не знайдено"
+            },
+            "emptyStateNotAuthorized": {
+                "link": "Способи оплати",
+                "subline": "Перейдіть до {link} для налаштування PayPal.",
+                "title": "Немає налаштування облікового запису PayPal"
+            },
+            "errorTitle": "Помилка під час отримання суперечок з PayPal",
+            "title": "Спори",
+            "titleSidebarItemFilter": "Фільтр",
+            "titleSidebarItemRefresh": "Оновити"
+        }
+    },
+    "swag-paypal-frw-credentials": {
+        "buttonGetCredentials": "Отримати облікові дані API",
+        "buttonGetSandboxCredentials": "Отримати облікові дані API пісочниці",
+        "labelClientId": "Ідентифікатор",
+        "labelClientIdSandbox": "Ідентифікатор клієнта ізольован",
+        "labelClientSecret": "Секрет клієнта",
+        "labelClientSecretSandbox": "Секрет клієнта пісочниці",
+        "labelMerchantPayerId": "PayPal торговий ідентифікатор",
+        "labelMerchantPayerIdSandbox": "Пісочниця PayPal торговий ідентифікатор",
+        "labelSandbox": "Використовуйте пісочницю",
+        "labelSetDefault": "Встановити як спосіб оплати за замовчуванням",
+        "messageFetchedError": "Повторіть спробу або скористайтеся додатковими настройками, щоб надати свої облікові дані.",
+        "messageInvalidCredentials": "Облікові дані недійсні.",
+        "messageNoCredentials": "Облікові дані не надаються.",
+        "messageTestSuccess": "Облікові дані дійсні.",
+        "textFetchedSuccessful": "Облікові дані було здано.",
+        "textIntroPayPal": "Щоб отримати PayPal і працювати, вам потрібно лише надати свої облікові дані PayPal API.",
+        "tooltipSandbox": "Залежно від активації пісочниці, окремі облікові дані зберігаються.",
+        "tooltipSetDefault": "PayPal буде встановлено як спосіб оплати за замовчуванням для всіх каналів продажів. Ви можете встановити індивідуальні способи оплати за замовчуванням для каналу продажів у модулі налаштувань."
+    },
+    "swag-paypal-method": {
+        "appImageAlt": "PayPal",
+        "availabilityToolTip": {
+            "bancontactapmhandler": "Bancontact доступний для наступних країн: Бельгія",
+            "blikapmhandler": "BLIK доступний для наступних країн: Польща",
+            "boletobancarioapmhandler": "Boleto Bancário доступний для наступних країн: Бразилія",
+            "epsapmhandler": "eps доступний для наступних країн: Австрія",
+            "idealapmhandler": "iDEal доступний для наступних країн: Нідерланди",
+            "multibancoapmhandler": "Multibanco доступний для наступних країн: Португалія",
+            "mybankapmhandler": "MyBank доступний для наступних країн: Італія",
+            "oxxoapmhandler": "OXXO доступний для наступних країн: Мексика",
+            "p24apmhandler": "Przelewy24 доступний для наступних країн: Польща",
+            "paylaterhandler": "Платити пізніше доступний для наступних країн: Австралія, Франція, Німеччина, Італія, Іспанія, Великобританія, США",
+            "puihandler": "Оплата за фактурою доступна для наступних країн: Німеччина",
+            "sepahandler": "SEPA Lastschrift доступний для наступних країн: Німеччина",
+            "trustlyapmhandler": "Trustly доступний для наступних країн: Естонія, Фінляндія, Нідерланди, Швеція",
+            "venmohandler": "Venmo доступний для наступних країн: США"
+        },
+        "banner": "За допомогою PayPal Checkout ви можете запропонувати своїм клієнтам оплату рахунком-фактурою, кредитною карткою та іншими місцевими способами оплати. PayPal Checkout підтримує вас за допомогою новітніх технологій та забезпечує найвищу гнучкість. Ви зберігаєте існуючі способи оплати, і комісія залишається незмінною! Активуйте PayPal Checkout та деактивуйте PayPal PLUS, щоб уникнути повторних способів оплати у вашому магазині.",
+        "bannerLink": "Більше інформації",
+        "cardTitle": "PayPal Оформити замовлення",
+        "description": "PayPal Checkout - це нове все-в-одному рішення, яке дозволяє пропонувати потужні гнучкі функції обробки платежів на ринках та інших торгових платформах.",
+        "domainAssociation": {
+            "link": "Відкрити налаштування доменів",
+            "title": "Переконайтеся, що ваш домен правильно налаштований, щоб Apple Pay працювала належним чином. Файл асоціації домену вже присутній."
+        },
+        "editDetail": "Редагувати подробиці",
+        "header": "Більше способів оплати за допомогою одного рішення від PayPal",
+        "merchantStatusText": {
+            "connected": "Підключено",
+            "emailUnconfirmed": "Електронна пошта не підтверджена",
+            "notConnected": "Не підключено",
+            "onboardingNeeded": "Потрібна повторна інтеграція",
+            "paymentsUnreceivable": "Недебіторські платежі"
+        },
+        "onboardingStatusText": {
+            "active": "Уповноважений",
+            "inactive": "Потрібна адаптація",
+            "ineligible": "Неприйнятні",
+            "limited": "Обмежений",
+            "mybank": "Обмежений",
+            "pending": "Авторизація очікує",
+            "test": "Тестовий режим"
+        },
+        "onboardingStatusTooltip": {
+            "ineligible": "PayPal повідомив нам, що цей спосіб оплати в даний час не підходить для вашого облікового запису.",
+            "limited": "PayPal повідомив нам, що цей спосіб оплати має деякі обмеження для вашого облікового запису.",
+            "mybank": "Торговцям, які ввімкнуть MyBank після лютого 2023 року, знадобиться ручне схвалення PayPal. Зверніться до служби підтримки PayPal для отримання додаткової інформації про це."
+        },
+        "paymentMethodText": "Способи оплати",
+        "ratePayLabel": "від Ратепай",
+        "sandbox": {
+            "helpText": "Увімкніть, якщо ви хочете протестувати інтеграцію PayPal.",
+            "label": "Пісочниця",
+            "onlyLiveTooltip": "Ви підключені тільки живий рахунок PayPal поки що.",
+            "onlySandboxTooltip": "Поки що ви підключені лише до облікового запису PayPal пісочниці."
+        },
+        "settingsLink": "Налаштування",
+        "switch": {
+            "active": "Спосіб оплати \"{name}\" тепер активний.",
+            "inactive": "Спосіб оплати \"{name}\" тепер неактивний.",
+            "label": "Активний"
+        }
+    },
+    "swag-paypal-onboarding-button": {
+        "live": {
+            "changeTitle": "Підключення іншого облікового запису",
+            "onboardingTitle": "Почніть інтеграцію PayPal",
+            "restartOnboardingTitle": "Перезапустіть реєстрацію PayPal",
+            "title": "Підключення облікового запису PayPal"
+        },
+        "sandbox": {
+            "changeTitle": "Підключення різних облікових записів пісочниці",
+            "onboardingTitle": "Почніть інтеграцію в пісочницю PayPal",
+            "title": "Підключення облікового запису пісочниці"
+        }
+    },
+    "swag-paypal-payment": {
+        "buttons": {
+            "label": {
+                "capture": "захоплення",
+                "refund": "Створити нове відшкодування",
+                "void": "Скасувати авторизацію"
+            }
+        },
+        "captureAction": {
+            "button": {
+                "text": "Захоплення платежу"
+            },
+            "captureInvoiceNumber": {
+                "label": "Номер накладної",
+                "placeholder": "Введіть номер рахунка-фактури"
+            },
+            "captureNoteToPayer": {
+                "label": "Примітка платнику",
+                "placeholder": "Введіть примітку платнику"
+            },
+            "currentAmount": "Сума",
+            "isFinal": "Це остаточне захоплення",
+            "isFinalHint": "Підказка: позначений як остаточний захоплення, хоча не вся сума повинна бути захоплена.",
+            "maxAmount": "Максимальна кількість",
+            "successMessage": "Ваш захват був успішним."
+        },
+        "errorPage": {
+            "canceledPaymentContent": "Сталася помилка при отриманні платіжних реквізитів з PayPal. Якщо ви бачите це повідомлення, ймовірно, це був платіж, який був скасований клієнтом. Скасовані платежі будуть видалені PayPal через деякий час і потім більше не доступні.",
+            "other": "Сталася помилка при отриманні платіжних реквізитів з PayPal.",
+            "title": "Реквізити для оплати недоступні"
+        },
+        "general": {
+            "title": "Замовлення"
+        },
+        "modal": {
+            "title": {
+                "capture": "захоплення",
+                "refund": "Нове повернення",
+                "void": "Скасувати авторизацію"
+            }
+        },
+        "paymentDetails": {
+            "cardTitle": "Оплата",
+            "customer": {
+                "heading": "Замовник",
+                "payerId": "ІД платника:"
+            },
+            "error": {
+                "title": "Помилка під час отримання платіжних реквізитів з PayPal"
+            },
+            "invoice": {
+                "discount": "Знижка:",
+                "handling": "Плата за обробку:",
+                "heading": "Сума рахунка",
+                "insurance": "Страхування:",
+                "shipping": "Доставка:",
+                "shipping_discount": "Знижка на доставку:",
+                "subTotal": "Проб. підсумок:",
+                "totalAmount": "Загальна сума:"
+            },
+            "payment": {
+                "cartId": "ІД кошика:",
+                "createTime": "Час створення:",
+                "heading": "Реквізити платежу",
+                "intent": "Намір:",
+                "paymentId": "Ідентифікатор платежу",
+                "state": "Стан:",
+                "updateTime": "Час оновлення:"
+            }
+        },
+        "puiDetails": {
+            "accountHolder": "Власник рахунку:",
+            "amount": "Сума:",
+            "bank": "Банк:",
+            "bic": "БИК:",
+            "buttonCopy": "Копіювати",
+            "cardTitle": "Дані про оплату рахунків-фактур",
+            "iban": "IBAN:",
+            "reference": "Довідка:"
+        },
+        "refundAction": {
+            "confirmButton": {
+                "text": "Виконати"
+            },
+            "invoiceSelect": {
+                "label": "Виберіть захоплення"
+            },
+            "refundAmount": {
+                "helpText": "Сума «0» призведе до повернення повного платежу",
+                "label": "Сума"
+            },
+            "refundDescription": {
+                "label": "Опис",
+                "placeholder": "Введіть опис"
+            },
+            "refundInvoiceNumber": {
+                "label": "Номер накладної",
+                "placeholder": "Введіть номер рахунка-фактури"
+            },
+            "refundNoteToPayer": {
+                "label": "Примітка платнику",
+                "placeholder": "Введіть примітку платнику"
+            },
+            "refundReason": {
+                "label": "Причина",
+                "placeholder": "Введіть причину"
+            },
+            "successMessage": "Повернення коштів було успішним."
+        },
+        "tabs": {
+            "order": "PayPal",
+            "overview": "Огляд"
+        },
+        "transactionHistory": {
+            "cardTitle": "Історія платежів",
+            "states": {
+                "authorization": "Авторизація",
+                "capture": "захоплення",
+                "order": "Замовити",
+                "refund": "Повернення коштів",
+                "sale": "Продаж"
+            },
+            "types": {
+                "amount": "Сума",
+                "createTime": "Створено",
+                "paymentMode": "Режим оплати",
+                "state": "Держава",
+                "trackingId": "ІД відстеження",
+                "transactionFee": "Комісія за операцію",
+                "type": "Тип",
+                "updateTime": "Оновлення"
+            }
+        },
+        "voidAction": {
+            "confirm": {
+                "button": {
+                    "confirm": "Скасувати авторизацію"
+                },
+                "message": "Ви дійсно хочете скасувати цей платіж?"
+            },
+            "successMessage": "Платіж успішно анулювався."
+        }
+    },
+    "swag-paypal-pos": {
+        "account": {
+            "connectedStatus": "Підключено",
+            "editConnection": "Змінити з' єднання",
+            "errorEmail": "Не вдалося перевірити ваш ключ API",
+            "errorName": "Помилка під час автентифікації",
+            "lastUpdated": "Останнє оновлення",
+            "loadingEmail": "pos@example.com",
+            "loadingName": "В даний час завантаження...",
+            "manageAccount": "Керування обліковим записом",
+            "noConnectionStatus": "Немає з' єднання"
+        },
+        "authentication": {
+            "apiKeyDescription": "Ключі API функціонують як паролі. Shopware використовуватиме ваш ключ Zettle API для встановлення безпечного з'єднання з вашим обліковим записом Zettle.",
+            "buttonGenerateKey": "Створити ключ API",
+            "labelApiKey": "Ключ API",
+            "messageDuplicateError": "Цей обліковий запис Zettle вже налаштовано в іншому каналі продажів",
+            "messageTestError": "Облікові дані не вдалося підтвердити",
+            "placeholderApiKey": "Введіть ключ API..."
+        },
+        "detail": {
+            "cleanLog": "Очищення журналу",
+            "disclaimer": {
+                "headline": "Zettle - це сервіс PayPal",
+                "linkTarget": "https://www.paypal.com/en/webapps/mpp/merchant",
+                "linkText": "Отримати PayPal для вашого магазину",
+                "subheadline": "Допоможіть збільшити продажі завдяки потужності PayPal. Розпочніть безкоштовно."
+            },
+            "logs": {
+                "columnLastSync": "Деталі",
+                "noEntry": "Ще не синхронізовано",
+                "states": {
+                    "aborted": "Перервано",
+                    "failed": "Не вдалося",
+                    "success": "Оновлення"
+                }
+            },
+            "overview": {
+                "buttonSync": "Синхронізувати зараз",
+                "buttonSyncAbort": "Перервати синхронізацію",
+                "buttonSyncImages": "Завантаження зображень",
+                "buttonSyncInventory": "Синхронізувати запаси",
+                "buttonSyncProducts": "Синхронізація відомостей про продукт",
+                "continueSetup": {
+                    "cardTitle": "Налаштування",
+                    "content": {
+                        "firstLine": "Ваші облікові записи Zettle і Shopware тепер підключені! Тепер ви можете налаштувати синхронізацію продукту.",
+                        "headline": "Налаштування синхронізації продуктів",
+                        "secondLine": "Після активації Zettle автоматично синхронізується з вашими продуктами Shopware. Продажі, зроблені через Zettle, також синхронізуються з Shopware, і ви можете використовувати Адміністрацію, щоб підтримувати себе в курсі продажів Zettle і Shopware, а також."
+                    }
+                },
+                "status": {
+                    "disabled": "Синхронізацію не ввімкнуто, оскільки канал збуту вимкнуто.",
+                    "lastSynced": "Остання синхронізація",
+                    "lastSyncedComplete": "Остання повна синхронізація",
+                    "message": {
+                        "aborted": "Остання синхронізація була перервана користувачем",
+                        "error": "Остання синхронізація завершилася з помилками",
+                        "noRunYet": "Нещодавнього запуску не знайдено",
+                        "success": "Успішно синхронізовано",
+                        "syncing": "Синхронізація, що виконується",
+                        "warning": "Остання синхронізація завершується з попередженнями"
+                    },
+                    "syncingDetail": "Це може зайняти кілька хвилин. Цей процес проходить у фоновому режимі, тим часом ви можете використовувати свій магазин як зазвичай.",
+                    "task": {
+                        "complete": "завершено",
+                        "image": "зображень",
+                        "inventory": "інвентар",
+                        "product": "продукції"
+                    }
+                },
+                "syncErrorTitle": "Помилка синхронізації",
+                "titleSync": "Синхронізація"
+            },
+            "runs": {
+                "actions": {
+                    "showDetails": "Показати подробиці"
+                },
+                "cloneVisibilityTask": "Видимість продукту",
+                "columns": {
+                    "date": "Дата",
+                    "state": "Держава",
+                    "task": "Тип"
+                },
+                "completeTask": "Завершити",
+                "emptyState": {
+                    "message": "Синхронізувати зараз для створення журналів.",
+                    "title": "Немає завершених синхронізацій"
+                },
+                "imageTask": "Зображення",
+                "inventoryTask": "Запаси",
+                "productTask": "Товар",
+                "states": {
+                    "aborted": "Перервано користувачем",
+                    "failed": "Не вдалося",
+                    "successful": "Завершені",
+                    "withWarnings": "Завершені попередженнями"
+                },
+                "title": "Історія синхронізації",
+                "toolbarText": "«Очистити журнали» видалить всі журнали. Журнали старше 30 днів будуть видалені автоматично."
+            },
+            "settings": {
+                "activeHelpText": "Якщо вона активна, синхронізація Zettle відбуватиметься автоматично у фоновому режимі.",
+                "domain": "Ваш домен магазину",
+                "domainHelpText": "Zettle використовуватиме цей домен для завантаження медіа, пов'язаних із синхронізованими продуктами. Zettle буде приймати тільки безпечні URL-адреси (https).",
+                "optionsTitle": "Опції",
+                "productStream": "Динамічна група продуктів",
+                "replace": "Замінити існуючі продукти в Zettle",
+                "reset": {
+                    "buttonTitle": "Скидання синхронізації",
+                    "descriptionText": "Якщо у вас виникли проблеми, ви можете повторно завантажити всі продукти та зображення.",
+                    "modalButtonConfirm": "Скидання синхронізації",
+                    "modalConfirmText": "Це скине журнал синхронізації для каналу продажів",
+                    "modalTextInfo": "Усі елементи буде повторно завантажено під час наступної синхронізації. Це може зайняти деякий час. Ви не втратите жодних даних у Shopware, деякі дані можуть бути перезаписані в Zettle.",
+                    "modalTitle": "Скидання історії синхронізації"
+                },
+                "saveAlert": "Збережені зміни доступні після завершення поточної синхронізації між Shopware і Zettle.",
+                "syncPrices": "Синхронізувати ціни",
+                "titleCredentials": "Облікові дані",
+                "titleGeneralSettings": "Загальні параметри",
+                "titlePrices": "Ціни",
+                "titleSync": "Синхронізація"
+            },
+            "syncedProducts": {
+                "actions": {
+                    "productDetails": "Деталі товару"
+                },
+                "columns": {
+                    "date": "Дата",
+                    "name": "Назва",
+                    "state": "Статус"
+                },
+                "emptyState": {
+                    "message": "Немає продуктів у вашому каналі продажів або динамічній групі продуктів.",
+                    "title": "Товарів не вибрано"
+                },
+                "notSyncedYet": "Ще не синхронізовано",
+                "title": "Синхронізовані продукти"
+            }
+        },
+        "general": {
+            "moduleTitle": "Zettle від PayPal",
+            "salesChannelDetailDescription": {
+                "manufacturer": "Zettle від PayPal",
+                "title": "Розвивайте свій бізнес за допомогою Shopware і Zettle від PayPal"
+            }
+        },
+        "gettingStarted": {
+            "appHeadline": "Завантажте додаток Zettle Go",
+            "appImageAlt": "Додаток Zettle",
+            "appText": "Доступно для планшетів і телефонів з iOS і Android.<br>Підключіть свій обліковий запис Zettle і ваш кардрідер, щоб почати продаж.",
+            "cardTitle": "Почніть роботу з Zettle за допомогою PayPal",
+            "readerHeadline": "Увійдіть в Zettle, щоб замовити пристрій зчитування карт Zettle",
+            "readerImageAlt": "Зчитувач карт Zettle",
+            "readerLinkTarget": "https://shop.zettle.com",
+            "readerLinkText": "shop.zettle.com",
+            "readerText": "Дізнайтеся більше про картрідер і замовте його прямо тут:"
+        },
+        "header": "Канал продажів Zettle",
+        "messageCloneError": "Не вдалося перенести видимість продукту з іншого каналу продажів.",
+        "messageWebhookRegisterError": "Веб-хук не може бути зареєстрований в Zettle",
+        "tabTitle": {
+            "help": "Допоможіть",
+            "overview": "Огляд",
+            "runs": "Журнали",
+            "settings": "Налаштування",
+            "syncedProducts": "Синхронізовані продукти"
+        },
+        "wizard": {
+            "connection": {
+                "buttonCreateAccount": "Створити обліковий запис Zettle",
+                "buttonCreateAccountLink": "https://www.zettle.com/gb/integrations/e-commerce/shopware?utm_source=local_partnership&utm_medium=ecommerce&utm_campaign=shopware",
+                "headerConnect": "Підключіть обліковий запис Zettle",
+                "headerNewCustomer": "Новенький для Зеттла?",
+                "modalTitle": "Налаштування облікового запису"
+            },
+            "connectionDisconnect": {
+                "disconnectButton": "Відключити рахунок",
+                "disconnectErrorMessage": "Виникла помилка при відключенні.",
+                "headline": "Ви збираєтеся відключити Zettle",
+                "info": "Продукти більше не оновлюватимуться та не синхронізуються з вашим обліковим записом Zettle під час відключення облікового запису.",
+                "modalTitle": "Відключити обліковий запис Zettle"
+            },
+            "connectionSuccess": {
+                "disclaimer": "Будь-які зміни, внесені до ваших продуктів Shopware, тепер автоматично оновлюватимуться в підключеному обліковому записі Zettle.",
+                "disconnectButton": "Вимкнути",
+                "fakeFirstName": "Зараз",
+                "fakeLastName": "завантаження...",
+                "fakeMail": "pos@example.com",
+                "headline": "Ваші облікові записи Zettle і Shopware тепер підключені!",
+                "info": "Виконайте наступні кроки, щоб завершити настроювання синхронізації продукту.",
+                "modalTitle": "З' єднання встановлено"
+            },
+            "customization": {
+                "labelDomain": "Ваш домен магазину",
+                "modalTitle": "Відомості про Канал продажів",
+                "placeholderDomain": "www.my-store.shopware.com",
+                "salesChannelLabel": "Назва каналу продажів",
+                "subtitle": "Zettle використовуватиме цей домен для завантаження медіа, пов'язаних із синхронізованими продуктами."
+            },
+            "finish": {
+                "firstParagraph": "Ваш обліковий запис Zettle тепер пов'язаний з вашим каналом продажів, і ваші продукти будуть передані в Zettle. Надалі, коли ви здійснюєте продаж, ми оновимо ваші акції в Zettle і Shopware.",
+                "header": "Налаштування синхронізації продукту завершено!",
+                "modalTitle": "Готово",
+                "secondParagraph": "Якщо вам потрібно оновити продукти, радимо зробити це в Shopware, і вони синхронізуються з вашим додатком Zettle автоматично."
+            },
+            "productSelection": {
+                "info": "Щоб розпочати роботу швидше, тепер ви маєте можливість призначити продукти з наявного каналу продажів новоствореному. Усі призначені продукти будуть доступні для синхронізації в Zettle POS. Ручна робота не потрібна.",
+                "labelSelect": "Канал продажів",
+                "labelToggle": "Передача вибору продукту",
+                "modalTitle": "Перенесення продуктів з існуючого каналу продажів"
+            },
+            "salesChannelPrototypeName": "Zettle POS",
+            "stepItemTitle": {
+                "connection": "Налаштування облікового запису",
+                "connectionSuccess": "Підключення",
+                "customization": "Налаштування",
+                "finish": "Готово",
+                "productSelection": "Вибір продукту",
+                "syncLibrary": "Синхронізація продукту",
+                "syncPrices": "Синхронізація цін"
+            },
+            "syncLibrary": {
+                "description": "Усі продукти синхронізуються з новоствореним каналом продажів у Shopware. Як би ви хотіли налаштувати свою бібліотеку Zettle?",
+                "disclaimer": "Ці параметри можна змінити пізніше в будь-який час.",
+                "header": "Ми знайшли {shopwareProducts} і {posProducts}",
+                "modalTitle": "Налаштування синхронізації продуктів",
+                "optionReplaceNotDescription": "Ваші продукти та кількість запасів Shopware будуть додані до наявної бібліотеки Zettle.",
+                "optionReplaceNotLabel": "Додати продукти для магазинів",
+                "optionReplaceOneTimeDescription": "Замініть наявну бібліотеку Zettle продуктами та кількістю запасів від Shopware один раз.",
+                "optionReplaceOneTimeLabel": "Замінити бібліотеку Zettle",
+                "optionReplacePermanentlyDescription": "У вашій бібліотеці Zettle будуть існувати лише ваші продукти та кількість запасів Shopware.",
+                "optionReplacePermanentlyLabel": "Використовуйте лише продукти для магазинів",
+                "posProducts": "немає продуктів Zettle | один продукт Zettle | {n} товарів Zettle",
+                "shopwareProducts": "Немає товарів для магазинів | Один продукт Shopware | {n} Товари для магазинів"
+            },
+            "syncPrices": {
+                "description": "Ціни ваших продуктів включатимуть ПДВ під час синхронізації з Zettle.",
+                "disclaimer": "Ви можете редагувати ПДВ вручну в бібліотеці продуктів Zettle.",
+                "header": "Як би ви хотіли синхронізувати ціни на продукти з Zettle?",
+                "modalTitle": "Налаштування синхронізації продуктів",
+                "optionFalseDescription": "Ціни на продукти не передаватимуться під час синхронізації. Ви можете встановити їх у своїй бібліотеці продуктів Zettle.",
+                "optionFalseLabel": "Не синхронізувати ціни",
+                "optionTrueDescription": "Ціни, синхронізовані з Zettle, включатимуть ПДВ.",
+                "optionTrueLabel": "Синхронізувати ціни з ПДВ"
+            }
+        }
+    },
+    "swag-paypal-setting": {
+        "helpText": {
+            "acdcForce3DS": "Транзакція не буде прийнята, якщо 3D Secure недоступний.",
+            "brandName": "Цей текст буде відображатися як назва бренду на платіжній сторінці PayPal.",
+            "clientId": "Ідентифікатор клієнта REST API використовується для автентифікації цього плагіна за допомогою PayPal API.",
+            "clientIdSandbox": "Ідентифікатор клієнта REST API використовується під час тестування для автентифікації цього плагіна за допомогою PayPal API.",
+            "clientSecret": "Секрет клієнта REST API використовується для автентифікації цього плагіна за допомогою PayPal API.",
+            "clientSecretSandbox": "Секрет клієнта REST API використовується при тестуванні для автентифікації цього плагіна за допомогою PayPal API.",
+            "ecsButtonLanguageIso": "Якщо не встановлено, мова каналу продажів буде використовуватися.",
+            "ecsCartEnabled": "Якщо цей параметр активний, кнопка Express Checkout буде показана в кошику.",
+            "ecsDetailEnabled": "Якщо цей параметр активний, кнопка Express Checkout відображатиметься на кожній сторінці відомостей про продукт.",
+            "ecsListingEnabled": "Якщо цей параметр активний, кнопка Express Checkout буде показана на сторінках списку.",
+            "ecsLoginEnabled": "Якщо цей параметр активний, кнопка Express Checkout буде показана на сторінці входу та реєстрації.",
+            "ecsOffCanvasEnabled": "Якщо цей параметр активний, кнопка Express Checkout відображатиметься на кошику, що не має полотна.",
+            "ecsShowPayLater": "Кнопка «Оплатити пізніше» відображатиметься на тих же сторінках і в тому ж дизайні, що і кнопка «PayPal Checkout».",
+            "ecsSubmitCart": "Якщо ця опція активна, кошик буде відправлений в PayPal для експрес-замовлень.",
+            "excludedProductIds": "Продукти, вибрані тут, не можна придбати за допомогою PayPal.",
+            "excludedProductStreamIds": "Продукти, що входять до динамічних груп товарів, вибраних тут, не можна придбати за допомогою PayPal.",
+            "installmentBannerCartEnabled": "Якщо ця опція активна, у кошику буде показано банер «Оплатити пізніше».",
+            "installmentBannerDetailPageEnabled": "Якщо ця опція активна, банер «Оплатити пізніше» буде відображатися на сторінці деталей кожного продукту.",
+            "installmentBannerFooterEnabled": "Якщо ця опція активна, у нижньому колонтитулі буде показано банер «Оплатити пізніше».",
+            "installmentBannerLoginPageEnabled": "Якщо ця опція активна, на сторінці входу та реєстрації буде показано банер «Оплатити пізніше».",
+            "installmentBannerOffCanvasCartEnabled": "Якщо ця опція активна, банер «Оплатити пізніше» буде відображатися на кошику поза полотном.",
+            "merchantPayerId": "Ідентифікатор продавця PayPal, присвоєний вашому обліковому запису PayPal (див. Інформація про компанію в налаштуваннях облікового запису PayPal",
+            "merchantPayerIdSandbox": "Ідентифікатор торгового продавця PayPal, присвоєний вашому обліковому запису в пісочниці PayPal (див. Інформація про компанію в налаштуваннях облікового запису",
+            "orderNumberPrefix": "Цей текст розміщується перед оригінальним номером замовлення (наприклад, MyShop_SW20001). Це допомагає визначити магазин, де була проведена оплата. Ви можете знайти його як ідентифікатор рахунка-фактури на інформаційній панелі PayPal.",
+            "orderNumberSuffix": "Цей текст розміщується після початкового номера замовлення (наприклад, SW20001_MyShop). Це допомагає визначити магазин, де була проведена оплата. Ви можете знайти його як ідентифікатор рахунка-фактури на інформаційній панелі PayPal.",
+            "puiCustomerServiceInstructions": "Ці інструкції будуть представлені в PayPal & RatePay і відображені в електронних листах для клієнта.",
+            "sandbox": "Увімкніть, якщо ви хочете протестувати інтеграцію PayPal.",
+            "sendOrderNumber": "Якщо ця опція активна, номер замовлення буде надіслано PayPal як ідентифікатор рахунка-фактури під час оформлення замовлення.",
+            "spbAlternativePaymentMethodsEnabled": "Альтернативними способами оплати є кредитно-дебетові картки тощо.",
+            "spbButtonLanguageIso": "Якщо не встановлено, мова каналу продажів буде використовуватися.",
+            "submitCart": "Якщо цей параметр активний, дані кошика будуть передані в PayPal при оформленні замовлення."
+        },
+        "hintText": {
+            "landingPage": {
+                "GUEST_CHECKOUT": "Оформлення замовлення гостей: Сайт PayPal відображає форму для платіжної інформації, клієнту не потрібно входити в систему.",
+                "LOGIN": "Логін: Сайт PayPal відображає екран входу в якості цільової сторінки.",
+                "NO_PREFERENCE": "Немає переваг: PayPal вирішує, яка сторінка показана, в залежності від попередньої взаємодії клієнта з PayPal."
+            }
+        },
+        "label": {
+            "acdcForce3DS": "Виконання операцій тільки з 3D Secure",
+            "brandName": "Власна назва бренду на сторінці PayPal",
+            "clientId": "Ідентифікатор",
+            "clientIdSandbox": "Ідентифікатор клієнта ізольован",
+            "clientSecret": "Секрет клієнта",
+            "clientSecretSandbox": "Секрет клієнта пісочниці",
+            "crossBorderBuyerCountry": "Локалізація",
+            "crossBorderMessagingEnabled": "Увімкнути транскордонну локалізацію повідомлення Pay Later",
+            "ecsButtonColor": "Колір гудзика",
+            "ecsButtonLanguageIso": "Локаль кнопок",
+            "ecsButtonShape": "Форма кнопки",
+            "ecsCartEnabled": "«PayPal Checkout» у кошику",
+            "ecsDetailEnabled": "«PayPal Checkout» на сторінці товару",
+            "ecsListingEnabled": "«PayPal Checkout» на сторінках категорій",
+            "ecsLoginEnabled": "«PayPal Checkout» на сторінці входу",
+            "ecsOffCanvasEnabled": "«PayPal Checkout» у поп-ап-кошику",
+            "ecsShowPayLater": "Показувати кнопку «Оплатити пізніше» поруч із кнопкою «PayPal Checkout»",
+            "ecsSubmitCart": "Надіслати кошик",
+            "excludedProductIds": "Виключені продукти",
+            "excludedProductStreamIds": "Виключені динамічні групи продуктів",
+            "installmentBannerCartEnabled": "Банер «Оплатити пізніше» у кошику",
+            "installmentBannerDetailPageEnabled": "Банер «Оплатити пізніше» на сторінці деталей",
+            "installmentBannerFooterEnabled": "Банер «Оплатити пізніше» на нижньому колонтитулі",
+            "installmentBannerLoginPageEnabled": "Банер «Оплатити пізніше» на сторінці входу",
+            "installmentBannerOffCanvasCartEnabled": "Банер «Оплатити пізніше» на нетканому кошику",
+            "intent": "Придбання платежів",
+            "landingPage": "цільову сторінку PayPal",
+            "merchantPayerId": "PayPal торговий ідентифікатор",
+            "merchantPayerIdSandbox": "Пісочниця PayPal торговий ідентифікатор",
+            "orderNumberPrefix": "Префікс номера замовлення",
+            "orderNumberSuffix": "Суфікс номера замовлення",
+            "puiCustomerServiceInstructions": "Інструкції з обслуговування клієнтів для оплати за фактурою",
+            "sandbox": "Увімкнути пісочницю",
+            "sendOrderNumber": "Надіслати номер замовлення",
+            "spbAlternativePaymentMethodsEnabled": "Увімкніть альтернативні способи оплати для Розумних Платіжних Кнопок.",
+            "spbButtonColor": "Колір гудзика",
+            "spbButtonLanguageIso": "Локаль кнопок",
+            "spbButtonShape": "Форма кнопки",
+            "spbCheckoutEnabled": "Увімкнути розумні кнопки оплати",
+            "spbShowPayLater": "Показувати кнопку «Оплатити пізніше» поруч із кнопкою PayPal",
+            "submitCart": "Надіслати кошик",
+            "vaultingEnabledACDC": "Eanable сховища для кредитних та дебетових карток",
+            "vaultingEnabledVenmo": "Увімкнути сховище для платежів Venmo",
+            "vaultingEnabledWallet": "Увімкнути сховище для платежів PayPal"
+        }
+    },
+    "swag-paypal-settings": {
+        "acdc": {
+            "title": "Кредитна або дебетова картка"
+        },
+        "behavior": {
+            "title": "Поведінка"
+        },
+        "credentialsLive": {
+            "test": "Тест",
+            "title": "Живі облікові дані API"
+        },
+        "credentialsSandbox": {
+            "test": "Тест",
+            "title": "Облікові дані API пісочниці"
+        },
+        "crossBorder": {
+            "buyerCountryAuto": "Автоматичне визначення",
+            "buyerCountryOverride": "Локалізація",
+            "info": "Повідомлення про оплату пізніше — це функція, яка дозволяє відображати повідомлення «Оплатити пізніше» мовою клієнта. Ця функція доступна лише для певних країн. {0}",
+            "title": "Платіть пізніше транскордонні повідомлення",
+            "warning": "Будь ласка, зв'яжіться зі своїм представником PayPal, щоб увімкнути цю функцію для свого облікового запису."
+        },
+        "express": {
+            "alertMessage": "Подвійна реєстрація для гостей активується в одному з ваших каналів продажів. Ця функція не сумісна з кнопками швидкого скорочення PayPal. Клієнти, які зареєструються за допомогою кнопок швидкого оформлення замовлення, не отримуватимуть електронні листи з підтвердженням подвійної підписки.",
+            "subtitle": "Експрес-каси збільшують коефіцієнт конверсії у вашому магазині і не становлять фінансового ризику для вас як продавця. Рекомендується тримати їх активованими. ",
+            "title": "Швидкий ярлик оформлення замовлення"
+        },
+        "header": "PayPal",
+        "installment": {
+            "subtitle": "Банери збільшують коефіцієнт конверсії у вашому магазині і не становлять фінансового ризику для вас як продавця. Рекомендується тримати їх активованими.",
+            "title": "Банер «Оплатити пізніше»"
+        },
+        "module": {
+            "description": "Налаштування PayPal",
+            "title": "PayPal"
+        },
+        "options": {
+            "buttonColor": {
+                "black": "Чорний",
+                "blue": "Синій",
+                "gold": "Золото (рекомендовано)",
+                "silver": "Сріблястий",
+                "white": "Білий"
+            },
+            "buttonShape": {
+                "pill": "Круглий",
+                "rect": "прямокутні",
+                "sharp": "Прямокутний з гострими кутами"
+            },
+            "intent": {
+                "AUTHORIZE": "Ручне стягнення платежів (умисел АВТОРИЗУВАТИ)",
+                "CAPTURE": "Автоматичне стягнення платежів (намір CAPTURE)"
+            },
+            "landingPage": {
+                "GUEST_CHECKOUT": "Оформлення замовлення гостей",
+                "LOGIN": "Увійти",
+                "NO_PREFERENCE": "Немає уподобань"
+            }
+        },
+        "pui": {
+            "title": "Оплатити за фактурою"
+        },
+        "spb": {
+            "title": "Кнопки розумних платежів"
+        },
+        "tabs": {
+            "advanced": "Розширений",
+            "general": "Загальний",
+            "storefront": "Презентація магазину"
+        },
+        "vaulting": {
+            "activeButtonLabel": "Активувати склепування",
+            "descriptionText": "Сховище облікового запису PayPal дозволить вам стягувати плату з рахунку в майбутньому, не вимагаючи від вашого клієнта присутності під час транзакції або повторної автентифікації в PayPal, коли він присутній під час транзакції.",
+            "descriptionTitle": "Одноразова оплата через Paypal",
+            "title": "склепіння"
+        },
+        "webhook": {
+            "buttonRefresh": "Оновити веб-хук",
+            "fetchFailed": "Не вдалося отримати статус веб-хука",
+            "info": "Вебхук використовується для оновлення стану транзакції асинхронно. Неправильно зареєстровані веб-хуки, наприклад, на іншому або недоступному для публіки сервері, можуть призвести до непідтверджених транзакцій, незалежно від того, чи була транзакція оброблена PayPal.",
+            "refreshFailed": "Не вдалося оновити",
+            "status": {
+                "invalid": "Зареєстровано, але можлива невідповідність домену",
+                "missing": "Не зареєстрований",
+                "unknown": "Завантаження...",
+                "valid": "Зареєстровано"
+            },
+            "title": "Вебхук"
+        }
+    },
+    "swag-paypal-settings-locale-select": {
+        "automatic": "Автоматичний (рекомендовано)",
+        "invalid": "Наведена локальність недійсна. Будь ласка, виберіть один із списку."
+    },
+    "swag-paypal-settings-sales-channel-switch": {
+        "description": "Натисніть цю кнопку, щоб увімкнути PayPal і виберіть його за замовчуванням у вибраному каналі продажів",
+        "label": "Встановити PayPal як типовий"
+    },
+    "swag-paypal-settings-shipping-carrier": {
+        "cardHelpText": "Інформація про відстеження буде надіслана в PayPal",
+        "cardTitle": "Транспортний перевізник за замовчуванням",
+        "commonCarrierBadge": "Зазвичай використовується",
+        "description": "PayPal пропонує відстеження замовлень, оброблених через PayPal. Щоб скористатися цим, вкажіть перевізника за замовчуванням, який може бути перезаписаний в замовленнях. Знайти список всіх постачальників доставки <a target=\"_blank\" href=\"https://developer.paypal.com/docs/tracking/reference/carriers/\">тут</a>",
+        "inputHelpText": "Виберіть «Інше», щоб ввести власне ім'я оператора.",
+        "inputHelpTextOther": "Якщо ваш перевізник не включений до списку, введіть тут назву. Залиште порожнім, щоб використовувати назву способу доставки.",
+        "inputLabel": "Код перевізника",
+        "inputLabelOther": "Назва перевізника",
+        "inputPlaceholder": "Введіть код оператора PayPal (наприклад, DHL_GLOBAL_ECOMMERCE)...",
+        "inputPlaceholderOther": "Введіть ім'я перевізника...",
+        "invalid": "Наданий код перевізника недійсний. Будь ласка, виберіть один із списку або виберіть «Інше»."
+    }
+}

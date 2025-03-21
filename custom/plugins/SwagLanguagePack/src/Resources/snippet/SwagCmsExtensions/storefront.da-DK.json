@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nej",
+                    "true": "Ja"
+                },
+                "select": {
+                    "defaultPlaceholder": "Vælg indstilling..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Vis flere detaljer",
+            "liveRegionSlideAnnouncement": "Ser nu slide for produkt %productName%"
+        }
+    }
+}

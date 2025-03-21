@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nej",
+                    "true": "Javisst"
+                },
+                "select": {
+                    "defaultPlaceholder": "Välj alternativ..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Visa mer information",
+            "liveRegionSlideAnnouncement": "Visar nu bild för produkt %productName%"
+        }
+    }
+}

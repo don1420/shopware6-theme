@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Tidak",
+                    "true": "ya"
+                },
+                "select": {
+                    "defaultPlaceholder": "Pilih opsi..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Tampilkan lebih rinci",
+            "liveRegionSlideAnnouncement": "Sekarang melihat slide untuk produk %productName%"
+        }
+    }
+}

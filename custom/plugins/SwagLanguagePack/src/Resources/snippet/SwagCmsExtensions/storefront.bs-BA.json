@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Ne",
+                    "true": "Da"
+                },
+                "select": {
+                    "defaultPlaceholder": "Odaberite opciju..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Prikaži više detalja",
+            "liveRegionSlideAnnouncement": "Sada se vidi slajd za proizvod %productName%"
+        }
+    }
+}

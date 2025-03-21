@@ -1,0 +1,774 @@
+{
+    "sw-order-detail": {
+        "payPalCarrierDescription": "Hvis du vil bytte transportør for denne PayPal-bestillingen, <a target=\"_blank\" href=\"{orderLink}\">klikk her</a>",
+        "payPalCarrierHelpText": "Du kan angi og endre standard transportør for PayPal i <a class=\"sw-internal-link sw-internal-link--inline\" href=\"#/sw/settings/shipping/index\">fraktmetoder<sw-icon name=\"regular-long-arrow-right\" small /></a>. Dette vil imidlertid ikke ha noen innvirkning på bestillinger som allerede er plassert.",
+        "payPalCarrierLabel": "Standard transportør",
+        "payPalCarrierPlaceholder": "ikke satt"
+    },
+    "swag-paypal": {
+        "errors": {
+            "SWAG_PAYPAL_POS__EXISTING_POS_ACCOUNT": "Denne Zettle-kontoen er allerede konfigurert i en annen salgskanal",
+            "SWAG_PAYPAL__API_INVALID_CREDENTIALS": "API-legitimasjonen er ugyldig",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "PayPal-tjenester er for øyeblikket utilgjengelige. Vennligst prøv igjen senere.",
+            "SWAG_PAYPAL__INVALID_API_CREDENTIALS": "API-legitimasjonen er ugyldig",
+            "UNKNOWN": "En ukjent feil oppstod"
+        },
+        "notifications": {
+            "credentials": {
+                "errorMessage": "Henting mislyktes:<br>{message}",
+                "title": "PayPal-legitimasjon"
+            },
+            "merchantInformation": {
+                "errorMessage": "Henting mislyktes:<br>{message}",
+                "title": "PayPal-konto"
+            },
+            "posError": {
+                "title": "Zettle POS"
+            },
+            "save": {
+                "errorMessage": "Lagring mislyktes:<br>{message}",
+                "title": "PayPal-innstillinger",
+                "webhookMessage": "Webhooken kunne ikke lagres:<br>{message}"
+            },
+            "test": {
+                "errorMessage": "Valideringen mislyktes:<br>{message}",
+                "successMessage": "Opplysningene er gyldige.",
+                "title": "PayPal API-legitimasjon"
+            },
+            "webhook": {
+                "errorMessage": "Kunne ikke oppdatere webhook:<br>{message}",
+                "successMessage": "Webhooken er oppdatert.",
+                "title": "PayPal-webkrok"
+            }
+        }
+    },
+    "swag-paypal-disputes": {
+        "common": {
+            "dispute_amount": "Beløp",
+            "dispute_id": "ID",
+            "dispute_life_cycle_stage": "Stage",
+            "response_due_date": {
+                "buyer": "Kjøper",
+                "label": "Forfallsdato for",
+                "seller": "Selger"
+            },
+            "status": "Status",
+            "update_time": "Oppdateringstid"
+        },
+        "detail": {
+            "copyButtonLabel": "Kopier rådata",
+            "externalLinkText": "Åpne tvist i PayPal-løsningssenter",
+            "mainFieldsCardTitle": "Detaljer",
+            "orderModuleLinkText": "Åpen ordre",
+            "rawDataCardTitle": "Rådata",
+            "title": "PayPal-tvist:",
+            "titleAddition": "(Tekniske detaljer)"
+        },
+        "general": {
+            "descriptionTextModule": "Administrer PayPal-tvister her",
+            "mainMenuItemGeneral": "PayPal-tvister"
+        },
+        "list": {
+            "emptyState": {
+                "subline": "Endre filteret for å vise alle tvister.",
+                "title": "Ingen tvister funnet"
+            },
+            "emptyStateNotAuthorized": {
+                "link": "Betalingsmåter",
+                "subline": "Gå til {link} for PayPal-oppsett.",
+                "title": "Ingen PayPal-kontooppsett"
+            },
+            "errorTitle": "Feil under henting av tvister fra PayPal",
+            "title": "Tvister",
+            "titleSidebarItemFilter": "Filtrer",
+            "titleSidebarItemRefresh": "Oppdater"
+        }
+    },
+    "swag-paypal-frw-credentials": {
+        "buttonGetCredentials": "Få API-legitimasjon",
+        "buttonGetSandboxCredentials": "Få API-legitimasjon for sandkasse",
+        "labelClientId": "Klient-ID",
+        "labelClientIdSandbox": "Sandkasse-klient-ID",
+        "labelClientSecret": "Klient hemmelighet",
+        "labelClientSecretSandbox": "Sandbox klient hemmelighet",
+        "labelMerchantPayerId": "PayPal-forhandler-ID",
+        "labelMerchantPayerIdSandbox": "Sandkasse PayPal-forhandler-ID",
+        "labelSandbox": "Bruk sandkasse",
+        "labelSetDefault": "Angi som standard betalingsmåte",
+        "messageFetchedError": "Prøv på nytt, eller bruk de avanserte innstillingene for å angi legitimasjonen din.",
+        "messageInvalidCredentials": "Legitimasjonen er ugyldig.",
+        "messageNoCredentials": "Ingen legitimasjon oppgitt.",
+        "messageTestSuccess": "Legitimasjon er gyldige.",
+        "textFetchedSuccessful": "Legitimasjonen er hentet.",
+        "textIntroPayPal": "For å få PayPal i gang trenger du bare å oppgi påloggingsinformasjonen for PayPal.",
+        "tooltipSandbox": "Avhengig av aktivering av sandkassen, lagres separate legitimasjonsbeskrivelser.",
+        "tooltipSetDefault": "PayPal vil bli satt som standard betalingsmåte for alle salgskanaler. Du kan angi individuelle standard betalingsmåter per salgskanal i innstillingsmodulen."
+    },
+    "swag-paypal-method": {
+        "appImageAlt": "PayPal",
+        "availabilityToolTip": {
+            "bancontactapmhandler": "Bancontact er tilgjengelig for følgende land: Belgia",
+            "blikapmhandler": "BLIK er tilgjengelig for følgende land: Polen",
+            "boletobancarioapmhandler": "Boleto Bancário er tilgjengelig for følgende land: Brasil",
+            "epsapmhandler": "eps er tilgjengelig for følgende land: Østerrike",
+            "idealapmhandler": "iDeal er tilgjengelig for følgende land: Nederland",
+            "multibancoapmhandler": "Multibanco er tilgjengelig for følgende land: Portugal",
+            "mybankapmhandler": "MyBank er tilgjengelig for følgende land: Italia",
+            "oxxoapmhandler": "OXXO er tilgjengelig for følgende land: Mexico",
+            "p24apmhandler": "Przelewy24 er tilgjengelig for følgende land: Polen",
+            "paylaterhandler": "Pay Later er tilgjengelig for følgende land: Australia, Frankrike, Tyskland, Italia, Spania, Storbritannia, USA",
+            "puihandler": "Betaling med faktura er tilgjengelig for følgende land: Tyskland",
+            "sepahandler": "SEPA Lastschrift er tilgjengelig for følgende land: Tyskland",
+            "trustlyapmhandler": "Trustly er tilgjengelig for følgende land: Estland, Finland, Nederland, Sverige",
+            "venmohandler": "Venmo er tilgjengelig for følgende land: Forente stater"
+        },
+        "banner": "Med PayPal Checkout kan du tilby kundene betaling med faktura, kredittkort og andre lokale betalingsmetoder. PayPal Checkout støtter deg med den nyeste teknologien og gir deg den høyeste fleksibiliteten. Du beholder dine eksisterende betalingsmetoder, og gebyrene forblir de samme! Aktiver PayPal Checkout og deaktiver PayPal PLUS for å unngå dupliserte betalingsmetoder i butikken din.",
+        "bannerLink": "Mer informasjon",
+        "cardTitle": "PayPal-kassen",
+        "description": "PayPal Checkout er den nye alt-i-ett-løsningen som lar deg tilby kraftige fleksible betalingsbehandlingsfunksjoner på markedsplassene og andre handelsplattformer.",
+        "domainAssociation": {
+            "link": "Åpne domeneinnstillinger",
+            "title": "Kontroller at domenet ditt er riktig innstilt for at Apple Pay skal fungere skikkelig. Domenetilknytningsfilen er allerede til stede."
+        },
+        "editDetail": "Rediger detaljer",
+        "header": "Flere betalingsmåter med én løsning fra PayPal",
+        "merchantStatusText": {
+            "connected": "Koblet",
+            "emailUnconfirmed": "E-post ubekreftet",
+            "notConnected": "Ikke tilkoblet",
+            "onboardingNeeded": "Re-onboarding nødvendig",
+            "paymentsUnreceivable": "Betalinger som ikke kan mottas"
+        },
+        "onboardingStatusText": {
+            "active": "autorisert",
+            "inactive": "Onboarding nødvendig",
+            "ineligible": "Ikke kvalifisert",
+            "limited": "Limited",
+            "mybank": "Limited",
+            "pending": "Autorisasjon venter",
+            "test": "Testmodus"
+        },
+        "onboardingStatusTooltip": {
+            "ineligible": "PayPal informerte oss om at denne betalingsmåten for øyeblikket ikke er kvalifisert for kontoen din.",
+            "limited": "PayPal informerte oss om at denne betalingsmåten har noen begrensninger for kontoen din.",
+            "mybank": "Forhandlere som aktiverer MyBank etter februar 2023, trenger manuell godkjenning av PayPal. Ta kontakt med PayPals kundestøtte for mer informasjon om dette."
+        },
+        "paymentMethodText": "Betalingsmåter",
+        "ratePayLabel": "av Ratepay",
+        "sandbox": {
+            "helpText": "Aktiver, hvis du vil teste PayPal-integrasjonen.",
+            "label": "Sandkasse",
+            "onlyLiveTooltip": "Du er bare koblet til en live PayPal-konto så langt.",
+            "onlySandboxTooltip": "Du er bare koblet til en sandkasse PayPal-konto så langt."
+        },
+        "settingsLink": "Innstillinger",
+        "switch": {
+            "active": "Betalingsmetode \"{name}\" er nå aktiv.",
+            "inactive": "Betalingsmetode \"{name}\" er nå inaktiv.",
+            "label": "Aktiv"
+        }
+    },
+    "swag-paypal-onboarding-button": {
+        "live": {
+            "changeTitle": "Koble til en annen konto",
+            "onboardingTitle": "Start PayPal-onboarding",
+            "restartOnboardingTitle": "Start PayPal-onboarding på nytt",
+            "title": "Koble PayPal-konto"
+        },
+        "sandbox": {
+            "changeTitle": "Koble til annen sandkasse konto",
+            "onboardingTitle": "Start innføring i PayPal-sandkasse",
+            "title": "Koble sandkasse konto"
+        }
+    },
+    "swag-paypal-payment": {
+        "buttons": {
+            "label": {
+                "capture": "Fang",
+                "refund": "Opprett en ny refusjon",
+                "void": "Avbryt godkjenning"
+            }
+        },
+        "captureAction": {
+            "button": {
+                "text": "Capture betaling"
+            },
+            "captureInvoiceNumber": {
+                "label": "Fakturanummer",
+                "placeholder": "Angi et fakturanummer"
+            },
+            "captureNoteToPayer": {
+                "label": "Merknad til betaler",
+                "placeholder": "Skriv inn et notat til betaleren"
+            },
+            "currentAmount": "Beløp",
+            "isFinal": "Dette er den endelige fangst",
+            "isFinalHint": "Tips: Merket som endelig fangst, men ikke hele beløpet skal fanges.",
+            "maxAmount": "Maksimalt beløp",
+            "successMessage": "Fangingen din var vellykket."
+        },
+        "errorPage": {
+            "canceledPaymentContent": "Det oppstod en feil under henting av betalingsdetaljer fra PayPal. Hvis du ser denne meldingen, var det sannsynligvis en betaling som ble kansellert av kunden. Avbestilte betalinger vil bli slettet av PayPal etter en stund og er da ikke lenger tilgjengelige.",
+            "other": "Det oppstod en feil under henting av betalingsdetaljer fra PayPal.",
+            "title": "Betalingsdetaljer er ikke tilgjengelig"
+        },
+        "general": {
+            "title": "Ordre"
+        },
+        "modal": {
+            "title": {
+                "capture": "Fang",
+                "refund": "Ny refusjon",
+                "void": "Avbryt godkjenning"
+            }
+        },
+        "paymentDetails": {
+            "cardTitle": "Betaling",
+            "customer": {
+                "heading": "Kunden",
+                "payerId": "Betaler-ID:"
+            },
+            "error": {
+                "title": "Feil ved innhenting av betalingsdetaljer fra PayPal"
+            },
+            "invoice": {
+                "discount": "Rabatt:",
+                "handling": "Håndteringsgebyr:",
+                "heading": "Fakturabeløp",
+                "insurance": "Forsikring:",
+                "shipping": "Frakt:",
+                "shipping_discount": "Frakt rabatt:",
+                "subTotal": "Delsum:",
+                "totalAmount": "Samlet beløp:"
+            },
+            "payment": {
+                "cartId": "Handlevogn ID:",
+                "createTime": "Opprett tid:",
+                "heading": "Detaljer om betaling",
+                "intent": "Forsett:",
+                "paymentId": "Betalings-ID:",
+                "state": "Stat:",
+                "updateTime": "Oppdateringstid:"
+            }
+        },
+        "puiDetails": {
+            "accountHolder": "Kontoinnehaver",
+            "amount": "Beløp:",
+            "bank": "Bank:",
+            "bic": "BIC:",
+            "buttonCopy": "Kopier",
+            "cardTitle": "Faktura betalingsdata",
+            "iban": "IBAN:",
+            "reference": "Referanse:"
+        },
+        "refundAction": {
+            "confirmButton": {
+                "text": "Utfør"
+            },
+            "invoiceSelect": {
+                "label": "Velg Capture"
+            },
+            "refundAmount": {
+                "helpText": "Et beløp på «0» vil føre til refusjon av den komplette betalingen",
+                "label": "Beløp"
+            },
+            "refundDescription": {
+                "label": "Beskrivelse",
+                "placeholder": "Skriv inn en beskrivelse"
+            },
+            "refundInvoiceNumber": {
+                "label": "Fakturanummer",
+                "placeholder": "Angi et fakturanummer"
+            },
+            "refundNoteToPayer": {
+                "label": "Merknad til betaler",
+                "placeholder": "Skriv inn et notat til betaleren"
+            },
+            "refundReason": {
+                "label": "Årsak",
+                "placeholder": "Angi en årsak"
+            },
+            "successMessage": "Tilbakebetalingen din var vellykket."
+        },
+        "tabs": {
+            "order": "PayPal",
+            "overview": "Oversikt"
+        },
+        "transactionHistory": {
+            "cardTitle": "Betaling Historie",
+            "states": {
+                "authorization": "Autorisasjon",
+                "capture": "Fang",
+                "order": "Orden",
+                "refund": "Refusjon",
+                "sale": "Salg"
+            },
+            "types": {
+                "amount": "Beløp",
+                "createTime": "Opprettet",
+                "paymentMode": "Betalingsmodus",
+                "state": "Stat",
+                "trackingId": "Sporings-ID",
+                "transactionFee": "Transaksjonsgebyr",
+                "type": "Type",
+                "updateTime": "Oppdatert"
+            }
+        },
+        "voidAction": {
+            "confirm": {
+                "button": {
+                    "confirm": "Avbryt godkjenning"
+                },
+                "message": "Vil du virkelig annullere denne betalingen?"
+            },
+            "successMessage": "Betalingen ble vellykket annullert."
+        }
+    },
+    "swag-paypal-pos": {
+        "account": {
+            "connectedStatus": "Koblet",
+            "editConnection": "Rediger tilkobling",
+            "errorEmail": "API-nøkkelen kunne ikke verifiseres",
+            "errorName": "Feil under godkjenning",
+            "lastUpdated": "Sist oppdatert",
+            "loadingEmail": "pos@example.com",
+            "loadingName": "Laster for øyeblikket...",
+            "manageAccount": "Administrer konto",
+            "noConnectionStatus": "Ingen tilkobling"
+        },
+        "authentication": {
+            "apiKeyDescription": "API-taster fungerer som passord. Shopware bruker Zettle API-nøkkelen til å opprette en sikker tilkobling til Zettle-kontoen din.",
+            "buttonGenerateKey": "Generer API-nøkkel",
+            "labelApiKey": "API-nøkkel",
+            "messageDuplicateError": "Denne Zettle-kontoen er allerede konfigurert i en annen salgskanal",
+            "messageTestError": "Legitimasjonen kunne ikke valideres",
+            "placeholderApiKey": "Skriv inn API-nøkkel..."
+        },
+        "detail": {
+            "cleanLog": "Rydd opp loggen",
+            "disclaimer": {
+                "headline": "Zettle er en PayPal-tjeneste",
+                "linkTarget": "https://www.paypal.com/en/webapps/mpp/merchant",
+                "linkText": "Få PayPal til butikken din",
+                "subheadline": "Bidra til å øke salget gjennom kraften i PayPal. Kom i gang gratis."
+            },
+            "logs": {
+                "columnLastSync": "Detaljer",
+                "noEntry": "Ikke synkronisert ennå",
+                "states": {
+                    "aborted": "Avbrutt",
+                    "failed": "Mislyktes",
+                    "success": "Oppdatert"
+                }
+            },
+            "overview": {
+                "buttonSync": "Synkroniser nå",
+                "buttonSyncAbort": "Avbryt synkronisering",
+                "buttonSyncImages": "Last opp bilder",
+                "buttonSyncInventory": "Synkroniser inventar",
+                "buttonSyncProducts": "Synkroniser produktdetaljer",
+                "continueSetup": {
+                    "cardTitle": "Oppsett",
+                    "content": {
+                        "firstLine": "Dine Zettle og Shopware kontoer er nå koblet sammen! Du kan nå konfigurere produktsynkronisering.",
+                        "headline": "Synkronisering av installasjonsprogrammet",
+                        "secondLine": "Når Zettle er aktivert, blir automatisk synkronisert med Shopware-produktene dine. Salg gjort gjennom Zettle synkroniseres også med Shopware, og du kan bruke administrasjonen til å holde deg oppdatert om Zettle og Shopware salg også."
+                    }
+                },
+                "status": {
+                    "disabled": "Synkronisering er ikke aktiveret, fordi din salgskanal er deaktiveret.",
+                    "lastSynced": "Siste synkronisering",
+                    "lastSyncedComplete": "Siste fullstendige synkronisering",
+                    "message": {
+                        "aborted": "Siste synkronisering ble avbrutt av brukeren",
+                        "error": "Siste synkronisering fullført med feil",
+                        "noRunYet": "Fant ingen nylig løpetur",
+                        "success": "Synkronisert vellykket",
+                        "syncing": "Synkronisering pågår",
+                        "warning": "Siste synkronisering fullført med advarsler"
+                    },
+                    "syncingDetail": "Dette kan ta noen minutter. Denne prosessen kjører i bakgrunnen, mens du kan bruke butikken som vanlig.",
+                    "task": {
+                        "complete": "fullstendig",
+                        "image": "bilder",
+                        "inventory": "inventar",
+                        "product": "produkter"
+                    }
+                },
+                "syncErrorTitle": "Synkroniseringsfeil",
+                "titleSync": "Synkronisering"
+            },
+            "runs": {
+                "actions": {
+                    "showDetails": "Vis detaljer"
+                },
+                "cloneVisibilityTask": "Produktets synlighet",
+                "columns": {
+                    "date": "Dato",
+                    "state": "Stat",
+                    "task": "Type"
+                },
+                "completeTask": "Fullført",
+                "emptyState": {
+                    "message": "Synkroniser nå for å generere logger.",
+                    "title": "Ingen ferdige synkroniseringer"
+                },
+                "imageTask": "Bilde",
+                "inventoryTask": "Inventar",
+                "productTask": "Produkt",
+                "states": {
+                    "aborted": "Avbrutt av bruker",
+                    "failed": "Mislyktes",
+                    "successful": "Fullført",
+                    "withWarnings": "Fullført med advarsler"
+                },
+                "title": "Synkroniseringslogg",
+                "toolbarText": "«Rydd opp logger» vil slette alle loggene. Logger som er eldre enn 30 dager, fjernes automatisk."
+            },
+            "settings": {
+                "activeHelpText": "Hvis den er aktiv, vil Zettle-synkroniseringen skje automatisk i bakgrunnen.",
+                "domain": "Ditt butikk-domene",
+                "domainHelpText": "Zettle bruker dette domenet til å laste ned medier som er knyttet til synkroniserte produkter. Zettle godtar kun sikre nettadresser (https).",
+                "optionsTitle": "Alternativer",
+                "productStream": "Dynamisk produktgruppe",
+                "replace": "Erstatte eksisterende produkter i Zettle",
+                "reset": {
+                    "buttonTitle": "Tilbakestill synkronisering",
+                    "descriptionText": "Hvis du opplever problemer, kan du laste opp alle produkter og bilder på nytt.",
+                    "modalButtonConfirm": "Tilbakestill synkronisering",
+                    "modalConfirmText": "Dette tilbakestiller synkroniseringsloggen for salgskanalen",
+                    "modalTextInfo": "Alle elementer vil bli lastet opp på nytt ved neste synkronisering. Dette kan ta en stund. Du vil ikke miste data i Shopware, noen data kan bli overskrevet hos Zettle.",
+                    "modalTitle": "Tilbakestille synkroniseringshistorikk"
+                },
+                "saveAlert": "Lagrede endringer er tilgjengelige etter at synkroniseringen mellom Shopware og Zettle ble avsluttet.",
+                "syncPrices": "Synkroniser priser",
+                "titleCredentials": "Legitimasjon",
+                "titleGeneralSettings": "Generelle innstillinger",
+                "titlePrices": "Priser",
+                "titleSync": "Synkronisering"
+            },
+            "syncedProducts": {
+                "actions": {
+                    "productDetails": "Produktdetaljer"
+                },
+                "columns": {
+                    "date": "Dato",
+                    "name": "Navn",
+                    "state": "Status"
+                },
+                "emptyState": {
+                    "message": "Det finnes ingen produkter i salgskanalen eller den dynamiske produktgruppen.",
+                    "title": "Ingen produkter valgt"
+                },
+                "notSyncedYet": "Ikke synkronisert ennå",
+                "title": "Synkroniserte produkter"
+            }
+        },
+        "general": {
+            "moduleTitle": "Zettle av PayPal",
+            "salesChannelDetailDescription": {
+                "manufacturer": "Zettle av PayPal",
+                "title": "Øk virksomheten din med Shopware og Zettle by PayPal"
+            }
+        },
+        "gettingStarted": {
+            "appHeadline": "Last ned Zettle Go-appen",
+            "appImageAlt": "Zettle-appen",
+            "appText": "Tilgjengelig for iOS og Android nettbrett og telefoner.<br>Koble til Zettle-kontoen din og kortleseren din for å begynne å gjøre salg.",
+            "cardTitle": "Kom i gang med Zettle by PayPal",
+            "readerHeadline": "Logg inn på Zettle for å bestille Zettle-kortleseren",
+            "readerImageAlt": "Zettle-kortleser",
+            "readerLinkTarget": "https://shop.zettle.com",
+            "readerLinkText": "shop.zettle.com",
+            "readerText": "Finn ut mer om kortleseren og bestill en her:"
+        },
+        "header": "Zettle salgskanal",
+        "messageCloneError": "Kan ikke overføre produktsynlighet fra en annen salgskanal.",
+        "messageWebhookRegisterError": "Webhook kunne ikke registreres hos Zettle",
+        "tabTitle": {
+            "help": "Hjelp",
+            "overview": "Oversikt",
+            "runs": "Logger",
+            "settings": "Innstillinger",
+            "syncedProducts": "Synkroniserte produkter"
+        },
+        "wizard": {
+            "connection": {
+                "buttonCreateAccount": "Opprett Zettle-konto",
+                "buttonCreateAccountLink": "https://www.zettle.com/gb/integrations/e-commerce/shopware?utm_source=local_partnership&utm_medium=ecommerce&utm_campaign=shopware",
+                "headerConnect": "Tilslut din Zettle-konto",
+                "headerNewCustomer": "Nytt til Zettle?",
+                "modalTitle": "Konto oppsett"
+            },
+            "connectionDisconnect": {
+                "disconnectButton": "Koble fra kontoen",
+                "disconnectErrorMessage": "Det oppstod en feil under frakobling.",
+                "headline": "Du er i ferd med å koble fra Zettle",
+                "info": "Produktene vil ikke lenger bli oppdatert og synkronisert med den viste Zettle-kontoen din når du kobler fra kontoen din.",
+                "modalTitle": "Koble fra Zettle-kontoen"
+            },
+            "connectionSuccess": {
+                "disclaimer": "Eventuelle endringer du gjør i Shopware-produktene dine, blir nå automatisk oppdatert i den tilkoblede Zettle-kontoen din.",
+                "disconnectButton": "Koble fra",
+                "fakeFirstName": "Foreløpig",
+                "fakeLastName": "lasting...",
+                "fakeMail": "pos@example.com",
+                "headline": "Dine Zettle og Shopware kontoer er nå koblet sammen!",
+                "info": "Følg de neste trinnene for å fullføre konfigureringen av produktsynkronisering.",
+                "modalTitle": "Tilkobling etablert"
+            },
+            "customization": {
+                "labelDomain": "Ditt butikk-domene",
+                "modalTitle": "Detaljer om salgsk",
+                "placeholderDomain": "www.my-store.shopware.com",
+                "salesChannelLabel": "Navn på salgskanal",
+                "subtitle": "Zettle bruker dette domenet til å laste ned medier som er knyttet til synkroniserte produkter."
+            },
+            "finish": {
+                "firstParagraph": "Din Zettle-konto er nå knyttet til din salgskanal, og dine produkter vil bli overført til Zettle. I fremtiden, når du foretar et salg, vil vi oppdatere aksjene dine i Zettle and Shopware.",
+                "header": "Oppsettet for produktsynkronisering er fullført!",
+                "modalTitle": "Fullfør",
+                "secondParagraph": "Hvis du trenger å oppdatere produktene dine, anbefaler vi at du gjør dette i Shopware, og de synkroniserer automatisk med Zettle-appen."
+            },
+            "productSelection": {
+                "info": "For å komme i gang raskere har du nå muligheten til å tilordne produkter fra en eksisterende salgskanal til den nyopprettede. Alle tilordnede produkter vil da være tilgjengelige for synkronisering i Zettle POS. Ingen manuell arbeid nødvendig.",
+                "labelSelect": "Salgskanal",
+                "labelToggle": "Overfør produktvalg",
+                "modalTitle": "Overfør produkter fra eksisterende salgskanal"
+            },
+            "salesChannelPrototypeName": "Zettle POS",
+            "stepItemTitle": {
+                "connection": "Konto oppsett",
+                "connectionSuccess": "Tilkobling",
+                "customization": "Tilpasning",
+                "finish": "Fullfør",
+                "productSelection": "Valg av produkter",
+                "syncLibrary": "Synkronisering av produkter",
+                "syncPrices": "Prissynkronisering"
+            },
+            "syncLibrary": {
+                "description": "Alle produkter synkroniseres fra den nyopprettede salgskanalen i Shopware. Hvordan vil du konfigurere Zettle-biblioteket ditt?",
+                "disclaimer": "Du kan endre disse innstillingene senere når som helst.",
+                "header": "Vi fant {shopwareProducts} og {posProducts}",
+                "modalTitle": "Synkronisering av installasjonsprogrammet",
+                "optionReplaceNotDescription": "Shopware-produktene og lagerantallet legges til i ditt eksisterende Zettle-bibliotek.",
+                "optionReplaceNotLabel": "Legg til Shopware-produkter",
+                "optionReplaceOneTimeDescription": "Erstatt ditt eksisterende Zettle-bibliotek med produkter og lagerantall fra Shopware én gang.",
+                "optionReplaceOneTimeLabel": "Erstatt Zettle-biblioteket",
+                "optionReplacePermanentlyDescription": "Bare Shopware-produktene og lagerantallet finnes i Zettle-biblioteket ditt.",
+                "optionReplacePermanentlyLabel": "Bruk bare Shopware-produkter",
+                "posProducts": "Ingen Zettle produkter | ett Zettle produkt | {n} Zettle produkter",
+                "shopwareProducts": "Ingen Shopware-produkter | ett Shopware-produkt | {n} Shopware produkter"
+            },
+            "syncPrices": {
+                "description": "Produktenes priser inkluderer mva når de synkroniseres med Zettle.",
+                "disclaimer": "Du kan redigere din moms manuelt i Zettle-produktbiblioteket.",
+                "header": "Hvordan vil du synkronisere produktpriser med Zettle?",
+                "modalTitle": "Synkronisering av installasjonsprogrammet",
+                "optionFalseDescription": "Produktprisene overføres ikke ved synkronisering. Du kan angi dem i Zettle-produktbiblioteket.",
+                "optionFalseLabel": "Ikke synkroniser priser",
+                "optionTrueDescription": "Priser synkroniseret med Zettle vil omfatte moms.",
+                "optionTrueLabel": "Synkroniser priser med moms"
+            }
+        }
+    },
+    "swag-paypal-setting": {
+        "helpText": {
+            "acdcForce3DS": "Transaksjonen godtas ikke hvis 3D Secure ikke er tilgjengelig.",
+            "brandName": "Denne teksten vises som merkenavnet på PayPals betalingsside.",
+            "clientId": "REST API-klient-IDen brukes til å godkjenne dette pluginet med PayPal API.",
+            "clientIdSandbox": "REST API-klient-IDen brukes under testing for å godkjenne denne plugin-modulen med PayPal API.",
+            "clientSecret": "REST API-klienthemmeligheten brukes til å godkjenne dette pluginet med PayPal API.",
+            "clientSecretSandbox": "REST API-klienthemmeligheten brukes under testing for å godkjenne dette pluginet med PayPal API.",
+            "ecsButtonLanguageIso": "Hvis ikke angitt, brukes språket for salgskanal.",
+            "ecsCartEnabled": "Hvis dette alternativet er aktivt, vises knappen Express Checkout på handlekurven.",
+            "ecsDetailEnabled": "Hvis dette alternativet er aktivt, vises knappen Express Checkout på hver produktdetaljside.",
+            "ecsListingEnabled": "Hvis dette alternativet er aktivt, vises knappen Express Checkout på oppføringssider.",
+            "ecsLoginEnabled": "Hvis dette alternativet er aktivt, vises knappen Express Checkout på innloggings- og registreringssiden.",
+            "ecsOffCanvasEnabled": "Hvis dette alternativet er aktivt, vises Express Checkout-knappen i handlekurven utenfor lerretet.",
+            "ecsShowPayLater": "Knappen «Betal senere» vises på de samme sidene og i samme design som 'PayPal Checkout'-knappen.",
+            "ecsSubmitCart": "Hvis dette alternativet er aktivt, sendes handlekurven til PayPal for Express-bestillinger.",
+            "excludedProductIds": "Produkter som er valgt her, kan ikke kjøpes med PayPal.",
+            "excludedProductStreamIds": "Produkter som inngår i de dynamiske produktgruppene som er valgt her, kan ikke kjøpes med PayPal.",
+            "installmentBannerCartEnabled": "Hvis dette alternativet er aktivt, vises banneret «Betal senere» i handlekurven.",
+            "installmentBannerDetailPageEnabled": "Hvis dette alternativet er aktivt, vises banneret «Betal senere» på hver produktdetaljside.",
+            "installmentBannerFooterEnabled": "Hvis dette alternativet er aktivt, vises banneret «Betal senere» i bunnteksten.",
+            "installmentBannerLoginPageEnabled": "Hvis dette alternativet er aktivt, vises banneret «Betal senere» på påloggings- og registreringssiden.",
+            "installmentBannerOffCanvasCartEnabled": "Hvis dette alternativet er aktivt, vises banneret «Betal senere» på handlekurven utenfor lerretet.",
+            "merchantPayerId": "PayPals forhandler-ID som er tilordnet PayPal-kontoen din (se Forretningsinformasjon i PayPal-kontoinnstillinger)",
+            "merchantPayerIdSandbox": "PayPals forhandler-ID som er tilordnet PayPal-sandkassekontoen din (se Forretningsinformasjon i PayPal-kontoinnstillinger)",
+            "orderNumberPrefix": "Denne teksten plasseres før det opprinnelige bestillingsnummeret (f.eks. MyShop_SW20001). Dette bidrar til å identifisere butikken der betalingen ble utført. Du finner den som faktura-ID i PayPal-dashbordet ditt.",
+            "orderNumberSuffix": "Denne teksten plasseres etter det opprinnelige ordrenummeret (f.eks SW20001_MyShop). Dette bidrar til å identifisere butikken der betalingen ble utført. Du finner den som faktura-ID i PayPal-dashbordet ditt.",
+            "puiCustomerServiceInstructions": "Disse instruksjonene vil bli sendt til PayPal & RatePay og vises i e-post for kunden.",
+            "sandbox": "Aktiver, hvis du vil teste PayPal-integrasjonen.",
+            "sendOrderNumber": "Hvis dette alternativet er aktivt, sendes bestillingsnummeret til PayPal som faktura-ID i kassen.",
+            "spbAlternativePaymentMethodsEnabled": "Alternative betalingsmetoder er kreditt- og debetkort og mer.",
+            "spbButtonLanguageIso": "Hvis ikke angitt, brukes språket for salgskanal.",
+            "submitCart": "Hvis dette alternativet er aktivt, sendes handlekurvdata til PayPal i kassen."
+        },
+        "hintText": {
+            "landingPage": {
+                "GUEST_CHECKOUT": "Gjestekasse: PayPal-nettstedet viser et skjema for betalingsinformasjon, kunden trenger ikke å logge på.",
+                "LOGIN": "Logg inn: PayPal-nettstedet viser en påloggingsskjerm som destinasjonsside.",
+                "NO_PREFERENCE": "Ingen preferanse: PayPal avgjør hvilken side som vises, avhengig av kundens tidligere samhandling med PayPal."
+            }
+        },
+        "label": {
+            "acdcForce3DS": "Utfør transaksjoner bare med 3D Secure",
+            "brandName": "Ditt eget merkenavn på PayPal-siden",
+            "clientId": "Klient-ID",
+            "clientIdSandbox": "Sandkasse-klient-ID",
+            "clientSecret": "Klient hemmelighet",
+            "clientSecretSandbox": "Sandbox klient hemmelighet",
+            "crossBorderBuyerCountry": "Lokalisering",
+            "crossBorderMessagingEnabled": "Aktiver grenseoverskridende lokalisering av Pay Later-melding",
+            "ecsButtonColor": "Knappfarge",
+            "ecsButtonLanguageIso": "Lokal knapp",
+            "ecsButtonShape": "Knapp form",
+            "ecsCartEnabled": "'PayPal Checkout' på handlekurven",
+            "ecsDetailEnabled": "'PayPal Checkout' på detaljsiden",
+            "ecsListingEnabled": "'PayPal Checkout' på oppføringssider",
+            "ecsLoginEnabled": "'PayPal Checkout' på påloggingssiden",
+            "ecsOffCanvasEnabled": "'PayPal Checkout' på handlekurv utenfor lerretet",
+            "ecsShowPayLater": "Vis «Betal senere» -knappen ved siden av «PayPal Checkout» -knappen",
+            "ecsSubmitCart": "Send handlekurv",
+            "excludedProductIds": "Ekskluderte produkter",
+            "excludedProductStreamIds": "Ekskluderte dynamiske produktgrupper",
+            "installmentBannerCartEnabled": "'Betal senere' banner på handlekurven",
+            "installmentBannerDetailPageEnabled": "'Betal senere' banner på detaljsiden",
+            "installmentBannerFooterEnabled": "'Betal senere' banner på bunnteksten",
+            "installmentBannerLoginPageEnabled": "'Betal senere' banner på påloggingssiden",
+            "installmentBannerOffCanvasCartEnabled": "'Betal senere' banner på handlekurv utenfor lerretet",
+            "intent": "Betaling oppkjøp",
+            "landingPage": "PayPal destinasjonsside",
+            "merchantPayerId": "PayPal-forhandler-ID",
+            "merchantPayerIdSandbox": "Sandkasse PayPal-forhandler-ID",
+            "orderNumberPrefix": "Bestillingsnummer prefiks",
+            "orderNumberSuffix": "Ordenummer suffiks",
+            "puiCustomerServiceInstructions": "Kundeserviceinstruksjoner for Betal ved faktura",
+            "sandbox": "Aktiver sandkasse",
+            "sendOrderNumber": "Send inn ordrenummer",
+            "spbAlternativePaymentMethodsEnabled": "Aktiver de alternative betalingsmetodene for smartbetalingsknappene.",
+            "spbButtonColor": "Knappfarge",
+            "spbButtonLanguageIso": "Lokal knapp",
+            "spbButtonShape": "Knapp form",
+            "spbCheckoutEnabled": "Aktiver knapper for smartbetaling",
+            "spbShowPayLater": "Vis «Betal senere» -knappen ved siden av PayPal-knappen",
+            "submitCart": "Send handlekurv",
+            "vaultingEnabledACDC": "Eanable Vaulting for kreditt- og debetkort",
+            "vaultingEnabledVenmo": "Aktiver Vaulting for Venmo-betalinger",
+            "vaultingEnabledWallet": "Aktiver Vaulting for PayPal-betalinger"
+        }
+    },
+    "swag-paypal-settings": {
+        "acdc": {
+            "title": "Kreditt- eller debetkort"
+        },
+        "behavior": {
+            "title": "Atferd"
+        },
+        "credentialsLive": {
+            "test": "Prøve",
+            "title": "Live API-legitimasjon"
+        },
+        "credentialsSandbox": {
+            "test": "Prøve",
+            "title": "Sandbox API-legitimasjon"
+        },
+        "crossBorder": {
+            "buyerCountryAuto": "Automatisk bestemmelse",
+            "buyerCountryOverride": "Lokalisering",
+            "info": "Betal senere meldinger er en funksjon som lar deg vise en Betal senere melding på kundens språk. Denne funksjonen er bare tilgjengelig for enkelte land. {0}",
+            "title": "Betal senere grenseoverskridende meldinger",
+            "warning": "Ta kontakt med PayPal-representanten din for å aktivere denne funksjonen for kontoen din."
+        },
+        "express": {
+            "alertMessage": "Dobbel opt-in for gjester aktiveres i en av salgskanalene dine. Denne funksjonen er ikke kompatibel med PayPal Express-snarveiknapper. Kunder som registrerer seg via hurtigknappene for Express Checkout, vil ikke motta e-post med dobbel påmeldingsbekreftelse.",
+            "subtitle": "Express Checkouts øker konverteringsfrekvensen i butikken din og utgjør ingen økonomisk risiko for deg som forhandler. Det anbefales å holde dem aktivert. ",
+            "title": "Hurtigutsjekkingssnarvei"
+        },
+        "header": "PayPal",
+        "installment": {
+            "subtitle": "Bannere øker konverteringsfrekvensen i butikken din og utgjør ingen økonomisk risiko for deg som selger. Det anbefales å holde dem aktivert.",
+            "title": "'Betal senere' banner"
+        },
+        "module": {
+            "description": "PayPal-innstillinger",
+            "title": "PayPal"
+        },
+        "options": {
+            "buttonColor": {
+                "black": "Svart",
+                "blue": "Blå",
+                "gold": "Gull (anbefalt)",
+                "silver": "Sølv",
+                "white": "Hvit"
+            },
+            "buttonShape": {
+                "pill": "Runde",
+                "rect": "Rektangulær",
+                "sharp": "Rektangulær med skarpe hjørner"
+            },
+            "intent": {
+                "AUTHORIZE": "Manuell innsamling av betaling (hensikt AUTHORIZE)",
+                "CAPTURE": "Automatisk innsamling av betaling (hensikt CAPTURE)"
+            },
+            "landingPage": {
+                "GUEST_CHECKOUT": "Gjesteutsjekking",
+                "LOGIN": "Logg inn",
+                "NO_PREFERENCE": "Ingen preferanse"
+            }
+        },
+        "pui": {
+            "title": "Betal på faktura"
+        },
+        "spb": {
+            "title": "Smarte betalingsknapper"
+        },
+        "tabs": {
+            "advanced": "Avansert",
+            "general": "Generell",
+            "storefront": "Presentasjon i butikken"
+        },
+        "vaulting": {
+            "activeButtonLabel": "Aktiver hvelving",
+            "descriptionText": "Hvis du hever en PayPal-konto, kan du belaste kontoen i fremtiden uten å kreve at kunden din er til stede under transaksjonen eller autentiserer seg på nytt med PayPal når de er til stede under transaksjonen.",
+            "descriptionTitle": "Engangs Paypal-utsjekking",
+            "title": "Hvelving"
+        },
+        "webhook": {
+            "buttonRefresh": "Oppdater webhook",
+            "fetchFailed": "Kunne ikke hente webhook-status",
+            "info": "Webhooken brukes til å oppdatere statusen til en transaksjon asynkront. Feil registrerte webhooks, for eksempel på en annen eller ikke offentlig tilgjengelig server, kan resultere i ubekreftede transaksjoner, uavhengig av om transaksjonen har blitt behandlet av PayPal.",
+            "refreshFailed": "Kunne ikke oppdatere",
+            "status": {
+                "invalid": "Registrert, men mulig domenefeil",
+                "missing": "Ikke registrert",
+                "unknown": "Laster inn...",
+                "valid": "Registrert"
+            },
+            "title": "Webkrok"
+        }
+    },
+    "swag-paypal-settings-locale-select": {
+        "automatic": "Automatisk (anbefalt)",
+        "invalid": "Den angitte lokaliteten er ugyldig. Velg en fra listen."
+    },
+    "swag-paypal-settings-sales-channel-switch": {
+        "description": "Klikk på denne knappen for å aktivere PayPal og velg den som standard i den valgte salgskanalen",
+        "label": "Angi PayPal som standard"
+    },
+    "swag-paypal-settings-shipping-carrier": {
+        "cardHelpText": "Sporingsinformasjon vil bli sendt til PayPal",
+        "cardTitle": "Standard transportør",
+        "commonCarrierBadge": "Vanlig brukt",
+        "description": "PayPal tilbyr sporing for bestillinger behandlet gjennom PayPal. Hvis du vil bruke dette, angir du en standard transportør, som kan overskrives i ordrene. Finn en liste over alle fraktleverandører <a target=\"_blank\" href=\"https://developer.paypal.com/docs/tracking/reference/carriers/\">her</a>",
+        "inputHelpText": "Velg «Annet» for å angi et tilpasset transportørnavn.",
+        "inputHelpTextOther": "Hvis transportøren din ikke er inkludert i listen, skriv inn navnet her. La stå tom for å bruke navnet på fraktmetoden.",
+        "inputLabel": "Carrier kode",
+        "inputLabelOther": "Transportørnavn",
+        "inputPlaceholder": "Skriv inn en PayPal-operatørkode (f.eks. DHL_GLOBAL_ECOMMERCE)...",
+        "inputPlaceholderOther": "Skriv inn et transportørnavn...",
+        "invalid": "Den oppgitte transportørkoden er ugyldig. Velg en fra listen eller velg «Annet»."
+    }
+}

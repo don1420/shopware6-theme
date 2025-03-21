@@ -1,0 +1,774 @@
+{
+    "sw-order-detail": {
+        "payPalCarrierDescription": "Jeśli chcesz zmienić przewoźnika dla tego zamówienia PayPal, <a target=\"_blank\" href=\"{orderLink}\">kliknij tutaj</a>",
+        "payPalCarrierHelpText": "Możesz ustawić i zmienić domyślnego przewoźnika dla PayPal w <a class=\"sw-internal-link sw-internal-link--inline\" href=\"#/sw/settings/shipping/index\">metody wysyłki<sw-icon name=\"regular-long-arrow-right\" small /></a>. Nie będzie to jednak miało wpływu na zamówienia, które zostały już złożone.",
+        "payPalCarrierLabel": "Domyślny przewoźnik",
+        "payPalCarrierPlaceholder": "nie ustawione"
+    },
+    "swag-paypal": {
+        "errors": {
+            "SWAG_PAYPAL_POS__EXISTING_POS_ACCOUNT": "To konto Zettle zostało już skonfigurowane w innym kanale sprzedaży",
+            "SWAG_PAYPAL__API_INVALID_CREDENTIALS": "Poświadczenia API są nieprawidłowe",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "Usługi PayPal są obecnie niedostępne. Spróbuj ponownie później.",
+            "SWAG_PAYPAL__INVALID_API_CREDENTIALS": "Poświadczenia API są nieprawidłowe",
+            "UNKNOWN": "Wystąpił nieznany błąd"
+        },
+        "notifications": {
+            "credentials": {
+                "errorMessage": "Odzyskiwanie nie powiodło się:<br>{message}",
+                "title": "Poświadczenia PayPal"
+            },
+            "merchantInformation": {
+                "errorMessage": "Odzyskiwanie nie powiodło się:<br>{message}",
+                "title": "Konto PayPal"
+            },
+            "posError": {
+                "title": "Zettle POS"
+            },
+            "save": {
+                "errorMessage": "Zapisywanie nie powiodło się:<br>{message}",
+                "title": "Ustawienia PayPal",
+                "webhookMessage": "Nie można zapisać haczyka internetowego:<br>{message}"
+            },
+            "test": {
+                "errorMessage": "Walidacja nie powiodła się:<br>{message}",
+                "successMessage": "Dane uwierzytelniające są ważne.",
+                "title": "Dane uwierzytelniające API PayPal"
+            },
+            "webhook": {
+                "errorMessage": "Nie udało się odświeżyć webhook:<br>{message}",
+                "successMessage": "Webhook został odświeżony.",
+                "title": "Hak internetowy PayPal"
+            }
+        }
+    },
+    "swag-paypal-disputes": {
+        "common": {
+            "dispute_amount": "Kwota",
+            "dispute_id": "ID",
+            "dispute_life_cycle_stage": "Etap",
+            "response_due_date": {
+                "buyer": "Kupujący",
+                "label": "Termin wymagalności odpowiedzi",
+                "seller": "Sprzedający"
+            },
+            "status": "Status",
+            "update_time": "Czas aktualizacji"
+        },
+        "detail": {
+            "copyButtonLabel": "Kopiuj surowe",
+            "externalLinkText": "Otwórz spór w Centrum rozstrzygania płatności PayPal",
+            "mainFieldsCardTitle": "Szczegóły",
+            "orderModuleLinkText": "Otwarte zamówienie",
+            "rawDataCardTitle": "Surowe dane",
+            "title": "Spór PayPal:",
+            "titleAddition": "(Szczegóły techniczne)"
+        },
+        "general": {
+            "descriptionTextModule": "Zarządzaj sporami PayPal tutaj",
+            "mainMenuItemGeneral": "Spory PayPal"
+        },
+        "list": {
+            "emptyState": {
+                "subline": "Zmień filtr, aby wyświetlić wszystkie spory.",
+                "title": "Nie znaleziono żadnych sporów"
+            },
+            "emptyStateNotAuthorized": {
+                "link": "Metody płatności",
+                "subline": "Przejdź do {link} , aby skonfigurować PayPal.",
+                "title": "Brak konfiguracji konta PayPal"
+            },
+            "errorTitle": "Błąd pobierania sporów z systemu PayPal",
+            "title": "Spory",
+            "titleSidebarItemFilter": "Filtr",
+            "titleSidebarItemRefresh": "Odśwież"
+        }
+    },
+    "swag-paypal-frw-credentials": {
+        "buttonGetCredentials": "Pobierz poświadczenia interfejsu API",
+        "buttonGetSandboxCredentials": "Pobierz poświadczenia interfejsu API obszaru izolowanego",
+        "labelClientId": "ID klienta",
+        "labelClientIdSandbox": "ID klienta piaskownicy",
+        "labelClientSecret": "Tajemnica klienta",
+        "labelClientSecretSandbox": "Tajemnica klienta piaskownicy",
+        "labelMerchantPayerId": "Identyfikator handlowca PayPal",
+        "labelMerchantPayerIdSandbox": "Piaskownica identyfikator płatnika PayPal",
+        "labelSandbox": "Użyj piaskownicy",
+        "labelSetDefault": "Ustaw jako domyślną metodę płatności",
+        "messageFetchedError": "Spróbuj ponownie lub użyj ustawień zaawansowanych, aby podać swoje poświadczenia.",
+        "messageInvalidCredentials": "Dane uwierzytelniające są nieprawidłowe.",
+        "messageNoCredentials": "Nie podano żadnych poświadczeń.",
+        "messageTestSuccess": "Poświadczenia są prawidłowe.",
+        "textFetchedSuccessful": "Poświadczenia zostały pobrane.",
+        "textIntroPayPal": "Aby uruchomić system PayPal, wystarczy podać dane uwierzytelniające API PayPal.",
+        "tooltipSandbox": "W zależności od aktywacji obszaru izolowanego zapisywane są oddzielne poświadczenia.",
+        "tooltipSetDefault": "PayPal zostanie ustawiona jako domyślna metoda płatności dla wszystkich kanałów sprzedaży. W module ustawień można ustawić indywidualne domyślne metody płatności dla każdego kanału sprzedaży."
+    },
+    "swag-paypal-method": {
+        "appImageAlt": "PayPal",
+        "availabilityToolTip": {
+            "bancontactapmhandler": "Bancontact jest dostępny dla następujących krajów: Belgium",
+            "blikapmhandler": "BLIK jest dostępny dla następujących krajów: Polska",
+            "boletobancarioapmhandler": "Boleto Bancário jest dostępny w następujących krajach: Brazylia",
+            "epsapmhandler": "eps jest dostępny dla następujących krajów: Austria",
+            "idealapmhandler": "iDeal jest dostępny dla następujących krajów: Holandia",
+            "multibancoapmhandler": "Multibanco jest dostępne dla następujących krajów: Portugalia",
+            "mybankapmhandler": "MyBank jest dostępny dla następujących krajów: Włochy",
+            "oxxoapmhandler": "OXXO jest dostępny dla następujących krajów: Meksyk",
+            "p24apmhandler": "Przelewy24 jest dostępny dla następujących krajów: Polska",
+            "paylaterhandler": "Płatność później jest dostępna dla następujących krajów: Australia, Francja, Niemcy, Włochy, Hiszpania, Wielka Brytania, Stany Zjednoczone",
+            "puihandler": "Płatność za fakturą jest dostępna dla następujących krajów: Niemcy",
+            "sepahandler": "SEPA Lastschrift jest dostępny w następujących krajach: Niemcy",
+            "trustlyapmhandler": "Trustly jest dostępny dla następujących krajów: Estonia, Finlandia, Holandia, Szwecja",
+            "venmohandler": "Venmo jest dostępne w następujących krajach: United States"
+        },
+        "banner": "Dzięki PayPal Checkout możesz zaoferować klientom płatności fakturą, kartą kredytową i innymi lokalnymi metodami płatności. PayPal Checkout wspiera Cię dzięki najnowszej technologii i zapewnia najwyższą elastyczność. Zachowujesz istniejące metody płatności, a opłaty pozostają takie same! Aktywuj PayPal Checkout i dezaktywuj PayPal PLUS, aby uniknąć zduplikowanych metod płatności w Twoim sklepie.",
+        "bannerLink": "Więcej informacji",
+        "cardTitle": "PayPal Realizacja transakcji",
+        "description": "PayPal Checkout to nowe rozwiązanie typu all-in-one, które pozwala oferować zaawansowane funkcje elastycznego przetwarzania płatności na rynku i innych platformach handlowych.",
+        "domainAssociation": {
+            "link": "Otwórz ustawienia domen",
+            "title": "Upewnij się, że Twoja domena jest poprawnie ustawiona, aby Apple Pay działała poprawnie. Plik skojarzenia domeny jest już obecny."
+        },
+        "editDetail": "Edytuj szczegóły",
+        "header": "Więcej metod płatności dzięki jednemu rozwiązaniu z PayPal",
+        "merchantStatusText": {
+            "connected": "Połączone",
+            "emailUnconfirmed": "E-mail niepotwierdzony",
+            "notConnected": "Nie podłączony",
+            "onboardingNeeded": "Wymagane ponowne wdrożenie",
+            "paymentsUnreceivable": "Płatności nieodpłatne"
+        },
+        "onboardingStatusText": {
+            "active": "Upoważniony",
+            "inactive": "Potrzebne wdrażanie",
+            "ineligible": "Niekwalifikowalny",
+            "limited": "Limitowany",
+            "mybank": "Limitowany",
+            "pending": "Oczekuje na autoryzację",
+            "test": "Tryb testowy"
+        },
+        "onboardingStatusTooltip": {
+            "ineligible": "PayPal poinformował nas, że ta metoda płatności obecnie nie kwalifikuje się do Twojego konta.",
+            "limited": "PayPal poinformował nas, że ta metoda płatności ma pewne ograniczenia dla Twojego konta.",
+            "mybank": "Sprzedawcy aktywujący MyBank po lutym 2023 roku będą wymagać ręcznego zatwierdzenia przez PayPal. Skontaktuj się z pomocą techniczną PayPal, aby uzyskać więcej informacji na ten temat."
+        },
+        "paymentMethodText": "Metody płatności",
+        "ratePayLabel": "od Ratepay",
+        "sandbox": {
+            "helpText": "Włącz, jeśli chcesz przetestować integrację PayPal.",
+            "label": "Piaskownica",
+            "onlyLiveTooltip": "Do tej pory masz tylko konto PayPal na żywo.",
+            "onlySandboxTooltip": "Do tej pory masz tylko konto PayPal w piaskownicy."
+        },
+        "settingsLink": "Ustawienia",
+        "switch": {
+            "active": "Metoda płatności „{name}” jest teraz aktywna.",
+            "inactive": "Metoda płatności „{name}” jest teraz nieaktywna.",
+            "label": "Aktywny"
+        }
+    },
+    "swag-paypal-onboarding-button": {
+        "live": {
+            "changeTitle": "Połącz inne konto",
+            "onboardingTitle": "Rozpocznij wdrażanie systemu PayPal",
+            "restartOnboardingTitle": "Uruchom ponownie wdrażanie systemu PayPal",
+            "title": "Połącz konto PayPal"
+        },
+        "sandbox": {
+            "changeTitle": "Połącz inne konto piaskownicy",
+            "onboardingTitle": "Rozpocznij wdrażanie piaskownicy PayPal",
+            "title": "Połącz konto piaskownicy"
+        }
+    },
+    "swag-paypal-payment": {
+        "buttons": {
+            "label": {
+                "capture": "Capture",
+                "refund": "Utwórz nowy zwrot pieniędzy",
+                "void": "Anulowanie autoryzacji"
+            }
+        },
+        "captureAction": {
+            "button": {
+                "text": "Przechwyć płatności"
+            },
+            "captureInvoiceNumber": {
+                "label": "Numer faktury",
+                "placeholder": "Wprowadź numer faktury"
+            },
+            "captureNoteToPayer": {
+                "label": "Uwaga dla płatnika",
+                "placeholder": "Wprowadź notatkę do płatnika"
+            },
+            "currentAmount": "Kwota",
+            "isFinal": "To jest ostateczne schwytanie",
+            "isFinalHint": "Wskazówka: Oznaczone jako ostateczne przejęcie, chociaż nie cała kwota ma zostać przechwycona.",
+            "maxAmount": "Maksymalna kwota",
+            "successMessage": "Twoje schwytanie się udało."
+        },
+        "errorPage": {
+            "canceledPaymentContent": "Wystąpił błąd podczas pobierania szczegółów płatności z systemu PayPal. Jeśli widzisz ten komunikat, prawdopodobnie była to płatność, która została anulowana przez klienta. Anulowane płatności zostaną usunięte przez PayPal po pewnym czasie i nie będą już dostępne.",
+            "other": "Wystąpił błąd podczas pobierania szczegółów płatności z systemu PayPal.",
+            "title": "Szczegóły płatności nie są dostępne"
+        },
+        "general": {
+            "title": "Zamówienia"
+        },
+        "modal": {
+            "title": {
+                "capture": "Capture",
+                "refund": "Nowy zwrot pieniędzy",
+                "void": "Anulowanie autoryzacji"
+            }
+        },
+        "paymentDetails": {
+            "cardTitle": "Płatność",
+            "customer": {
+                "heading": "Klient",
+                "payerId": "Identyfikator płatnika:"
+            },
+            "error": {
+                "title": "Błąd pobierania szczegółów płatności z systemu PayPal"
+            },
+            "invoice": {
+                "discount": "Rabat:",
+                "handling": "Opłata manipulacyjna:",
+                "heading": "Kwota faktury",
+                "insurance": "Ubezpieczenie:",
+                "shipping": "Wysyłka:",
+                "shipping_discount": "Zniżka wysyłki:",
+                "subTotal": "Suma częściowa:",
+                "totalAmount": "Łączna kwota:"
+            },
+            "payment": {
+                "cartId": "ID koszyka:",
+                "createTime": "Utwórz czas:",
+                "heading": "Szczegóły płatności",
+                "intent": "Zamiar:",
+                "paymentId": "Identyfikator płatności:",
+                "state": "Stan:",
+                "updateTime": "Czas aktualizacji:"
+            }
+        },
+        "puiDetails": {
+            "accountHolder": "Posiadacz rachunku:",
+            "amount": "Kwota:",
+            "bank": "Bank:",
+            "bic": "BIC:",
+            "buttonCopy": "Kopiuj",
+            "cardTitle": "Dane dotyczące płatności faktury",
+            "iban": "IBAN:",
+            "reference": "Numer referencyjny:"
+        },
+        "refundAction": {
+            "confirmButton": {
+                "text": "Wykonaj"
+            },
+            "invoiceSelect": {
+                "label": "Wybierz przechwycenie"
+            },
+            "refundAmount": {
+                "helpText": "Kwota „0” spowoduje zwrot pełnej płatności",
+                "label": "Kwota"
+            },
+            "refundDescription": {
+                "label": "Opis",
+                "placeholder": "Wprowadź opis"
+            },
+            "refundInvoiceNumber": {
+                "label": "Numer faktury",
+                "placeholder": "Wprowadź numer faktury"
+            },
+            "refundNoteToPayer": {
+                "label": "Uwaga dla płatnika",
+                "placeholder": "Wprowadź notatkę do płatnika"
+            },
+            "refundReason": {
+                "label": "Powód",
+                "placeholder": "Podaj powód"
+            },
+            "successMessage": "Twój zwrot zakończył się sukcesem."
+        },
+        "tabs": {
+            "order": "PayPal",
+            "overview": "Przegląd"
+        },
+        "transactionHistory": {
+            "cardTitle": "Historia płatności",
+            "states": {
+                "authorization": "Autoryzacja",
+                "capture": "Capture",
+                "order": "Zamów",
+                "refund": "Refundacja",
+                "sale": "Sprzedaż"
+            },
+            "types": {
+                "amount": "Kwota",
+                "createTime": "Utworzone",
+                "paymentMode": "Tryb płatności",
+                "state": "Stan",
+                "trackingId": "ID śledzenia",
+                "transactionFee": "Opłata transakcyjna",
+                "type": "Typ",
+                "updateTime": "Aktualizacja"
+            }
+        },
+        "voidAction": {
+            "confirm": {
+                "button": {
+                    "confirm": "Anulowanie autoryzacji"
+                },
+                "message": "Czy na pewno chcesz anulować tę płatność?"
+            },
+            "successMessage": "Płatność została pomyślnie unieważniona."
+        }
+    },
+    "swag-paypal-pos": {
+        "account": {
+            "connectedStatus": "Połączone",
+            "editConnection": "Edytuj połączenie",
+            "errorEmail": "Nie można zweryfikować klucza API",
+            "errorName": "Błąd podczas uwierzytelniania",
+            "lastUpdated": "Ostatnia aktualizacja",
+            "loadingEmail": "pos@example.com",
+            "loadingName": "Aktualnie ładowanie...",
+            "manageAccount": "Zarządzaj kontem",
+            "noConnectionStatus": "Brak połączenia"
+        },
+        "authentication": {
+            "apiKeyDescription": "Klawisze API działają jak hasła. Shopware użyje klucza API Zettle do nawiązania bezpiecznego połączenia z kontem Zettle.",
+            "buttonGenerateKey": "Generuj klucz API",
+            "labelApiKey": "Klucz API",
+            "messageDuplicateError": "To konto Zettle zostało już skonfigurowane w innym kanale sprzedaży",
+            "messageTestError": "Nie można sprawdzić poprawności poświadczeń",
+            "placeholderApiKey": "Wprowadź klucz API..."
+        },
+        "detail": {
+            "cleanLog": "Oczyść dziennik",
+            "disclaimer": {
+                "headline": "Zettle to usługa PayPal",
+                "linkTarget": "https://www.paypal.com/en/webapps/mpp/merchant",
+                "linkText": "Pobierz system PayPal dla swojego sklepu",
+                "subheadline": "Pomóż zwiększyć sprzedaż dzięki mocy systemu PayPal. Zacznij za darmo."
+            },
+            "logs": {
+                "columnLastSync": "Szczegóły",
+                "noEntry": "Jeszcze nie zsynchronizowano",
+                "states": {
+                    "aborted": "Przerwana",
+                    "failed": "Nie udało",
+                    "success": "Aktualizacja"
+                }
+            },
+            "overview": {
+                "buttonSync": "Synchronizuj teraz",
+                "buttonSyncAbort": "Przerwij synchronizację",
+                "buttonSyncImages": "Prześlij obrazy",
+                "buttonSyncInventory": "Synchronizowanie zapasów",
+                "buttonSyncProducts": "Synchronizuj szczegóły produktu",
+                "continueSetup": {
+                    "cardTitle": "Ustawienia",
+                    "content": {
+                        "firstLine": "Twoje konta Zettle i Shopware są teraz połączone! Możesz teraz skonfigurować synchronizację produktów.",
+                        "headline": "Konfiguracja synchronizacji produktu",
+                        "secondLine": "Po aktywacji firma Zettle będzie automatycznie synchronizowana z Twoimi produktami Shopware. Sprzedaż dokonywana przez firmę Zettle jest również zsynchronizowana z usługą Shopware i możesz korzystać z administracji, aby być na bieżąco ze sprzedażą Zettle i Shopware."
+                    }
+                },
+                "status": {
+                    "disabled": "Synchronizacja nie jest włączona, ponieważ Twój kanał sprzedaży jest wyłączony.",
+                    "lastSynced": "Ostatnia synchronizacja",
+                    "lastSyncedComplete": "Ostatnia pełna synchronizacja",
+                    "message": {
+                        "aborted": "Ostatnia synchronizacja została przerwana przez użytkownika",
+                        "error": "Ostatnia synchronizacja zakończona błędami",
+                        "noRunYet": "Nie znaleziono ostatniego biegu",
+                        "success": "Zsynchronizowane pomyślnie",
+                        "syncing": "Synchronizacja w toku",
+                        "warning": "Ostatnia synchronizacja zakończona ostrzeżeniami"
+                    },
+                    "syncingDetail": "To może potrwać kilka minut. Proces ten przebiega w tle, w międzyczasie możesz korzystać ze swojego sklepu jak zwykle.",
+                    "task": {
+                        "complete": "kompletne",
+                        "image": "obrazy",
+                        "inventory": "inwentaryzacji",
+                        "product": "produkty"
+                    }
+                },
+                "syncErrorTitle": "Błąd synchronizacji",
+                "titleSync": "Synchronizacja"
+            },
+            "runs": {
+                "actions": {
+                    "showDetails": "Pokaż szczegóły"
+                },
+                "cloneVisibilityTask": "Widoczność produktu",
+                "columns": {
+                    "date": "Data",
+                    "state": "Stan",
+                    "task": "Typ"
+                },
+                "completeTask": "Kompletne",
+                "emptyState": {
+                    "message": "Synchronizuj teraz aby wygenerować dzienniki.",
+                    "title": "Brak ukończonych synchronizacji"
+                },
+                "imageTask": "Obraz",
+                "inventoryTask": "Zapasy",
+                "productTask": "Produkt",
+                "states": {
+                    "aborted": "Przerywane przez użytkownika",
+                    "failed": "Nie udało się!",
+                    "successful": "Wykonane",
+                    "withWarnings": "Ukończone z ostrzeżeniami"
+                },
+                "title": "Historia synchronizacji",
+                "toolbarText": "„Oczyść dzienniki” usunie wszystkie dzienniki. Dzienniki starsze niż 30 dni zostaną automatycznie usunięte."
+            },
+            "settings": {
+                "activeHelpText": "Jeśli jest aktywna, synchronizacja Zettle nastąpi automatycznie w tle.",
+                "domain": "Twoja domena sklepowa",
+                "domainHelpText": "Firma Zettle będzie używać tej domeny do pobierania multimediów skojarzonych z synchronizowanymi produktami. Zettle akceptuje tylko bezpieczne adresy URL (https).",
+                "optionsTitle": "Opcje",
+                "productStream": "Dynamiczna grupa produktów",
+                "replace": "Zastąp istniejące produkty w Zettle",
+                "reset": {
+                    "buttonTitle": "Resetuj synchronizację",
+                    "descriptionText": "Jeśli występują problemy, możesz ponownie przesłać wszystkie produkty i obrazy.",
+                    "modalButtonConfirm": "Resetuj synchronizację",
+                    "modalConfirmText": "Spowoduje to zresetowanie historii synchronizacji kanału sprzedaży",
+                    "modalTextInfo": "Wszystkie elementy zostaną ponownie przesłane podczas następnej synchronizacji. To może trochę potrwać. Nie stracisz żadnych danych w Shopware, niektóre dane mogą zostać nadpisane w firmie Zettle.",
+                    "modalTitle": "Resetowanie historii synchronizacji"
+                },
+                "saveAlert": "Zapisane zmiany są dostępne po zakończeniu aktualnie uruchomionej synchronizacji między Shopware a Zettle.",
+                "syncPrices": "Synchronizuj ceny",
+                "titleCredentials": "Poświadczenia",
+                "titleGeneralSettings": "Ustawienia ogólne",
+                "titlePrices": "Ceny",
+                "titleSync": "Synchronizacja"
+            },
+            "syncedProducts": {
+                "actions": {
+                    "productDetails": "Szczegóły produktu"
+                },
+                "columns": {
+                    "date": "Data",
+                    "name": "Nazwa",
+                    "state": "Status"
+                },
+                "emptyState": {
+                    "message": "Brak produktów w kanale sprzedaży lub dynamicznej grupie produktów.",
+                    "title": "Nie wybrano produktów"
+                },
+                "notSyncedYet": "Jeszcze nie zsynchronizowano",
+                "title": "Produkty zsynchronizowane"
+            }
+        },
+        "general": {
+            "moduleTitle": "Zettle przez PayPal",
+            "salesChannelDetailDescription": {
+                "manufacturer": "Zettle przez PayPal",
+                "title": "Rozwijaj swoją działalność dzięki usłudze Shopware i Zettle w systemie PayPal"
+            }
+        },
+        "gettingStarted": {
+            "appHeadline": "Pobierz aplikację Zettle Go",
+            "appImageAlt": "Aplikacja Zettle",
+            "appText": "Dostępne dla tabletów i telefonów z systemem iOS i Android.<br>Połącz swoje konto Zettle i czytnik kart, aby rozpocząć sprzedaż.",
+            "cardTitle": "Rozpocznij pracę z Zettle w systemie PayPal",
+            "readerHeadline": "Zaloguj się do Zettle, aby zamówić czytnik kart Zettle",
+            "readerImageAlt": "Czytnik kart Zettle",
+            "readerLinkTarget": "https://shop.zettle.com",
+            "readerLinkText": "shop.zettle.com",
+            "readerText": "Dowiedz się więcej o czytniku kart i zamów jeden tutaj:"
+        },
+        "header": "Kanał sprzedaży Zettle",
+        "messageCloneError": "Nie można przenieść widoczności produktu z innego kanału sprzedaży.",
+        "messageWebhookRegisterError": "Hak webhook nie mógł zostać zarejestrowany w Zettle",
+        "tabTitle": {
+            "help": "Pomoc",
+            "overview": "Przegląd",
+            "runs": "Dzienniki",
+            "settings": "Ustawienia",
+            "syncedProducts": "Produkty zsynchronizowane"
+        },
+        "wizard": {
+            "connection": {
+                "buttonCreateAccount": "Utwórz konto Zettle",
+                "buttonCreateAccountLink": "https://www.zettle.com/gb/integrations/e-commerce/shopware?utm_source=local_partnership&utm_medium=ecommerce&utm_campaign=shopware",
+                "headerConnect": "Połącz swoje konto Zettle",
+                "headerNewCustomer": "Nowy w Zettle?",
+                "modalTitle": "Konfiguracja konta"
+            },
+            "connectionDisconnect": {
+                "disconnectButton": "Rozłącz konto",
+                "disconnectErrorMessage": "Wystąpił błąd podczas rozłączania.",
+                "headline": "Masz zamiar odłączyć Zettle",
+                "info": "Po odłączeniu konta produkty nie będą już aktualizowane i synchronizowane z wyświetlanym kontem Zettle.",
+                "modalTitle": "Odłącz konto Zettle"
+            },
+            "connectionSuccess": {
+                "disclaimer": "Wszelkie zmiany wprowadzone w produktach Shopware będą teraz automatycznie aktualizowane na połączonym koncie Zettle.",
+                "disconnectButton": "Odłącz",
+                "fakeFirstName": "Obecnie",
+                "fakeLastName": "ładowanie...",
+                "fakeMail": "pos@example.com",
+                "headline": "Twoje konta Zettle i Shopware są teraz połączone!",
+                "info": "Wykonaj następne kroki, aby zakończyć konfigurowanie synchronizacji produktów.",
+                "modalTitle": "Połączenie nawiązane"
+            },
+            "customization": {
+                "labelDomain": "Twoja domena sklepowa",
+                "modalTitle": "Szczegóły kanału sprzedaży",
+                "placeholderDomain": "www.my-store.shopware.com",
+                "salesChannelLabel": "Nazwa kanału sprzedaży",
+                "subtitle": "Firma Zettle będzie używać tej domeny do pobierania multimediów skojarzonych z synchronizowanymi produktami."
+            },
+            "finish": {
+                "firstParagraph": "Twoje konto Zettle jest teraz powiązane z Twoim kanałem sprzedaży, a Twoje produkty zostaną przeniesione do firmy Zettle. W przyszłości, gdy dokonasz sprzedaży, zaktualizujemy Twoje akcje w Zettle i Shopware.",
+                "header": "Konfiguracja synchronizacji produktu zakończona!",
+                "modalTitle": "FIN",
+                "secondParagraph": "Jeśli chcesz zaktualizować swoje produkty, zalecamy wykonanie tego w sklepie Shopware, które automatycznie zsynchronizują się z aplikacją Zettle."
+            },
+            "productSelection": {
+                "info": "Aby szybciej rozpocząć, masz teraz możliwość przypisania produktów z istniejącego kanału sprzedaży do nowo utworzonego kanału sprzedaży. Wszystkie przypisane produkty będą następnie dostępne do synchronizacji w Zettle POS. Nie jest potrzebna praca ręczna.",
+                "labelSelect": "Kanał sprzedaży",
+                "labelToggle": "Przenieś wybór produktów",
+                "modalTitle": "Przenoszenie produktów z istniejącego kanału sprzedaży"
+            },
+            "salesChannelPrototypeName": "Zettle POS",
+            "stepItemTitle": {
+                "connection": "Konfiguracja konta",
+                "connectionSuccess": "Połączenie",
+                "customization": "Dostosowywanie",
+                "finish": "FIN",
+                "productSelection": "Wybór produktu",
+                "syncLibrary": "Synchronizacja produktów",
+                "syncPrices": "Synchronizacja cen"
+            },
+            "syncLibrary": {
+                "description": "Wszystkie produkty są synchronizowane z nowo utworzonego kanału sprzedaży w sklepie Shopware. Jak chcesz skonfigurować bibliotekę Zettle?",
+                "disclaimer": "Ustawienia te można zmienić później w dowolnym momencie.",
+                "header": "Znaleźliśmy {shopwareProducts} i {posProducts}",
+                "modalTitle": "Konfiguracja synchronizacji produktu",
+                "optionReplaceNotDescription": "Produkty Shopware i ilości zapasów zostaną dodane do istniejącej biblioteki Zettle.",
+                "optionReplaceNotLabel": "Dodaj produkty Shopware",
+                "optionReplaceOneTimeDescription": "Zastąp istniejącą bibliotekę Zettle produktami i ilościami zapasów z Shopware raz.",
+                "optionReplaceOneTimeLabel": "Zamień bibliotekę Zettle",
+                "optionReplacePermanentlyDescription": "W bibliotece Zettle będą dostępne tylko produkty Shopware i ilości zapasów.",
+                "optionReplacePermanentlyLabel": "Używaj tylko produktów Shopware",
+                "posProducts": "brak produktów firmy Zettle | jeden produkt firmy Zettle | {n} Produkty firmy Zettle",
+                "shopwareProducts": "brak produktów Shopware | jeden produkt Shopware | {n} Produkty Shopware"
+            },
+            "syncPrices": {
+                "description": "Ceny produktów będą zawierały podatek VAT po zsynchronizowaniu z Zettle.",
+                "disclaimer": "Podatek VAT można edytować ręcznie w bibliotece produktów Zettle.",
+                "header": "Jak chcesz zsynchronizować ceny produktów z Zettle?",
+                "modalTitle": "Konfiguracja synchronizacji produktu",
+                "optionFalseDescription": "Ceny produktów nie zostaną przeniesione podczas synchronizacji. Można je ustawić w bibliotece produktów Zettle.",
+                "optionFalseLabel": "Nie synchronizuj cen",
+                "optionTrueDescription": "Ceny zsynchronizowane z Zettle zawierają podatek VAT.",
+                "optionTrueLabel": "Synchronizuj ceny z VAT"
+            }
+        }
+    },
+    "swag-paypal-setting": {
+        "helpText": {
+            "acdcForce3DS": "Transakcja nie zostanie zaakceptowana, jeśli 3D Secure jest niedostępny.",
+            "brandName": "Ten tekst będzie wyświetlany jako nazwa marki na stronie płatności PayPal.",
+            "clientId": "Identyfikator klienta REST API służy do uwierzytelniania tej wtyczki za pomocą API PayPal.",
+            "clientIdSandbox": "Identyfikator klienta REST API jest używany podczas testowania w celu uwierzytelnienia tej wtyczki za pomocą API PayPal.",
+            "clientSecret": "Tajemnica klienta REST API służy do uwierzytelniania tej wtyczki za pomocą API PayPal.",
+            "clientSecretSandbox": "Sekret klienta REST API jest używany podczas testowania w celu uwierzytelnienia tej wtyczki za pomocą API PayPal.",
+            "ecsButtonLanguageIso": "Jeśli nie jest ustawiona, zostanie użyty język kanału sprzedaży.",
+            "ecsCartEnabled": "Jeśli ta opcja jest aktywna, na wózku pojawi się przycisk Express Checkout.",
+            "ecsDetailEnabled": "Jeśli ta opcja jest aktywna, przycisk Express Checkout pojawi się na każdej stronie szczegółów produktu.",
+            "ecsListingEnabled": "Jeśli ta opcja jest aktywna, przycisk Express Checkout pojawi się na stronach aukcji.",
+            "ecsLoginEnabled": "Jeśli ta opcja jest aktywna, przycisk Express Checkout pojawi się na stronie logowania i rejestracji.",
+            "ecsOffCanvasEnabled": "Jeśli ta opcja jest aktywna, przycisk Express Checkout zostanie wyświetlony na koszyku poza płótnem.",
+            "ecsShowPayLater": "Przycisk „Zapłać później” będzie wyświetlany na tych samych stronach i w tym samym wyglądzie, co przycisk „PayPal Checkout”.",
+            "ecsSubmitCart": "Jeśli ta opcja jest aktywna, koszyk zostanie przesłany do systemu PayPal w przypadku zamówień ekspresowych.",
+            "excludedProductIds": "Wybranych tutaj produktów nie można kupić w systemie PayPal.",
+            "excludedProductStreamIds": "Produktów wchodzących w skład wybranych tutaj grup produktów dynamicznych nie można kupować w systemie PayPal.",
+            "installmentBannerCartEnabled": "Jeśli ta opcja jest aktywna, na koszyku pojawi się baner „Zapłać później”.",
+            "installmentBannerDetailPageEnabled": "Jeśli ta opcja jest aktywna, baner „Zapłać później” zostanie wyświetlony na każdej stronie szczegółów produktu.",
+            "installmentBannerFooterEnabled": "Jeśli ta opcja jest aktywna, w stopce pojawi się baner „Zapłać później”.",
+            "installmentBannerLoginPageEnabled": "Jeśli ta opcja jest aktywna, baner „Zapłać później” zostanie wyświetlony na stronie logowania i rejestracji.",
+            "installmentBannerOffCanvasCartEnabled": "Jeśli ta opcja jest aktywna, baner „Zapłać później” zostanie wyświetlony na koszyku bez płótna.",
+            "merchantPayerId": "Identyfikator sprzedawcy PayPal przypisany do Twojego konta PayPal (zobacz Informacje o firmie w ustawieniach konta PayPal).",
+            "merchantPayerIdSandbox": "Identyfikator PayPal Merchant przypisany do konta w piaskownicy PayPal (zobacz Informacje o firmie w ustawieniach konta PayPal).",
+            "orderNumberPrefix": "Tekst ten jest umieszczany przed oryginalnym numerem zamówienia (np. myShop_SW20001). Pomaga to zidentyfikować sklep, w którym dokonano płatności. Można go znaleźć jako identyfikator faktury w pulpicie nawigacyjnym PayPal.",
+            "orderNumberSuffix": "Tekst ten jest umieszczany po oryginalnym numerze zamówienia (np. SW20001_myShop). Pomaga to zidentyfikować sklep, w którym dokonano płatności. Można go znaleźć jako identyfikator faktury w pulpicie nawigacyjnym PayPal.",
+            "puiCustomerServiceInstructions": "Instrukcje te zostaną przesłane do systemu PayPal & RatePay i wyświetlane w wiadomościach e-mail dla klienta.",
+            "sandbox": "Włącz, jeśli chcesz przetestować integrację PayPal.",
+            "sendOrderNumber": "Jeśli ta opcja jest aktywna, numer zamówienia zostanie przesłany do systemu PayPal jako identyfikator faktury w momencie realizacji transakcji.",
+            "spbAlternativePaymentMethodsEnabled": "Alternatywne metody płatności są kredyt- i karty debetowe i więcej.",
+            "spbButtonLanguageIso": "Jeśli nie jest ustawiona, zostanie użyty język kanału sprzedaży.",
+            "submitCart": "Jeśli ta opcja jest aktywna, dane koszyka zostaną przesłane do systemu PayPal przy kasie."
+        },
+        "hintText": {
+            "landingPage": {
+                "GUEST_CHECKOUT": "Checkout gościa: Witryna PayPal wyświetla formularz informacji o płatności, klient nie musi się logować.",
+                "LOGIN": "Logowanie: Strona PayPal wyświetla ekran logowania jako stronę docelową.",
+                "NO_PREFERENCE": "Brak preferencji: PayPal decyduje, która strona jest wyświetlana, w zależności od poprzedniej interakcji klienta z systemem PayPal."
+            }
+        },
+        "label": {
+            "acdcForce3DS": "Wykonuj transakcje tylko z 3D Secure",
+            "brandName": "Nazwa własnej marki na stronie PayPal",
+            "clientId": "ID klienta",
+            "clientIdSandbox": "ID klienta piaskownicy",
+            "clientSecret": "Tajemnica klienta",
+            "clientSecretSandbox": "Tajemnica klienta piaskownicy",
+            "crossBorderBuyerCountry": "Lokalizacja",
+            "crossBorderMessagingEnabled": "Włącz transgraniczną lokalizację wiadomości Pay Later",
+            "ecsButtonColor": "Kolor przycisku",
+            "ecsButtonLanguageIso": "Przycisk locale",
+            "ecsButtonShape": "Kształt przycisku",
+            "ecsCartEnabled": "'PayPal Checkout' w koszyku",
+            "ecsDetailEnabled": "'PayPal Checkout' na stronie produktowej",
+            "ecsListingEnabled": "'PayPal Checkout' na widoku kategorii",
+            "ecsLoginEnabled": "'PayPal Checkout' na stronie logowania",
+            "ecsOffCanvasEnabled": "'PayPal Checkout' w koszyku off-canvas",
+            "ecsShowPayLater": "Wyświetl przycisk „Zapłać później” obok przycisku „PayPal Checkout”",
+            "ecsSubmitCart": "Prześlij koszyk",
+            "excludedProductIds": "Wykluczone produkty",
+            "excludedProductStreamIds": "Wykluczone dynamiczne grupy produktów",
+            "installmentBannerCartEnabled": "Baner „Zapłać później” na koszyku",
+            "installmentBannerDetailPageEnabled": "Baner „Zapłać później” na stronie szczegółów",
+            "installmentBannerFooterEnabled": "Baner „Zapłać później” na stopce",
+            "installmentBannerLoginPageEnabled": "Baner „Zapłać później” na stronie logowania",
+            "installmentBannerOffCanvasCartEnabled": "Baner „Zapłać później” na koszyku bez płótna",
+            "intent": "Nabycie płatności",
+            "landingPage": "Strona docelowa PayPal",
+            "merchantPayerId": "Identyfikator handlowca PayPal",
+            "merchantPayerIdSandbox": "Piaskownica identyfikator płatnika PayPal",
+            "orderNumberPrefix": "Przedrostek numeru zamówienia",
+            "orderNumberSuffix": "Sufiks numeru zamówienia",
+            "puiCustomerServiceInstructions": "Instrukcje obsługi klienta dotyczące płatności na fakturze",
+            "sandbox": "Włącz piaskownicę",
+            "sendOrderNumber": "Prześlij numer zamówienia",
+            "spbAlternativePaymentMethodsEnabled": "Włącz alternatywne metody płatności dla przycisków płatności inteligentnych.",
+            "spbButtonColor": "Kolor przycisku",
+            "spbButtonLanguageIso": "Przycisk locale",
+            "spbButtonShape": "Kształt przycisku",
+            "spbCheckoutEnabled": "Włącz przyciski inteligentnej płatności",
+            "spbShowPayLater": "Wyświetl przycisk „Zapłać później” obok przycisku PayPal",
+            "submitCart": "Prześlij koszyk",
+            "vaultingEnabledACDC": "Eanable Vaulting dla kart kredytowych i debetowych",
+            "vaultingEnabledVenmo": "Włącz Kaulting dla płatności Venmo",
+            "vaultingEnabledWallet": "Włącz Vaulting dla płatności PayPal"
+        }
+    },
+    "swag-paypal-settings": {
+        "acdc": {
+            "title": "Karta kredytowa lub debetowa"
+        },
+        "behavior": {
+            "title": "Zachowanie"
+        },
+        "credentialsLive": {
+            "test": "Testowanie",
+            "title": "Poświadczenia API na żywo"
+        },
+        "credentialsSandbox": {
+            "test": "Testowanie",
+            "title": "Dane uwierzytelniające API Sandbox"
+        },
+        "crossBorder": {
+            "buyerCountryAuto": "Automatyczne określenie",
+            "buyerCountryOverride": "Lokalizacja",
+            "info": "Wiadomości Pay Later to funkcja, która umożliwia wyświetlanie wiadomości Pay Later w języku klienta. Ta funkcja jest dostępna tylko w niektórych krajach. {0}",
+            "title": "Przesyłanie wiadomości transgranicznych Pay Later",
+            "warning": "Skontaktuj się z przedstawicielem PayPal, aby włączyć tę funkcję na swoim koncie."
+        },
+        "express": {
+            "alertMessage": "Podwójna akceptacja dla gości jest aktywowana w jednym z Kanałów Sprzedaży. Ta funkcja nie jest kompatybilna z przyciskami skrótów PayPal Express. Klienci, którzy zarejestrują się za pomocą przycisków skrótu Express Checkout, nie otrzymają e-maili weryfikacyjnych podwójnej zgody.",
+            "subtitle": "Express Checkout zwiększa współczynnik konwersji w Twoim sklepie i nie stanowią ryzyka finansowego dla Ciebie jako sprzedawcy. Zalecamy ich aktywację. ",
+            "title": "Skrót Express Checkout"
+        },
+        "header": "PayPal",
+        "installment": {
+            "subtitle": "Banery zwiększają współczynnik konwersji w Twoim sklepie i nie stanowią ryzyka finansowego dla Ciebie jako sprzedawcy. Zaleca się, aby były aktywowane.",
+            "title": "Baner „Zapłać później”"
+        },
+        "module": {
+            "description": "Ustawienia systemu PayPal",
+            "title": "PayPal"
+        },
+        "options": {
+            "buttonColor": {
+                "black": "Czarny",
+                "blue": "Niebieska",
+                "gold": "Złoto (zalecane)",
+                "silver": "Srebrna",
+                "white": "Biały"
+            },
+            "buttonShape": {
+                "pill": "Runda",
+                "rect": "Prostokątny",
+                "sharp": "Prostokątny z ostrymi narożnikami"
+            },
+            "intent": {
+                "AUTHORIZE": "Ręczne pobieranie płatności (intencja AUTORYZACJI)",
+                "CAPTURE": "Automatyczne pobieranie płatności (Intent CAPTURE)"
+            },
+            "landingPage": {
+                "GUEST_CHECKOUT": "Zamówienie dla gości",
+                "LOGIN": "Logowanie",
+                "NO_PREFERENCE": "Brak preferencji"
+            }
+        },
+        "pui": {
+            "title": "Płatność na fakturze"
+        },
+        "spb": {
+            "title": "Inteligentne przyciski płatności"
+        },
+        "tabs": {
+            "advanced": "Zaawansowane",
+            "general": "Ogólne",
+            "storefront": "Prezentacja sklepu internetowego"
+        },
+        "vaulting": {
+            "activeButtonLabel": "Aktywuj sklepienie",
+            "descriptionText": "Zakończenie konta PayPal umożliwi Ci obciążenie konta w przyszłości bez konieczności obecności klienta podczas transakcji lub ponownego uwierzytelnienia w systemie PayPal, gdy jest obecny podczas transakcji.",
+            "descriptionTitle": "Jednorazowa płatność Paypal",
+            "title": "Sklepienie"
+        },
+        "webhook": {
+            "buttonRefresh": "Odśwież webhook",
+            "fetchFailed": "Nie udało się pobrać statusu webhook",
+            "info": "Webhook służy do asynchronicznego aktualizowania stanu transakcji. Nieprawidłowo zarejestrowane webhooky, np. na innym lub niedostępnym publicznie serwerze, mogą skutkować niepotwierdzonymi transakcjami, niezależnie od tego, czy transakcja została przetworzona przez PayPal.",
+            "refreshFailed": "Nie udało się odświeżyć",
+            "status": {
+                "invalid": "Zarejestrowane, ale możliwe niedopasowanie domen",
+                "missing": "Nie zarejestrowany",
+                "unknown": "Ładowanie...",
+                "valid": "Zarejestrowany"
+            },
+            "title": "Hook internetowy"
+        }
+    },
+    "swag-paypal-settings-locale-select": {
+        "automatic": "Automatyczny (zalecany)",
+        "invalid": "Podane ustawienia regionalne są nieprawidłowe. Proszę wybrać jedną z listy."
+    },
+    "swag-paypal-settings-sales-channel-switch": {
+        "description": "Kliknij ten przycisk, aby włączyć system PayPal i wybrać go jako domyślny w wybranym kanale sprzedaży",
+        "label": "Ustaw system PayPal jako domyślny"
+    },
+    "swag-paypal-settings-shipping-carrier": {
+        "cardHelpText": "Informacje o śledzeniu zostaną wysłane do systemu PayPal",
+        "cardTitle": "Domyślny przewoźnik",
+        "commonCarrierBadge": "Powszechnie stosowane",
+        "description": "PayPal oferuje śledzenie zamówień przetwarzanych za pośrednictwem systemu PayPal. Aby z tego skorzystać, określ domyślnego przewoźnika, który może zostać nadpisany w zamówieniach. Lista wszystkich dostawców usług żeglugowych <a target=\"_blank\" href=\"https://developer.paypal.com/docs/tracking/reference/carriers/\">znajdziesz tutaj</a>",
+        "inputHelpText": "Wybierz „Inne”, aby wprowadzić niestandardową nazwę operatora.",
+        "inputHelpTextOther": "Jeśli Twój przewoźnik nie znajduje się na liście, wprowadź tutaj nazwę. Pozostaw puste, aby użyć nazwy metody wysyłki.",
+        "inputLabel": "Kod przewoźnika",
+        "inputLabelOther": "Nazwa przewoźnika",
+        "inputPlaceholder": "Wprowadź kod przewoźnika PayPal (np. DHL_GLOBAL_ECOMMERCE)...",
+        "inputPlaceholderOther": "Wprowadź nazwę operatora...",
+        "invalid": "Podany kod przewoźnika jest nieprawidłowy. Wybierz jedną z listy lub wybierz „Inne”."
+    }
+}

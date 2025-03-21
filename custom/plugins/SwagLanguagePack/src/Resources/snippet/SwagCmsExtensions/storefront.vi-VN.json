@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Không",
+                    "true": "Vâng"
+                },
+                "select": {
+                    "defaultPlaceholder": "Chọn tùy chọn..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Xem thêm chi tiết",
+            "liveRegionSlideAnnouncement": "Hiện đang xem slide cho sản phẩm %productName%"
+        }
+    }
+}

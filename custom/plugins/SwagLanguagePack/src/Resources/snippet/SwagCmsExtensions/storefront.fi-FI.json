@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Ei",
+                    "true": "Joo"
+                },
+                "select": {
+                    "defaultPlaceholder": "Valitse vaihtoehto..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Näytä lisätietoja",
+            "liveRegionSlideAnnouncement": "Katselemme nyt tuotteen %productName%diaa"
+        }
+    }
+}

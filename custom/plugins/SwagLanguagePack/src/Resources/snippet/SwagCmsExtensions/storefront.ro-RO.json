@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nu",
+                    "true": "da"
+                },
+                "select": {
+                    "defaultPlaceholder": "Selectaţi opţiunea..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Arată mai multe detalii",
+            "liveRegionSlideAnnouncement": "Acum vizualizăm diapozitiv pentru produsul %productName%"
+        }
+    }
+}

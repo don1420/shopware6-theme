@@ -1,0 +1,774 @@
+{
+    "sw-order-detail": {
+        "payPalCarrierDescription": "Αν θέλετε να αλλάξετε τον φορέα για αυτή την παραγγελία PayPal, <a target=\"_blank\" href=\"{orderLink}\">κάντε κλικ εδώ</a>",
+        "payPalCarrierHelpText": "Μπορείτε να ορίσετε και να αλλάξετε τον προεπιλεγμένο μεταφορέα αποστολής για το PayPal στις <a class=\"sw-internal-link sw-internal-link--inline\" href=\"#/sw/settings/shipping/index\">μεθόδους αποστολής<sw-icon name=\"regular-long-arrow-right\" small /></a>. Ωστόσο, αυτό δεν θα έχει καμία επίδραση στις παραγγελίες που έχουν ήδη πραγματοποιηθεί.",
+        "payPalCarrierLabel": "Προεπιλεγμένος μεταφορέας",
+        "payPalCarrierPlaceholder": "δεν έχει οριστεί"
+    },
+    "swag-paypal": {
+        "errors": {
+            "SWAG_PAYPAL_POS__EXISTING_POS_ACCOUNT": "Αυτός ο λογαριασμός Zettle έχει ήδη ρυθμιστεί σε άλλο κανάλι πωλήσεων",
+            "SWAG_PAYPAL__API_INVALID_CREDENTIALS": "Τα διαπιστευτήρια API δεν είναι έγκυρα",
+            "SWAG_PAYPAL__API_NOT_AVAILABLE": "Οι υπηρεσίες PayPal δεν είναι διαθέσιμες αυτήν τη στιγμή. Παρακαλώ δοκιμάστε ξανά αργότερα.",
+            "SWAG_PAYPAL__INVALID_API_CREDENTIALS": "Τα διαπιστευτήρια API δεν είναι έγκυρα",
+            "UNKNOWN": "Παρουσιάστηκε ένα άγνωστο σφάλμα"
+        },
+        "notifications": {
+            "credentials": {
+                "errorMessage": "Η ανάκτηση απέτυχε:<br>{message}",
+                "title": "Πιστοποιητικά PayPal"
+            },
+            "merchantInformation": {
+                "errorMessage": "Η ανάκτηση απέτυχε:<br>{message}",
+                "title": "Λογαριασμός PayPal"
+            },
+            "posError": {
+                "title": "Zettle POS"
+            },
+            "save": {
+                "errorMessage": "Αποτυχία αποθήκευσης:<br>{message}",
+                "title": "Ρυθμίσεις PayPal",
+                "webhookMessage": "Δεν ήταν δυνατή η αποθήκευση του webhook:<br>{message}"
+            },
+            "test": {
+                "errorMessage": "Η επικύρωση απέτυχε:<br>{message}",
+                "successMessage": "Τα διαπιστευτήρια είναι έγκυρα.",
+                "title": "Διαπιστευτήρια API PayPal"
+            },
+            "webhook": {
+                "errorMessage": "Αποτυχία ανανέωσης του webhook:<br>{message}",
+                "successMessage": "Το webhook έχει ανανεωθεί.",
+                "title": "Ηλεκτρονικό άγκιστρο PayPal"
+            }
+        }
+    },
+    "swag-paypal-disputes": {
+        "common": {
+            "dispute_amount": "Ποσό",
+            "dispute_id": "ID",
+            "dispute_life_cycle_stage": "Σκηνή",
+            "response_due_date": {
+                "buyer": "Ο αγοραστής",
+                "label": "Ημερομηνία λήξης απάντησης",
+                "seller": "Πωλητής"
+            },
+            "status": "Κατάσταση",
+            "update_time": "Χρόνος ενημέρωσης"
+        },
+        "detail": {
+            "copyButtonLabel": "Αντιγραφή μη επεξεργασμένων δεδομένων",
+            "externalLinkText": "Ανοικτή διαφωνία στο κέντρο επίλυσης PayPal",
+            "mainFieldsCardTitle": "Λεπτομέρειες",
+            "orderModuleLinkText": "Ανοιχτή παραγγελία",
+            "rawDataCardTitle": "Πρωτογενή δεδομένα",
+            "title": "Διαφωνία PayPal:",
+            "titleAddition": "(Τεχνικές λεπτομέρειες)"
+        },
+        "general": {
+            "descriptionTextModule": "Διαχειριστείτε τις διαφωνίες PayPal εδώ",
+            "mainMenuItemGeneral": "Διαφωνίες PayPal"
+        },
+        "list": {
+            "emptyState": {
+                "subline": "Αλλάξτε το φίλτρο για να εμφανίσετε όλες τις διαφορές.",
+                "title": "Δεν βρέθηκαν διαφορές"
+            },
+            "emptyStateNotAuthorized": {
+                "link": "Τρόποι πληρωμής",
+                "subline": "Μεταβείτε στο {link} για ρύθμιση PayPal.",
+                "title": "Δεν υπάρχει ρύθμιση λογαριασμού PayPal"
+            },
+            "errorTitle": "Σφάλμα κατά την εκτέλεση διαφορών από το PayPal",
+            "title": "Διαφορές",
+            "titleSidebarItemFilter": "Φίλτρο",
+            "titleSidebarItemRefresh": "Ανανέωση"
+        }
+    },
+    "swag-paypal-frw-credentials": {
+        "buttonGetCredentials": "Αποκτήστε διαπιστευτήρια API",
+        "buttonGetSandboxCredentials": "Αποκτήστε πιστοποιήσεις API sandbox",
+        "labelClientId": "Κωδικός Πελάτη",
+        "labelClientIdSandbox": "ID προγράμματος-πελάτη Sandbox",
+        "labelClientSecret": "Μυστικό πελάτη",
+        "labelClientSecretSandbox": "Μυστικό πελάτη Sandbox",
+        "labelMerchantPayerId": "ID εμπόρου PayPal",
+        "labelMerchantPayerIdSandbox": "Κωδικός εμπόρου PayPal Sandbox",
+        "labelSandbox": "Χρήση sandbox",
+        "labelSetDefault": "Ορισμός ως προκαθορισμένης μεθόδου πληρωμής",
+        "messageFetchedError": "Δοκιμάστε ξανά ή χρησιμοποιήστε τις ρυθμίσεις για προχωρημένους για να δώσετε τα διαπιστευτήριά σας.",
+        "messageInvalidCredentials": "Τα διαπιστευτήρια δεν είναι έγκυρα.",
+        "messageNoCredentials": "Δεν παρέχονται διαπιστευτήρια.",
+        "messageTestSuccess": "Τα διαπιστευτήρια είναι έγκυρα.",
+        "textFetchedSuccessful": "Τα διαπιστευτήρια έχουν παραχθεί.",
+        "textIntroPayPal": "Για να λειτουργήσει το PayPal, χρειάζεται μόνο να δώσετε τα διαπιστευτήριά σας API PayPal.",
+        "tooltipSandbox": "Ανάλογα με την ενεργοποίηση του sandbox, αποθηκεύονται ξεχωριστά διαπιστευτήρια.",
+        "tooltipSetDefault": "Το PayPal θα οριστεί ως προεπιλεγμένος τρόπος πληρωμής για όλα τα Κανάλια Πωλήσεων. Μπορείτε να ορίσετε μεμονωμένες προεπιλεγμένες μεθόδους πληρωμής ανά κανάλι πωλήσεων στην ενότητα ρυθμίσεων."
+    },
+    "swag-paypal-method": {
+        "appImageAlt": "PayPal",
+        "availabilityToolTip": {
+            "bancontactapmhandler": "Bancontact είναι διαθέσιμη για τις ακόλουθες χώρες: Βέλγιο",
+            "blikapmhandler": "BLIK είναι διαθέσιμη στις ακόλουθες χώρες: Πολωνία",
+            "boletobancarioapmhandler": "Το Boleto Bancário είναι διαθέσιμο για τις ακόλουθες χώρες: Βραζιλία",
+            "epsapmhandler": "Το eps είναι διαθέσιμο για τις παρακάτω χώρες: Αυστρία",
+            "idealapmhandler": "Το iDeal είναι διαθέσιμο στις ακόλουθες χώρες: Ολλανδία",
+            "multibancoapmhandler": "Η Multibanco είναι διαθέσιμη στις ακόλουθες χώρες: Πορτογαλία",
+            "mybankapmhandler": "Η υπηρεσία MyBank είναι διαθέσιμη στις παρακάτω χώρες: Ιταλία",
+            "oxxoapmhandler": "Το OXXO είναι διαθέσιμο στις ακόλουθες χώρες: Μεξικό",
+            "p24apmhandler": "Το Przelewy24 είναι διαθέσιμο στις ακόλουθες χώρες: Πολωνία",
+            "paylaterhandler": "Η υπηρεσία Pay Later είναι διαθέσιμη για τις ακόλουθες χώρες: Αυστραλία, Γαλλία, Γερμανία, Ιταλία, Ισπανία, Ηνωμένο Βασίλειο, Ηνωμένες Πολιτείες",
+            "puihandler": "Η πληρωμή με τιμολόγιο είναι διαθέσιμη για τις παρακάτω χώρες: Γερμανία",
+            "sepahandler": "Ο SEPA Lastschrift είναι διαθέσιμος για τις ακόλουθες χώρες: Γερμανία",
+            "trustlyapmhandler": "Το Trustly είναι διαθέσιμο για τις ακόλουθες χώρες: Εσθονία, Φινλανδία, Ολλανδία, Σουηδία",
+            "venmohandler": "Το Venmo είναι διαθέσιμο στις ακόλουθες χώρες: Ηνωμένες Πολιτείες Αμερικής"
+        },
+        "banner": "Με το PayPal Checkout, μπορείτε να προσφέρετε στους πελάτες σας πληρωμή με τιμολόγιο, πιστωτική κάρτα και άλλους τοπικούς τρόπους πληρωμής. Το PayPal Checkout σας υποστηρίζει με την τελευταία λέξη της τεχνολογίας και σας προσφέρει την υψηλότερη ευελιξία. Διατηρείτε τους υπάρχοντες τρόπους πληρωμής σας, και τα τέλη παραμένουν τα ίδια! Ενεργοποιήστε το PayPal Checkout και απενεργοποιήστε το PayPal PLUS για να αποφύγετε διπλές μεθόδους πληρωμής στο κατάστημά σας.",
+        "bannerLink": "Περισσότερες πληροφορίες",
+        "cardTitle": "PayPal Ολοκλήρωση",
+        "description": "Το PayPal Checkout είναι η νέα όλα-σε-ένα λύση που σας επιτρέπει να προσφέρετε ισχυρές δυνατότητες επεξεργασίας πληρωμών flexibile στις αγορές και σε άλλες εμπορικές πλατφόρμες.",
+        "domainAssociation": {
+            "link": "Ανοίξτε τις ρυθμίσεις τομέων",
+            "title": "Βεβαιωθείτε ότι ο τομέας σας έχει ρυθμιστεί σωστά για να λειτουργεί σωστά το Apple Pay. Το αρχείο συσχέτισης τομέα είναι ήδη παρόν."
+        },
+        "editDetail": "Επεξεργασία λεπτομερειών",
+        "header": "Περισσότερες μέθοδοι πληρωμής με μία λύση από το PayPal",
+        "merchantStatusText": {
+            "connected": "Συνδεδεμένο",
+            "emailUnconfirmed": "Ηλεκτρονικό ταχυδρομείο μη επιβεβαιωμένο",
+            "notConnected": "Δεν είναι συνδεδεμένο",
+            "onboardingNeeded": "Απαιτείται εκ νέου ενσωμάτωση",
+            "paymentsUnreceivable": "Πληρωμές που δεν εισπράττονται"
+        },
+        "onboardingStatusText": {
+            "active": "Εγκεκριμένος",
+            "inactive": "Απαιτείται προσθήκη επιβιβάσεως",
+            "ineligible": "Μη επιλέξιμη",
+            "limited": "Περιορισμένη",
+            "mybank": "Περιορισμένη",
+            "pending": "Εκκρεμεί εξουσιοδότηση",
+            "test": "Τρόπος δοκιμής"
+        },
+        "onboardingStatusTooltip": {
+            "ineligible": "PayPal μας ενημέρωσε, ότι αυτή η μέθοδος πληρωμής αυτή τη στιγμή δεν είναι επιλέξιμες για το λογαριασμό σας.",
+            "limited": "PayPal μας ενημέρωσε, ότι αυτή η μέθοδος πληρωμής έχει ορισμένους περιορισμούς για το λογαριασμό σας.",
+            "mybank": "Οι έμποροι που ενεργοποιούν το MyBank μετά τον Φεβρουάριο του 2023 θα χρειαστούν χειροκίνητη έγκριση από το PayPal. Επικοινωνήστε με την υποστήριξη του PayPal για περισσότερες πληροφορίες σχετικά με αυτό."
+        },
+        "paymentMethodText": "Τρόποι πληρωμής",
+        "ratePayLabel": "από Ρατέπαϊ",
+        "sandbox": {
+            "helpText": "Ενεργοποιήστε το, εάν θέλετε να ελέγξετε την ενσωμάτωση PayPal.",
+            "label": "Σκουμπότ",
+            "onlyLiveTooltip": "Είστε συνδεδεμένοι μόνο ένα ζωντανό λογαριασμό PayPal μέχρι στιγμής.",
+            "onlySandboxTooltip": "Είστε συνδεδεμένοι μόνο ένα λογαριασμό sandbox PayPal μέχρι στιγμής."
+        },
+        "settingsLink": "Ρυθμίσεις",
+        "switch": {
+            "active": "Η μέθοδος πληρωμής \"{name}\" είναι πλέον ενεργή.",
+            "inactive": "Η μέθοδος πληρωμής \"{name}\" είναι πλέον ανενεργή.",
+            "label": "Ενεργός"
+        }
+    },
+    "swag-paypal-onboarding-button": {
+        "live": {
+            "changeTitle": "Σύνδεση διαφορετικού λογαριασμού",
+            "onboardingTitle": "Ξεκινήστε την ενσωμάτωση στο PayPal",
+            "restartOnboardingTitle": "Επανεκκινήστε την ενσωμάτωση στο PayPal",
+            "title": "Σύνδεση λογαριασμού PayPal"
+        },
+        "sandbox": {
+            "changeTitle": "Σύνδεση διαφορετικού λογαριασμού sandbox",
+            "onboardingTitle": "Ξεκινήστε την ενσωμάτωση στο sandbox του PayPal",
+            "title": "Σύνδεση λογαριασμού sandbox"
+        }
+    },
+    "swag-paypal-payment": {
+        "buttons": {
+            "label": {
+                "capture": "Σύλληψη",
+                "refund": "Δημιουργία νέας επιστροφής χρημάτων",
+                "void": "Ακύρωση άδειας"
+            }
+        },
+        "captureAction": {
+            "button": {
+                "text": "Καταγραφή πληρωμής"
+            },
+            "captureInvoiceNumber": {
+                "label": "Αριθμός τιμολογίου",
+                "placeholder": "Εισάγετε έναν αριθμό τιμολογίου"
+            },
+            "captureNoteToPayer": {
+                "label": "Σημείωση προς τον πληρωτή",
+                "placeholder": "Εισάγετε μια σημείωση στον πληρωτή"
+            },
+            "currentAmount": "Ποσό",
+            "isFinal": "Αυτή είναι η τελική σύλληψη",
+            "isFinalHint": "Συμβουλή: Σημειώνεται ως τελική σύλληψη, αν και δεν πρέπει να συλληφθεί ολόκληρο το ποσό.",
+            "maxAmount": "Ανώτατο ποσό",
+            "successMessage": "Η σύλληψή σου ήταν επιτυχής."
+        },
+        "errorPage": {
+            "canceledPaymentContent": "Παρουσιάστηκε σφάλμα κατά την ανάκτηση των στοιχείων πληρωμής από το PayPal. Αν δείτε αυτό το μήνυμα, ήταν πιθανώς μια πληρωμή που ακυρώθηκε από τον πελάτη. Οι ακυρωμένες πληρωμές θα διαγραφούν από το PayPal μετά από λίγο και στη συνέχεια δεν είναι πλέον διαθέσιμες.",
+            "other": "Παρουσιάστηκε σφάλμα κατά την ανάκτηση των στοιχείων πληρωμής από το PayPal.",
+            "title": "Τα στοιχεία πληρωμής δεν είναι διαθέσιμα"
+        },
+        "general": {
+            "title": "Παραγγελίες"
+        },
+        "modal": {
+            "title": {
+                "capture": "Σύλληψη",
+                "refund": "Νέα επιστροφή χρημάτων",
+                "void": "Ακύρωση άδειας"
+            }
+        },
+        "paymentDetails": {
+            "cardTitle": "Πληρωμή",
+            "customer": {
+                "heading": "Πελάτης",
+                "payerId": "Αναγνωριστικό πληρωτή:"
+            },
+            "error": {
+                "title": "Σφάλμα κατά την εκτέλεση των στοιχείων πληρωμής από το PayPal"
+            },
+            "invoice": {
+                "discount": "Έκπτωση:",
+                "handling": "Χρέωση διαχείρισης:",
+                "heading": "Ποσό τιμολογίου",
+                "insurance": "Ασφάλιση:",
+                "shipping": "Αποστολές:",
+                "shipping_discount": "Έκπτωση αποστολής:",
+                "subTotal": "Μερικό σύνολο:",
+                "totalAmount": "Συνολικό ποσό:"
+            },
+            "payment": {
+                "cartId": "Κωδικός Καλαθιού:",
+                "createTime": "Δημιουργία χρόνου:",
+                "heading": "Λεπτομέρειες πληρωμής",
+                "intent": "Πρόθεση:",
+                "paymentId": "Κωδικός Πληρωμής:",
+                "state": "Κατάσταση:",
+                "updateTime": "Χρόνος ενημέρωσης:"
+            }
+        },
+        "puiDetails": {
+            "accountHolder": "Κάτοχος λογαριασμού:",
+            "amount": "Ποσό:",
+            "bank": "Τράπεζα:",
+            "bic": "BIC:",
+            "buttonCopy": "Αντιγραφή",
+            "cardTitle": "Στοιχεία πληρωμής τιμολογίου",
+            "iban": "IBAN:",
+            "reference": "Αναφορά:"
+        },
+        "refundAction": {
+            "confirmButton": {
+                "text": "Εκτέλεση"
+            },
+            "invoiceSelect": {
+                "label": "Επιλογή σύλληψης"
+            },
+            "refundAmount": {
+                "helpText": "Ένα ποσό «0» θα προκαλέσει την επιστροφή της πλήρους πληρωμής",
+                "label": "Ποσό"
+            },
+            "refundDescription": {
+                "label": "Περιγραφή",
+                "placeholder": "Εισάγετε μια περιγραφή"
+            },
+            "refundInvoiceNumber": {
+                "label": "Αριθμός τιμολογίου",
+                "placeholder": "Εισάγετε έναν αριθμό τιμολογίου"
+            },
+            "refundNoteToPayer": {
+                "label": "Σημείωση προς τον πληρωτή",
+                "placeholder": "Εισάγετε μια σημείωση στον πληρωτή"
+            },
+            "refundReason": {
+                "label": "Λόγος",
+                "placeholder": "Εισάγετε έναν λόγο"
+            },
+            "successMessage": "Η επιστροφή σας ήταν επιτυχής."
+        },
+        "tabs": {
+            "order": "PayPal",
+            "overview": "Επισκόπηση"
+        },
+        "transactionHistory": {
+            "cardTitle": "Ιστορικό Πληρωμών",
+            "states": {
+                "authorization": "Εξουσιοδότηση",
+                "capture": "Σύλληψη",
+                "order": "Σειρά",
+                "refund": "Επιστροφή",
+                "sale": "Πώληση"
+            },
+            "types": {
+                "amount": "Ποσό",
+                "createTime": "Δημιουργήθηκε",
+                "paymentMode": "Τρόπος πληρωμής",
+                "state": "Κράτος",
+                "trackingId": "Ταυτότητα παρακολούθησης",
+                "transactionFee": "Χρέωση συναλλαγής",
+                "type": "Τύπος",
+                "updateTime": "Ενημερώθηκε"
+            }
+        },
+        "voidAction": {
+            "confirm": {
+                "button": {
+                    "confirm": "Ακύρωση άδειας"
+                },
+                "message": "Θέλετε πραγματικά να ακυρώσετε αυτή την πληρωμή;"
+            },
+            "successMessage": "Η πληρωμή ακυρώθηκε με επιτυχία."
+        }
+    },
+    "swag-paypal-pos": {
+        "account": {
+            "connectedStatus": "Συνδεδεμένο",
+            "editConnection": "Επεξεργασία σύνδεσης",
+            "errorEmail": "Το κλειδί API δεν ήταν δυνατό να επαληθευτεί",
+            "errorName": "Σφάλμα κατά τον έλεγχο ταυτότητας",
+            "lastUpdated": "Τελευταία ενημέρωση",
+            "loadingEmail": "pos@example.com",
+            "loadingName": "Αυτήν τη στιγμή φόρτωση...",
+            "manageAccount": "Διαχείριση λογαριασμού",
+            "noConnectionStatus": "Καμία σύνδεση"
+        },
+        "authentication": {
+            "apiKeyDescription": "Τα πλήκτρα API λειτουργούν όπως οι κωδικοί πρόσβασης. Το Shopware θα χρησιμοποιήσει το κλειδί Zettle API για να δημιουργήσει μια ασφαλή σύνδεση με το λογαριασμό σας Zettle.",
+            "buttonGenerateKey": "Δημιουργία κλειδιού API",
+            "labelApiKey": "Πλήκτρο API",
+            "messageDuplicateError": "Αυτός ο λογαριασμός Zettle έχει ήδη ρυθμιστεί σε άλλο κανάλι πωλήσεων",
+            "messageTestError": "Δεν ήταν δυνατή η επικύρωση των διαπιστευτηρίων",
+            "placeholderApiKey": "Εισάγετε το κλειδί API..."
+        },
+        "detail": {
+            "cleanLog": "Καθαρισμός αρχείου καταγραφής",
+            "disclaimer": {
+                "headline": "Το Zettle είναι μια υπηρεσία PayPal",
+                "linkTarget": "https://www.paypal.com/en/webapps/mpp/merchant",
+                "linkText": "Αποκτήστε PayPal για το κατάστημά σας",
+                "subheadline": "Αυξήστε τις πωλήσεις μέσω της ισχύος του PayPal. Ξεκίνα τζάμπα."
+            },
+            "logs": {
+                "columnLastSync": "Λεπτομέρειες",
+                "noEntry": "Δεν έχει συγχρονιστεί ακόμα",
+                "states": {
+                    "aborted": "Ματαιώθηκε",
+                    "failed": "Απέτυχε",
+                    "success": "Ενημερώθηκε"
+                }
+            },
+            "overview": {
+                "buttonSync": "Συγχρονισμός τώρα",
+                "buttonSyncAbort": "Ματαίωση συγχρονισμού",
+                "buttonSyncImages": "Ανεβάστε εικόνες",
+                "buttonSyncInventory": "Συγχρονισμός αποθέματος",
+                "buttonSyncProducts": "Συγχρονισμός λεπτομερειών προϊόντος",
+                "continueSetup": {
+                    "cardTitle": "Εγκατάσταση",
+                    "content": {
+                        "firstLine": "Οι λογαριασμοί Zettle και Shopware είναι τώρα συνδεδεμένοι! Τώρα μπορείτε να ρυθμίσετε το συγχρονισμό του προϊόντος.",
+                        "headline": "Ρύθμιση συγχρονισμού προϊόντος",
+                        "secondLine": "Μόλις ενεργοποιηθεί, το Zettle θα διατηρείται αυτόματα σε συγχρονισμό με τα προϊόντα Shopware που διαθέτετε. Οι πωλήσεις που πραγματοποιούνται μέσω της Zettle συγχρονίζονται επίσης με το Shopware και μπορείτε να χρησιμοποιείτε τη Διοίκηση για να ενημερώνεστε για τις πωλήσεις των Zettle και Shopware."
+                    }
+                },
+                "status": {
+                    "disabled": "Ο συγχρονισμός δεν είναι ενεργοποιημένος, επειδή το κανάλι πωλήσεων είναι απενεργοποιημένο.",
+                    "lastSynced": "Τελευταίος συγχρονισμός",
+                    "lastSyncedComplete": "Τελευταίος πλήρης συγχρονισμός",
+                    "message": {
+                        "aborted": "Ο τελευταίος συγχρονισμός ματαιώθηκε από τον χρήστη",
+                        "error": "Ο τελευταίος συγχρονισμός ολοκληρώθηκε με σφάλματα",
+                        "noRunYet": "Δεν βρέθηκε πρόσφατη εκτέλεση",
+                        "success": "Επιτυχής συγχρονισμός",
+                        "syncing": "Συγχρονισμός σε εξέλιξη",
+                        "warning": "Ο τελευταίος συγχρονισμός ολοκληρώθηκε με προειδοποιήσεις"
+                    },
+                    "syncingDetail": "Αυτό μπορεί να πάρει μερικά λεπτά. Αυτή η διαδικασία εκτελείται στο παρασκήνιο, εν τω μεταξύ, μπορείτε να χρησιμοποιήσετε το κατάστημά σας ως συνήθως.",
+                    "task": {
+                        "complete": "ολοκληρωμένο",
+                        "image": "εικόνες",
+                        "inventory": "κατάλογος",
+                        "product": "παράγωγα"
+                    }
+                },
+                "syncErrorTitle": "Σφάλμα συγχρονισμού",
+                "titleSync": "Συγχρονισμός"
+            },
+            "runs": {
+                "actions": {
+                    "showDetails": "Εμφάνιση λεπτομερειών"
+                },
+                "cloneVisibilityTask": "Ορατότητα προϊόντος",
+                "columns": {
+                    "date": "Ημερομηνία",
+                    "state": "Κράτος",
+                    "task": "Τύπος"
+                },
+                "completeTask": "Ολοκλήρωση",
+                "emptyState": {
+                    "message": "Συγχρονισμός τώρα για να δημιουργήσετε αρχεία καταγραφής.",
+                    "title": "Δεν έχουν ολοκληρωθεί συγχρονισμοί"
+                },
+                "imageTask": "Εικόνα",
+                "inventoryTask": "Απογραφή",
+                "productTask": "Προϊόν",
+                "states": {
+                    "aborted": "Ματαίωση από το χρήστη",
+                    "failed": "Απέτυχε",
+                    "successful": "Ολοκληρώθηκε",
+                    "withWarnings": "Ολοκληρώθηκε με προειδοποιήσεις"
+                },
+                "title": "Ιστορικό συγχρονισμού",
+                "toolbarText": "Το «Εκκαθάριση αρχείων καταγραφής» θα διαγράψει όλα τα αρχεία καταγραφής. Τα αρχεία καταγραφής παλαιότερων των 30 ημερών θα καταργηθούν αυτόματα."
+            },
+            "settings": {
+                "activeHelpText": "Αν είναι ενεργός, ο συγχρονισμός του Zettle θα γίνει αυτόματα στο παρασκήνιο.",
+                "domain": "Το κατάστημά σας",
+                "domainHelpText": "Η Zettle θα χρησιμοποιήσει αυτόν τον τομέα για να κατεβάσει μέσα που σχετίζονται με τα συγχρονισμένα προϊόντα σας. Η Zettle θα δέχεται μόνο ασφαλείς διευθύνσεις URL (https).",
+                "optionsTitle": "Επιλογές",
+                "productStream": "Δυναμική ομάδα προϊόντων",
+                "replace": "Αντικατάσταση υπαρχόντων προϊόντων στο Zettle",
+                "reset": {
+                    "buttonTitle": "Επαναφορά συγχρονισμού",
+                    "descriptionText": "Εάν αντιμετωπίζετε προβλήματα, μπορείτε να ανεβάσετε ξανά όλα τα προϊόντα και τις εικόνες.",
+                    "modalButtonConfirm": "Επαναφορά συγχρονισμού",
+                    "modalConfirmText": "Αυτό θα επαναφέρει το ιστορικό συγχρονισμού για το κανάλι πωλήσεων",
+                    "modalTextInfo": "Όλα τα στοιχεία θα επανατοποθετηθούν στον επόμενο συγχρονισμό. Αυτό μπορεί να πάρει λίγο χρόνο. Δεν θα χάσετε δεδομένα στο Shopware, ορισμένα δεδομένα μπορεί να αντικατασταθούν στο Zettle.",
+                    "modalTitle": "Επαναφορά ιστορικού συγχρονισμού"
+                },
+                "saveAlert": "Οι αποθηκευμένες αλλαγές είναι διαθέσιμες μετά τον τερματισμό του συγχρονισμού που εκτελείται αυτήν τη στιγμή μεταξύ του Shopware και του Zettle.",
+                "syncPrices": "Συγχρονισμός τιμών",
+                "titleCredentials": "Διαπιστευτήρια",
+                "titleGeneralSettings": "Γενικές ρυθμίσεις",
+                "titlePrices": "Τιμές",
+                "titleSync": "Συγχρονισμός"
+            },
+            "syncedProducts": {
+                "actions": {
+                    "productDetails": "Λεπτομέρειες προϊόντος"
+                },
+                "columns": {
+                    "date": "Ημερομηνία",
+                    "name": "Ονομασία",
+                    "state": "Κατάσταση"
+                },
+                "emptyState": {
+                    "message": "Δεν υπάρχουν προϊόντα στο κανάλι πωλήσεων ή στη δυναμική ομάδα προϊόντων.",
+                    "title": "Δεν επιλέχθηκαν προϊόντα"
+                },
+                "notSyncedYet": "Δεν έχει συγχρονιστεί ακόμα",
+                "title": "Συγχρονισμένα Προϊόντα"
+            }
+        },
+        "general": {
+            "moduleTitle": "Zettle από PayPal",
+            "salesChannelDetailDescription": {
+                "manufacturer": "Zettle από PayPal",
+                "title": "Αναπτύξτε την επιχείρησή σας με Shopware και Zettle μέσω PayPal"
+            }
+        },
+        "gettingStarted": {
+            "appHeadline": "Κατεβάστε την εφαρμογή Zettle Go",
+            "appImageAlt": "Εφαρμογή Zettle",
+            "appText": "Διατίθεται για tablet και τηλέφωνα iOS και Android.<br>Συνδέστε τον λογαριασμό Zettle και τον αναγνώστη καρτών σας για να αρχίσετε να πραγματοποιείτε πωλήσεις.",
+            "cardTitle": "Ξεκινήστε με το Zettle μέσω PayPal",
+            "readerHeadline": "Συνδεθείτε στη Zettle για να παραγγείλετε τον αναγνώστη καρτών Zettle",
+            "readerImageAlt": "Συσκευή ανάγνωσης καρτών Zettle",
+            "readerLinkTarget": "https://shop.zettle.com",
+            "readerLinkText": "shop.zettle.com",
+            "readerText": "Μάθετε περισσότερα για τον αναγνώστη καρτών και παραγγείλετε ένα εδώ:"
+        },
+        "header": "Κανάλι πωλήσεων Zettle",
+        "messageCloneError": "Δεν ήταν δυνατή η μεταφορά της ορατότητας του προϊόντος από άλλο κανάλι πωλήσεων.",
+        "messageWebhookRegisterError": "Το άγκιστρο δεν ήταν δυνατό να καταχωρηθεί στο Zettle",
+        "tabTitle": {
+            "help": "Βοήθεια",
+            "overview": "Επισκόπηση",
+            "runs": "κούτσουρα",
+            "settings": "Ρυθμίσεις",
+            "syncedProducts": "Συγχρονισμένα Προϊόντα"
+        },
+        "wizard": {
+            "connection": {
+                "buttonCreateAccount": "Δημιουργία λογαριασμού Zettle",
+                "buttonCreateAccountLink": "https://www.zettle.com/gb/integrations/e-commerce/shopware?utm_source=local_partnership&utm_medium=ecommerce&utm_campaign=shopware",
+                "headerConnect": "Συνδέστε τον Zettle λογαριασμό σας",
+                "headerNewCustomer": "Καινούργιος για τον Ζέτλ;",
+                "modalTitle": "Ρύθμιση λογαριασμού"
+            },
+            "connectionDisconnect": {
+                "disconnectButton": "Αποσύνδεση λογαριασμού",
+                "disconnectErrorMessage": "Παρουσιάστηκε σφάλμα κατά την αποσύνδεση.",
+                "headline": "Πρόκειται να αποσυνδέσετε τον Zettle",
+                "info": "Τα προϊόντα δεν θα ενημερώνονται και συγχρονίζονται πλέον με τον εμφανιζόμενο λογαριασμό Zettle κατά την αποσύνδεση του λογαριασμού σας.",
+                "modalTitle": "Αποσύνδεση λογαριασμού Zettle"
+            },
+            "connectionSuccess": {
+                "disclaimer": "Οποιεσδήποτε αλλαγές κάνετε στα προϊόντα Shopware σας θα ενημερώνονται αυτόματα στον συνδεδεμένο λογαριασμό Zettle.",
+                "disconnectButton": "Αποσύνδεση",
+                "fakeFirstName": "Επί του παρόντος",
+                "fakeLastName": "φόρτωση...",
+                "fakeMail": "pos@example.com",
+                "headline": "Οι λογαριασμοί Zettle και Shopware είναι τώρα συνδεδεμένοι!",
+                "info": "Ακολουθήστε τα επόμενα βήματα για να ολοκληρώσετε τη ρύθμιση του συγχρονισμού του προϊόντος.",
+                "modalTitle": "Ιδρύθηκε η σύνδεση"
+            },
+            "customization": {
+                "labelDomain": "Το κατάστημά σας",
+                "modalTitle": "Λεπτομέρειες καναλιού πωλήσεων",
+                "placeholderDomain": "www.my-store.shopware.com",
+                "salesChannelLabel": "Όνομα καναλιού πωλήσεων",
+                "subtitle": "Η Zettle θα χρησιμοποιήσει αυτόν τον τομέα για να κατεβάσει μέσα που σχετίζονται με τα συγχρονισμένα προϊόντα σας."
+            },
+            "finish": {
+                "firstParagraph": "Ο λογαριασμός σας στη Zettle είναι τώρα συνδεδεμένος με το κανάλι πωλήσεων και τα προϊόντα σας θα μεταφερθούν στη Zettle. Στο μέλλον, όταν κάνετε μια πώληση, θα ενημερώσουμε το απόθεμά σας στο Zettle και Shopware.",
+                "header": "Ολοκληρώθηκε η εγκατάσταση συγχρονισμού προϊόντος!",
+                "modalTitle": "Φινίρισμα",
+                "secondParagraph": "Αν θέλετε να ενημερώσετε τα προϊόντα σας, σας συνιστούμε να το κάνετε αυτό στο Shopware και θα συγχρονιστούν αυτόματα με την εφαρμογή Zettle."
+            },
+            "productSelection": {
+                "info": "Για να ξεκινήσετε πιο γρήγορα, έχετε τώρα την επιλογή να εκχωρήσετε προϊόντα από ένα υπάρχον κανάλι πωλήσεων στο νέο σας. Στη συνέχεια, όλα τα εκχωρημένα προϊόντα θα είναι διαθέσιμα για συγχρονισμό στο Zettle POS. Δεν χρειάζεται χειρωνακτική εργασία.",
+                "labelSelect": "Κανάλι Πωλήσεων",
+                "labelToggle": "Μεταφορά επιλογής προϊόντος",
+                "modalTitle": "Μεταφορά προϊόντων από το υπάρχον κανάλι πωλήσεων"
+            },
+            "salesChannelPrototypeName": "Zettle POS",
+            "stepItemTitle": {
+                "connection": "Ρύθμιση λογαριασμού",
+                "connectionSuccess": "Σύνδεση",
+                "customization": "Προσαρμογή",
+                "finish": "Φινίρισμα",
+                "productSelection": "Επιλογή προϊόντος",
+                "syncLibrary": "Συγχρονισμός προϊόντος",
+                "syncPrices": "Συγχρονισμός τιμών"
+            },
+            "syncLibrary": {
+                "description": "Όλα τα προϊόντα συγχρονίζονται από το νέο κανάλι πωλήσεων στο Shopware. Πώς θα σου φαινόταν να στήσεις τη βιβλιοθήκη Zettle;",
+                "disclaimer": "Μπορείτε να αλλάξετε αυτές τις ρυθμίσεις αργότερα οποιαδήποτε στιγμή.",
+                "header": "Βρήκαμε {shopwareProducts} και {posProducts}",
+                "modalTitle": "Ρύθμιση συγχρονισμού προϊόντος",
+                "optionReplaceNotDescription": "Τα προϊόντα και οι ποσότητες αποθεμάτων σας θα προστεθούν στην υπάρχουσα βιβλιοθήκη Zettle.",
+                "optionReplaceNotLabel": "Προσθήκη προϊόντων Shopware",
+                "optionReplaceOneTimeDescription": "Αντικαταστήστε την υπάρχουσα βιβλιοθήκη Zettle με προϊόντα και ποσότητες αποθεμάτων από το Shopware μία φορά.",
+                "optionReplaceOneTimeLabel": "Αντικατάσταση βιβλιοθήκης Zettle",
+                "optionReplacePermanentlyDescription": "Μόνο τα προϊόντα Shopware και οι ποσότητες των αποθεμάτων σας θα υπάρχουν στη βιβλιοθήκη Zettle.",
+                "optionReplacePermanentlyLabel": "Χρησιμοποιείτε μόνο προϊόντα Shopware",
+                "posProducts": "Χωρίς προϊόντα Zettle | ένα προϊόν Zettle | {n} προϊόντα Zettle",
+                "shopwareProducts": "Δεν υπάρχουν είδη καταστημάτων | ένα προϊόν για τα σκεύη | {n} Προϊόντα για τα πιάτα"
+            },
+            "syncPrices": {
+                "description": "Οι τιμές των προϊόντων σας θα περιλαμβάνουν ΦΠΑ όταν συγχρονιστούν με το Zettle.",
+                "disclaimer": "Μπορείτε να επεξεργαστείτε τον ΦΠΑ σας χειροκίνητα στη βιβλιοθήκη προϊόντων Zettle.",
+                "header": "Πώς θα θέλατε να συγχρονίσετε τις τιμές των προϊόντων με τη Zettle;",
+                "modalTitle": "Ρύθμιση συγχρονισμού προϊόντος",
+                "optionFalseDescription": "Οι τιμές των προϊόντων δεν θα μεταφερθούν κατά το συγχρονισμό. Μπορείτε να τα ορίσετε στη βιβλιοθήκη προϊόντων Zettle.",
+                "optionFalseLabel": "Να μην συγχρονίζονται οι τιμές",
+                "optionTrueDescription": "Οι τιμές που συγχρονίζονται με τη Zettle περιλαμβάνουν ΦΠΑ.",
+                "optionTrueLabel": "Συγχρονισμός τιμών με ΦΠΑ"
+            }
+        }
+    },
+    "swag-paypal-setting": {
+        "helpText": {
+            "acdcForce3DS": "Η συναλλαγή δεν θα γίνει αποδεκτή, εάν το 3D Secure δεν είναι διαθέσιμο.",
+            "brandName": "Αυτό το κείμενο θα εμφανίζεται ως το εμπορικό σήμα στη σελίδα πληρωμής PayPal.",
+            "clientId": "Το αναγνωριστικό προγράμματος-πελάτη REST API χρησιμοποιείται για τον έλεγχο ταυτότητας αυτού του πρόσθετου με το API PayPal.",
+            "clientIdSandbox": "Το αναγνωριστικό προγράμματος-πελάτη REST API χρησιμοποιείται κατά τη δοκιμή για τον έλεγχο ταυτότητας αυτού του πρόσθετου με το API PayPal.",
+            "clientSecret": "Το μυστικό του προγράμματος-πελάτη REST API χρησιμοποιείται για τον έλεγχο ταυτότητας αυτού του πρόσθετου με το API PayPal.",
+            "clientSecretSandbox": "Το μυστικό του προγράμματος-πελάτη REST API χρησιμοποιείται κατά τη δοκιμή για τον έλεγχο ταυτότητας αυτού του plugin με το PayPal API.",
+            "ecsButtonLanguageIso": "Αν δεν οριστεί, θα χρησιμοποιηθεί η γλώσσα του καναλιού πωλήσεων.",
+            "ecsCartEnabled": "Αν αυτή η επιλογή είναι ενεργή, το κουμπί Express Checkout θα εμφανιστεί στο καλάθι.",
+            "ecsDetailEnabled": "Αν αυτή η επιλογή είναι ενεργή, το κουμπί Express Checkout θα εμφανίζεται σε κάθε σελίδα λεπτομερειών προϊόντος.",
+            "ecsListingEnabled": "Αν αυτή η επιλογή είναι ενεργή, το κουμπί Εξπρές checkout θα εμφανίζεται στις σελίδες λίστας.",
+            "ecsLoginEnabled": "Αν αυτή η επιλογή είναι ενεργή, το κουμπί Express Checkout θα εμφανιστεί στη σελίδα σύνδεσης και εγγραφής.",
+            "ecsOffCanvasEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το κουμπί Express Checkout θα εμφανίζεται στο καλάθι εκτός καμβά.",
+            "ecsShowPayLater": "Το κουμπί «Πληρωμή αργότερα» θα εμφανίζεται στις ίδιες σελίδες και στην ίδια σχεδίαση με το κουμπί «PayPal Checkout».",
+            "ecsSubmitCart": "Εάν αυτή η επιλογή είναι ενεργή, το καλάθι θα υποβληθεί στο PayPal για παραγγελίες Express.",
+            "excludedProductIds": "Τα προϊόντα που επιλέγονται εδώ δεν μπορούν να αγοραστούν μέσω PayPal.",
+            "excludedProductStreamIds": "Τα προϊόντα που περιλαμβάνονται στις δυναμικές ομάδες προϊόντων που επιλέγονται εδώ δεν μπορούν να αγοραστούν μέσω PayPal.",
+            "installmentBannerCartEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το banner «Πληρωμή αργότερα» θα εμφανιστεί στο καλάθι.",
+            "installmentBannerDetailPageEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το banner «Πληρωμή αργότερα» θα εμφανίζεται σε κάθε σελίδα λεπτομερειών προϊόντος.",
+            "installmentBannerFooterEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το banner «Πληρωμή αργότερα» θα εμφανιστεί στο υποσέλιδο.",
+            "installmentBannerLoginPageEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το banner «Πληρωμή αργότερα» θα εμφανιστεί στη σελίδα σύνδεσης και εγγραφής.",
+            "installmentBannerOffCanvasCartEnabled": "Εάν αυτή η επιλογή είναι ενεργή, το banner «Πληρωμή αργότερα» θα εμφανίζεται στο καλάθι εκτός καμβά.",
+            "merchantPayerId": "Το Αναγνωριστικό προμηθευτή PayPal που έχει εκχωρηθεί στον λογαριασμό σας PayPal (ανατρέξτε στην ενότητα «Επιχειρηματικές πληροφορίες» στις ρυθμίσεις του λογαριασμού",
+            "merchantPayerIdSandbox": "Το Αναγνωριστικό εμπόρου PayPal που έχει εκχωρηθεί στον λογαριασμό σας PayPal sandbox (βλ. Επιχειρηματικές πληροφορίες στις ρυθμίσεις λογαριασμού PayPal",
+            "orderNumberPrefix": "Αυτό το κείμενο τοποθετείται πριν από τον αρχικό αριθμό παραγγελίας (π.χ. myshop_SW20001). Αυτό βοηθά στην αναγνώριση του καταστήματος στο οποίο έγινε η πληρωμή. Μπορείτε να το βρείτε ως αναγνωριστικό τιμολογίου στον πίνακα εργαλείων του PayPal.",
+            "orderNumberSuffix": "Αυτό το κείμενο τοποθετείται μετά τον αρχικό αριθμό παραγγελίας (π.χ. SW20001_MyShop). Αυτό βοηθά στην αναγνώριση του καταστήματος στο οποίο έγινε η πληρωμή. Μπορείτε να το βρείτε ως αναγνωριστικό τιμολογίου στον πίνακα εργαλείων του PayPal.",
+            "puiCustomerServiceInstructions": "Αυτές οι οδηγίες θα υποβληθούν στο PayPal & RatePay και θα εμφανίζονται στα μηνύματα ηλεκτρονικού ταχυδρομείου για τον πελάτη.",
+            "sandbox": "Ενεργοποιήστε το, εάν θέλετε να ελέγξετε την ενσωμάτωση PayPal.",
+            "sendOrderNumber": "Εάν αυτή η επιλογή είναι ενεργή, ο αριθμός παραγγελίας θα υποβληθεί στο PayPal ως αναγνωριστικό τιμολογίου κατά την ολοκλήρωση της παραγγελίας.",
+            "spbAlternativePaymentMethodsEnabled": "Εναλλακτικές μέθοδοι πληρωμής είναι πιστωτικές- και χρεωστικές κάρτες και περισσότερα.",
+            "spbButtonLanguageIso": "Αν δεν οριστεί, θα χρησιμοποιηθεί η γλώσσα του καναλιού πωλήσεων.",
+            "submitCart": "Αν αυτή η επιλογή είναι ενεργή, τα στοιχεία του καλαθιού θα υποβληθούν στην PayPal κατά την ολοκλήρωση της παραγγελίας."
+        },
+        "hintText": {
+            "landingPage": {
+                "GUEST_CHECKOUT": "Checkout επισκέπτη: Ο ιστότοπος PayPal εμφανίζει μια φόρμα για πληροφορίες πληρωμής, ο πελάτης δεν χρειάζεται να συνδεθεί.",
+                "LOGIN": "Σύνδεση: Ο ιστότοπος PayPal εμφανίζει μια οθόνη σύνδεσης ως σελίδα προορισμού.",
+                "NO_PREFERENCE": "Καμία προτίμηση: Η PayPal αποφασίζει ποια σελίδα εμφανίζεται, ανάλογα με την προηγούμενη αλληλεπίδραση του πελάτη με την PayPal."
+            }
+        },
+        "label": {
+            "acdcForce3DS": "Εκτέλεση συναλλαγών μόνο με 3D Secure",
+            "brandName": "Το δικό σας εμπορικό σήμα στη σελίδα PayPal",
+            "clientId": "Κωδικός Πελάτη",
+            "clientIdSandbox": "ID προγράμματος-πελάτη Sandbox",
+            "clientSecret": "Μυστικό πελάτη",
+            "clientSecretSandbox": "Μυστικό πελάτη Sandbox",
+            "crossBorderBuyerCountry": "Εντοπισμός",
+            "crossBorderMessagingEnabled": "Ενεργοποίηση διασυνοριακής εντοπισμού του μηνύματος Pay Later",
+            "ecsButtonColor": "Χρώμα κουμπιού",
+            "ecsButtonLanguageIso": "Εντοπιότητα κουμπιού",
+            "ecsButtonShape": "Σχήμα κουμπιού",
+            "ecsCartEnabled": "'Ολοκλήρωση Paypal 'στο καλάθι",
+            "ecsDetailEnabled": "'PayPal Checkout 'στη σελίδα λεπτομερειών",
+            "ecsListingEnabled": "«PayPal Checkout» στις σελίδες καταχώρισης",
+            "ecsLoginEnabled": "'PayPal Checkout 'στη σελίδα σύνδεσης",
+            "ecsOffCanvasEnabled": "'PayPal Checkout 'στο καλάθι εκτός καμβά",
+            "ecsShowPayLater": "Εμφάνιση του κουμπιού «Πληρωμή αργότερα» δίπλα στο κουμπί «Ολοκλήρωση πληρωμής PayPal»",
+            "ecsSubmitCart": "Υποβολή καλαθιού",
+            "excludedProductIds": "Αποκλειόμενα προϊόντα",
+            "excludedProductStreamIds": "Εξαιρόμενες δυναμικές ομάδες προϊόντων",
+            "installmentBannerCartEnabled": "Μπάνερ «Πληρώστε αργότερα» στο καλάθι",
+            "installmentBannerDetailPageEnabled": "Το πανό «Πληρώστε αργότερα» στη σελίδα λεπτομερειών",
+            "installmentBannerFooterEnabled": "Μπάνερ «Πληρώστε αργότερα» στο υποσέλιδο",
+            "installmentBannerLoginPageEnabled": "Μπάνερ «Πληρώστε αργότερα» στη σελίδα σύνδεσης",
+            "installmentBannerOffCanvasCartEnabled": "Μπάνερ «Πληρώστε αργότερα» σε καλάθι εκτός καμβά",
+            "intent": "Απόκτηση πληρωμής",
+            "landingPage": "Σελίδα προορισμού PayPal",
+            "merchantPayerId": "ID εμπόρου PayPal",
+            "merchantPayerIdSandbox": "Κωδικός εμπόρου PayPal Sandbox",
+            "orderNumberPrefix": "Πρόθεμα αριθμού σειράς",
+            "orderNumberSuffix": "Επίθημα αριθμού σειράς",
+            "puiCustomerServiceInstructions": "Οδηγίες Εξυπηρέτησης Πελατών για Πληρωμή με τιμολόγιο",
+            "sandbox": "Ενεργοποίηση sandbox",
+            "sendOrderNumber": "Υποβολή αριθμού παραγγελίας",
+            "spbAlternativePaymentMethodsEnabled": "Ενεργοποιήστε τις εναλλακτικές μεθόδους πληρωμής για τα Έξυπνα Κουμπιά Πληρωμής.",
+            "spbButtonColor": "Χρώμα κουμπιού",
+            "spbButtonLanguageIso": "Εντοπιότητα κουμπιού",
+            "spbButtonShape": "Σχήμα κουμπιού",
+            "spbCheckoutEnabled": "Ενεργοποίηση έξυπνων κουμπιών πληρωμής",
+            "spbShowPayLater": "Εμφάνιση του κουμπιού «Πληρωμή αργότερα» δίπλα στο κουμπί PayPal",
+            "submitCart": "Υποβολή καλαθιού",
+            "vaultingEnabledACDC": "Eanable Vaulting για πιστωτικές και χρεωστικές κάρτες",
+            "vaultingEnabledVenmo": "Ενεργοποίηση αποθήκευσης για πληρωμές Venmo",
+            "vaultingEnabledWallet": "Ενεργοποίηση αποθήκευσης για πληρωμές μέσω PayPal"
+        }
+    },
+    "swag-paypal-settings": {
+        "acdc": {
+            "title": "Πιστωτική ή χρεωστική κάρτα"
+        },
+        "behavior": {
+            "title": "Συμπεριφορά"
+        },
+        "credentialsLive": {
+            "test": "Δοκιμή",
+            "title": "Ζωντανά διαπιστευτήρια API"
+        },
+        "credentialsSandbox": {
+            "test": "Δοκιμή",
+            "title": "Διαπιστευτήρια API Sandbox"
+        },
+        "crossBorder": {
+            "buyerCountryAuto": "Αυτόματος προσδιορισμός",
+            "buyerCountryOverride": "Εντοπισμός",
+            "info": "Η ανταλλαγή μηνυμάτων Pay Later είναι μια δυνατότητα που σας επιτρέπει να εμφανίσετε ένα μήνυμα Πληρωμή αργότερα στη γλώσσα του πελάτη. Αυτή η δυνατότητα είναι διαθέσιμη μόνο για ορισμένες χώρες. {0}",
+            "title": "Πληρώστε αργότερα διασυνοριακά μηνύματα",
+            "warning": "Επικοινωνήστε με τον αντιπρόσωπο της PayPal για να ενεργοποιήσετε αυτήν τη λειτουργία για τον λογαριασμό σας."
+        },
+        "express": {
+            "alertMessage": "Η διπλή επιλογή για τους επισκέπτες ενεργοποιείται σε ένα από τα κανάλια πωλήσεών σας. Αυτή η λειτουργία δεν είναι συμβατή με τα κουμπιά συντόμευσης PayPal Express. Οι πελάτες που εγγράφονται μέσω των κουμπιών συντόμευσης Express Checkout δεν θα λαμβάνουν email επαλήθευσης διπλής επιλογής.",
+            "subtitle": "Τα Express Checkout αυξάνουν το ποσοστό μετατροπής στο κατάστημά σας και δεν ενέχουν οικονομικό κίνδυνο για εσάς ως έμπορο. Συνιστάται να τα διατηρείτε ενεργοποιημένα. ",
+            "title": "Γρήγορη συντόμευση ολοκλήρωσης αγοράς"
+        },
+        "header": "PayPal",
+        "installment": {
+            "subtitle": "Τα πανό αυξάνουν το ποσοστό μετατροπής στο κατάστημά σας και δεν ενέχουν οικονομικό κίνδυνο για εσάς ως έμπορο. Συνιστάται να τα διατηρείτε ενεργοποιημένα.",
+            "title": "Πανό «Πληρώστε αργότερα»"
+        },
+        "module": {
+            "description": "Ρυθμίσεις PayPal",
+            "title": "PayPal"
+        },
+        "options": {
+            "buttonColor": {
+                "black": "Μαύρος",
+                "blue": "λυπημένος",
+                "gold": "Χρυσός (συνιστάται)",
+                "silver": "Ασήμι",
+                "white": "Λευκό"
+            },
+            "buttonShape": {
+                "pill": "Γύρος",
+                "rect": "Ορθογώνιο",
+                "sharp": "Ορθογώνιο με απότομες γωνίες"
+            },
+            "intent": {
+                "AUTHORIZE": "Εγχειρίδιο είσπραξης πληρωμών (έγκριση πρόθεσης)",
+                "CAPTURE": "Αυτόματη είσπραξη πληρωμών (πρόθεση CUTPTION)"
+            },
+            "landingPage": {
+                "GUEST_CHECKOUT": "Αποστολή Επισκεπτών",
+                "LOGIN": "Σύνδεση",
+                "NO_PREFERENCE": "Καμία προτίμηση"
+            }
+        },
+        "pui": {
+            "title": "Πληρωμή με τιμολόγιο"
+        },
+        "spb": {
+            "title": "Έξυπνα κουμπιά πληρωμής"
+        },
+        "tabs": {
+            "advanced": "Για προχωρημένους",
+            "general": "στρατηγός",
+            "storefront": "Παρουσίαση βιτρίνα"
+        },
+        "vaulting": {
+            "activeButtonLabel": "Ενεργοποιήστε το θόλο",
+            "descriptionText": "Η αποθήκευση ενός λογαριασμού PayPal θα σας επιτρέψει να χρεώσετε τον λογαριασμό στο μέλλον χωρίς να απαιτείται από τον πελάτη σας να είναι παρών κατά τη διάρκεια της συναλλαγής ή να επαναπροσδιορίσει τον έλεγχο ταυτότητας με το PayPal όταν είναι παρών κατά τη διάρκεια της συναλλαγής.",
+            "descriptionTitle": "Εφάπαξ ολοκλήρωση αγοράς Paypal",
+            "title": "Θύλιση"
+        },
+        "webhook": {
+            "buttonRefresh": "Ανανέωση του webhook",
+            "fetchFailed": "Αποτυχία ανάκτησης κατάστασης webhook",
+            "info": "Το webhook χρησιμοποιείται για την ασύγχρονη ενημέρωση της κατάστασης μιας συναλλαγής. Τα εσφαλμένα καταχωρημένα webhooks, π.χ. σε διαφορετικό ή μη διαθέσιμο στο κοινό διακομιστή, ενδέχεται να οδηγήσουν σε μη επιβεβαιωμένες συναλλαγές, ανεξάρτητα από το αν η συναλλαγή έχει υποβληθεί σε επεξεργασία από την PayPal.",
+            "refreshFailed": "Αποτυχία ανανέωσης",
+            "status": {
+                "invalid": "Καταχωρημένη, αλλά πιθανή αναντιστοιχία τομέα",
+                "missing": "Δεν έχει εγγραφεί",
+                "unknown": "Φόρτωση...",
+                "valid": "Εγγεγραμμένος"
+            },
+            "title": "Χούγκουκ στο διαδίκτυο"
+        }
+    },
+    "swag-paypal-settings-locale-select": {
+        "automatic": "Αυτόματο (συνιστάται)",
+        "invalid": "Η παρεχόμενη τοπική ρύθμιση δεν είναι έγκυρη. Παρακαλώ επιλέξτε ένα από τη λίστα."
+    },
+    "swag-paypal-settings-sales-channel-switch": {
+        "description": "Κάντε κλικ σε αυτό το κουμπί για να ενεργοποιήσετε το PayPal και να το επιλέξετε ως προεπιλογή στο επιλεγμένο κανάλι πωλήσεων",
+        "label": "Ορισμός του PayPal ως προεπιλεγμένου"
+    },
+    "swag-paypal-settings-shipping-carrier": {
+        "cardHelpText": "Οι πληροφορίες παρακολούθησης θα αποστέλλονται στην PayPal",
+        "cardTitle": "Προεπιλεγμένος μεταφορέας",
+        "commonCarrierBadge": "Συνήθως χρησιμοποιείται",
+        "description": "Το PayPal προσφέρει παρακολούθηση των παραγγελιών που διεκπεραιώνονται μέσω Pay Για να το χρησιμοποιήσετε, καθορίστε έναν προεπιλεγμένο μεταφορέα αποστολής, ο οποίος μπορεί να αντικατασταθεί στις παραγγελίες. Βρείτε μια λίστα με όλους τους παρόχους αποστολής <a target=\"_blank\" href=\"https://developer.paypal.com/docs/tracking/reference/carriers/\">εδώ</a>",
+        "inputHelpText": "Επιλέξτε «Άλλο» για να εισαγάγετε ένα προσαρμοσμένο όνομα μεταφορέα.",
+        "inputHelpTextOther": "Εάν ο μεταφορέας σας δεν περιλαμβάνεται στη λίστα, πληκτρολογήστε το όνομα εδώ. Αφήστε κενό για να χρησιμοποιήσετε το όνομα της μεθόδου αποστολής.",
+        "inputLabel": "Κωδικός μεταφορέα",
+        "inputLabelOther": "Όνομα μεταφορέα",
+        "inputPlaceholder": "Εισάγετε έναν κωδικό φορέα PayPal (π.χ. DHL_GLOBAL_ECOMMERCE)...",
+        "inputPlaceholderOther": "Εισαγάγετε ένα όνομα μεταφορέα...",
+        "invalid": "Ο παρεχόμενος κωδικός μεταφορέα δεν είναι έγκυρος. Επιλέξτε ένα από τη λίστα ή επιλέξτε «Άλλο»."
+    }
+}

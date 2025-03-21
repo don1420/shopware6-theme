@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Нет",
+                    "true": "Да"
+                },
+                "select": {
+                    "defaultPlaceholder": "Выберите параметр..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Показать больше данных",
+            "liveRegionSlideAnnouncement": "Сейчас просматривается слайд продукта %productName%"
+        }
+    }
+}

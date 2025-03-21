@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nei",
+                    "true": "Ja"
+                },
+                "select": {
+                    "defaultPlaceholder": "Velg alternativ..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Vis flere detaljer",
+            "liveRegionSlideAnnouncement": "Ser nå lysbilde for produkt %productName%"
+        }
+    }
+}

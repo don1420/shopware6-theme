@@ -1,0 +1,19 @@
+{
+    "swagCmsExtensions": {
+        "form": {
+            "component": {
+                "checkbox": {
+                    "false": "Nee",
+                    "true": "Ja"
+                },
+                "select": {
+                    "defaultPlaceholder": "Opties selecteren..."
+                }
+            }
+        },
+        "quickview": {
+            "detailPageLinkText": "Toon meer details",
+            "liveRegionSlideAnnouncement": "Bekijk nu de dia voor product %productName%"
+        }
+    }
+}
